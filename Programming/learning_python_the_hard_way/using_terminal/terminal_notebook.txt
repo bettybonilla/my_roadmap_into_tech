@@ -1,0 +1,28 @@
+Terminal Notebook
+
+
+The command rm -rf is more effective and easier to use than the rmdir command which only specifically removes a directory/folder. The rm -rf deletes everything in the folder whereas the rmdir commands only removes the folder if it is an empty folder. When using the rm -rf command, what you remove is unrecoverable and does not show up in the trashcan. In the trashcan, even if you empty the trashcan, files may still be able to be recovered however with the rm -rf command it is unrecoverable.
+
+What does the command pwd -> print working directory mean? 
+- Tells you the directory you are currently working in
+
+When I use the command ls to list what's on my desktop, there seems to be a file still on there that I thought I had deleted weeks ago. Why is it still listed on my desktop? How can I get rid of it?
+
+What does the command pushd -> push directory mean?
+What does the command popd -> pop directory mean?
+- These commands can simply be replaced with the command mv which moves a file or directory
+- https://www.eriwen.com/bash/pushd-and-popd/
+
+What does the command dirs mean? Does it mean the same as the command pwd?
+pwd is more specific whereas dirs is less specific
+
+What does the command less mean?
+- Less is a much better way to inspect large files on the command line. You’ll get a screen-full of text at a time, but no more. You can move a line up or a line down with the k and j respectively, and move a window up or down with b and f. You can search for a pattern by typing /pattern. When you’re done, hit q to exit the less viewer.
+- http://code.tutsplus.com/articles/10-terminal-commands-that-will-boost-your-productivity--net-14105
+
+What does the command echo mean?
+- http://www.tecmint.com/echo-command-in-linux/
+
+What does the command xargs mean?
+
+When I enter the history command in terminal, how far back does it go back?

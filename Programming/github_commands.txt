@@ -1,0 +1,10 @@
+GitHub Commands
+
+
+Before using the GitHub commands, make sure you're in the directory linked to your GitHub repository that you want to upload the changes to
+EX: Type cd Desktop/ then begin typing the name of the next directory and press tab to quickly complete the name
+NOTE: Remember to make sure you type in "cd" to change directories
+
+git add . or git add --all -> adds all the changes you've made
+git commit -m "some comment on the changes you've made" (make sure that you do not use quotation marks inside the quotation marks of the comment. This will confuse the comment so instead use 'sample word' when you want to have something in quotations inside of your comment.)
+git push -> uploads the changes you've made

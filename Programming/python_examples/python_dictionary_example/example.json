@@ -1,0 +1,94 @@
+{
+  "app": {
+    "bundle": "com.dailymail.online",
+    "domain": "https://www.dailymail.co.uk/mobile",
+    "name": "Daily Mail Online / Mail Online",
+    "paid": 0,
+    "privacypolicy": 0,
+    "publisher": {
+      "domain": "https://www.dailymail.co.uk/mobile",
+      "name": "dailymail-dailymailonlinemailonline"
+    },
+    "storeurl": "https://play.google.com/store/apps/details?id=com.dailymail.online",
+    "ver": "5.5.0"
+  },
+  "bcat": [
+    "IAB25-2",
+    "IAB25-3",
+    "IAB25-4",
+    "IAB25-5",
+    "IAB26-1",
+    "IAB26-2",
+    "IAB26-3",
+    "IAB26-4",
+    "IAB7-39",
+    "IAB7-42"
+  ],
+  "device": {
+    "connectiontype": 2,
+    "devicetype": 1,
+    "dnt": 0,
+    "ext": {
+      "atts": 0,
+      "ifv": "f45ec7b1-93f1-30e6-861b-d08e6f3566fa"
+    },
+    "geo": {
+      "country": "GBR",
+      "ipservice": 3,
+      "lat": 51.4964,
+      "lon": -0.1224,
+      "metro": "0",
+      "type": 2
+    },
+    "h": 1920,
+    "ifa": "2d3eca8b-2253-47ec-8a21-f43d812aaf45",
+    "ip": "92.31.31.144",
+    "lmt": 0,
+    "make": "samsung",
+    "model": "SM-T580",
+    "os": "android",
+    "osv": "8.1.0",
+    "ua": "Mozilla/5.0 (Linux; Android 8.1.0; SM-T580 Build/M1AJQ; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Safari/537.36",
+    "w": 1200
+  },
+  "ext": {
+    "session_id": "be33fad4-c291-4cdc-9bf3-fd1cf3e2b2cf"
+  },
+  "format": {
+    "h": 1920,
+    "w": 1200
+  },
+  "imp": [
+    {
+      "banner": {
+        "api": [
+          3,
+          5
+        ],
+        "h": 250,
+        "w": 300
+      },
+      "bidfloor": 0,
+      "clickbrowser": 0,
+      "displaymanagerver": "1.10.8",
+      "ext": {
+        "position": "inline_article_ad_1"
+      },
+      "instl": 0,
+      "secure": 1
+    }
+  ],
+  "regs": {
+    "coppa": 0,
+    "ext": {
+      "gdpr": 1
+    }
+  },
+  "source": {
+    "ext": {}
+  },
+  "tmax": 500,
+  "user": {
+    "ext": {}
+  }
+}
