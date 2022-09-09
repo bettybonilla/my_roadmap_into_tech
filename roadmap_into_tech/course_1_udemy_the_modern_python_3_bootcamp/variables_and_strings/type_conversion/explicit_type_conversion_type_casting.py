@@ -14,7 +14,7 @@ print("data type of num_str:", num_str, type(num_str))
 # This is explicit type conversion (type casting) because you cannot
 # add numbers and strings so therefore you have to convert the data type value
 # of the num_str variable yourself (explicitly) to an int data type by using
-# the type conversion function int()
+# the int() type conversion function
 num_str = int(num_str)
 print("data type of num_str after type casting:", num_str, type(num_str))
 
