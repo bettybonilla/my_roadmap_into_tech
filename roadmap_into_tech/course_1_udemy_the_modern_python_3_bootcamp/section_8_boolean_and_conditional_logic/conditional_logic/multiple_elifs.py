@@ -4,6 +4,7 @@ conditional statement
 '''
 
 color = input("What's your favorite color? ").lower().strip()
+
 if color == "purple":
     print("excellent choice!")
 elif color == "teal":
