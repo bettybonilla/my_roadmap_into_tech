@@ -1,7 +1,10 @@
 '''
 Below is an example showing truthiness to show that certain things have a
 default inherit truthiness or falsiness
-- NOTE: Any string that isn't empty is truthy, any empty string is falsy
+- NOTE: Any empty string is naturally falsy, any string that isn't empty is
+naturally truthy however if your intention is to purposely set True values to
+naturally falsy things then naturally truthy things will be False values and
+they lose their default inherit truthiness or falsiness
 '''
 
 animal = input("Enter your favorite animal: ")
@@ -10,7 +13,7 @@ if animal:
     print(animal + "s" + " are my favorite too!")
     # If the user doesn’t enter anything and presses enter this will result in
     # an empty string which is falsy because it will not print anything
-    # therefore, the else conditional is added to tell the user they didn’t
+    # therefore the else conditional is added to tell the user they didn’t
     # enter anything
 else:
     print("YOU DIDN'T ENTER ANYTHING!")
