@@ -5,11 +5,11 @@ the and logical operator
 - From 2 to 8 years old, there is a child ticket price
 '''
 
-# Both sides of the and logical operator need to be True in order for the
-# entire statement to be True
 age = input("Enter your age: ")
 age = float(age)
 
+# Both sides of the and logical operator need to be True in order for the
+# entire statement to be True
 if age >= 2 and age <= 8:
     print("YOU PAY CHILD TICKET PRICE!")
 elif age < 2:
