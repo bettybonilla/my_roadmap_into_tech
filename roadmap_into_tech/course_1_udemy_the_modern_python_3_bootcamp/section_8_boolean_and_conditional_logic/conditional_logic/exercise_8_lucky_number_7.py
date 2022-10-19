@@ -14,6 +14,7 @@ choice = randint(1, 10)
 
 # YOUR CODE GOES HERE:
 print(choice)
+
 if choice == 7:
     print("lucky")
 else:

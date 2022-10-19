@@ -13,6 +13,7 @@ num = randint(1, 1000)
 
 # YOUR CODE GOES HERE:
 print(num)
+
 if num % 2 == 1:
     print("odd")
 elif num % 2 == 0:

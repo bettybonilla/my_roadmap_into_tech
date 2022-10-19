@@ -2,7 +2,7 @@
 The below is a conditional statement that checks someone's age by using
 the and logical operator
 - In the US, infants usually get into the movies for free up until 2 years old
-- From 2 to 8 years old, there is a child ticket price
+- For ages 2 to 8 years old, there is a child ticket price
 '''
 
 age = input("Enter your age: ")
