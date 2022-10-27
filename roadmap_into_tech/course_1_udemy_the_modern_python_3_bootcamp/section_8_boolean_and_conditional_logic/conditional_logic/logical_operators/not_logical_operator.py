@@ -5,8 +5,8 @@ The below is a conditional statement using the not logical operator
 - Movie ticket price for everyone else: 10 dollars
 '''
 
-age = input("Enter your age: ")
-age = float(age)
+age = input("Enter your age: ").strip()
+age = int(age)
 
 # Anything inside parentheses () will be the opposite value when you use
 # the not logical operator in front of it
