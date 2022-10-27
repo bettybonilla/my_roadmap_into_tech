@@ -3,8 +3,8 @@ The below shows 2 ways you can prompt for user input with the print() function
 or input() function
 '''
 
-# This is how you can prompt a user to input data by using a seperate line with
-# the print() function
+# This is one way you can prompt a user to input data by using a seperate line
+# with the print() function
 print("What's your favorite color?")
 data = input()
 print("You said " + data)

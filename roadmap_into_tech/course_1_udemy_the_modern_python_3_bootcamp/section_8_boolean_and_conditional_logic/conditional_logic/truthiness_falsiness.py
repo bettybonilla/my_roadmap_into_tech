@@ -11,9 +11,9 @@ animal = input("Enter your favorite animal: ")
 
 if animal:
     print(animal + "s" + " are my favorite too!")
+else:
     # If the user doesn’t enter anything and presses enter this will result in
     # an empty string which is falsy because it will not print anything
-    # therefore the else conditional is added to tell the user they didn’t
+    # therefore this else conditional is added to tell the user they didn’t
     # enter anything
-else:
     print("YOU DIDN'T ENTER ANYTHING!")
