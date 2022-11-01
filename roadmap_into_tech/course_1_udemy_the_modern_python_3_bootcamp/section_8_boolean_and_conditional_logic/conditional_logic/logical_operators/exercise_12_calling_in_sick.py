@@ -26,6 +26,10 @@ sick_days = randint(0, 10)
 # NO TOUCHING =================================================================
 
 # Set this to True or False with boolean logic and conditionals!
+# The None value acts as a placeholder for a variable so that you can
+# define/assign it later
+# By using the None value, as shown below the calling_in_sick variable can be
+# dynamically assigned in the conditional logic
 calling_in_sick = None
 
 # YOUR CODE GOES HERE:
