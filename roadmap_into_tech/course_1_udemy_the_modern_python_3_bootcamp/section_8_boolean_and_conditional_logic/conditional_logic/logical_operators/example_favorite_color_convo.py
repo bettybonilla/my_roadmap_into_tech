@@ -2,7 +2,7 @@ from random import randint
 
 RED = "red"
 BlUE = "blue"
-GREEN = "green"
+YELLOW = "yellow"
 
 # It can be a good idea to have 2 variables for your user input in case you
 # need to look at the original unmodified user input data for future
@@ -19,8 +19,8 @@ if validate_x == "":
 
 # If the user doesn't input what is in the list [] then print "Hmm I guess you
 # don't like primary colors"
-if validate_x not in [RED, BlUE, GREEN]:
-    print("Hmm I guess you don't like primary colors")
+if validate_x not in [RED, BlUE, YELLOW]:
+    print("Hmm, I guess you don't like primary colors")
 
 # The None value acts as a placeholder for a variable so that you can
 # define/assign it later
@@ -31,11 +31,11 @@ response = "Cool, my pets favorite color is {0}"
 n = randint(0, 2)
 
 if n == 0:
-    pet_color = "orange"
+    pet_color = "green"
 elif n == 1:
-    pet_color = "purple"
+    pet_color = "orange"
 elif n == 2:
-    pet_color = "pink"
+    pet_color = "purple"
 
 if pet_color is not None:
     print(response.format(pet_color))
