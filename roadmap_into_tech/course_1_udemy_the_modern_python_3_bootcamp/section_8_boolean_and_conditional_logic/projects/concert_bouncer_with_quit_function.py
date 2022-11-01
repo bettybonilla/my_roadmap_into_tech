@@ -11,25 +11,25 @@ old enough to drink
 # Ask for age
 age = input("Stop right there! Enter your age: ").strip()
 
+# The quit() function (alias for the exit() function or vice versa) tells the
+# computer to exit/quit running the program and it is important because it
+# follows the return early rule of terminating a program early when there is
+# an error which avoids unnecessary bugs and this allows to safely implement
+# logic later - When you terminate a program early on errors, it also avoids
+# the possibility of more code being executed without intention and it is
+# easier to bugfix
+# Using quit(0) means you told the program to exit/quit successfully because
+# there were no errors - Visually indicated with a green arrow in terminal
+# Using quit(1) means you told the program to exit/quit unsuccessfully because
+# there were errors since the data was invalid - Visually indicated with a red
+# arrow in terminal
+# Using quit() means you told the program to exit/quit but don't want to
+# reveal whether successful or unsuccessful
+
 # This accounts for user input errors with empty strings
 if age == "":
     print("YOU DIDN'T ENTER ANYTHING, ENTER YOUR AGE NOW!")
     quit(1)
-    # The quit() function (alias for the exit() function or vice versa) tells
-    # the computer to exit/quit running the program and it is important
-    # because it follows the return early rule of terminating a program early
-    # when there is an error which avoids unnecessary bugs and this allows to
-    # safely implement logic later - When you terminate a program early on
-    # errors, it also avoids the possibility of more code being executed
-    # without intention and it is easier to bugfix
-    # Using quit(0) means you told the program to exit/quit successfully
-    # because there were no errors - Visually indicated with a green arrow in
-    # terminal
-    # Using quit(1) means you told the program to exit/quit unsuccessfully
-    # because there were errors since the data was invalid - Visually indicated
-    # with a red arrow in terminal
-    # Using quit() means you told the program to exit/quit but don't want to
-    # reveal whether successful or unsuccessful
 
 # After accounting for user input errors with empty strings, now we can use
 # the int() type conversion function to convert a non-empty string with a
