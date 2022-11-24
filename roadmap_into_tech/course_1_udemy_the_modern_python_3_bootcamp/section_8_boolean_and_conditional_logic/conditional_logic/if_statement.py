@@ -13,3 +13,14 @@ elif name == "werewolves":
     print("You're Team Jacob")
 else:
     print("Carry on, human")
+
+# The code block below is alternative code to the code block above
+# To further account for user input errors, string indexing can be used to
+# check for the first character in the user input which helps eliminate the
+# possibility of spelling errors breaking the program
+# if name[0] == "v":
+#     print("You're Team Edward")
+# elif name[0] == "w":
+#     print("You're Team Jacob")
+# else:
+#     print("Carry on, human")
