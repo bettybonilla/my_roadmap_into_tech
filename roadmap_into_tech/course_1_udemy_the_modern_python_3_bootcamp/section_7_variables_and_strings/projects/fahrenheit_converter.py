@@ -7,6 +7,7 @@ print("What's the temperature in celsius?")
 celsius = input()
 
 celsius = float(celsius)
+
 fahrenheit = (celsius * 1.8) + 32
 fahrenheit = round(fahrenheit, 2)
 
