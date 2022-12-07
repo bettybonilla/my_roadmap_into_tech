@@ -16,7 +16,7 @@ which defines a function so you can reuse it again throughout your code
 # the same code for it again
 # The 1st line is your signature line where you use a clear name (green) to
 # describe what your function will do then you write your parameters inside
-# the parenthesis
+# the parentheses
 # The rest of the def code block follows each line of code in order
 def get_user_input(question):
     print(question)
