@@ -6,7 +6,8 @@ The program below acts as a concert bouncer using a nested conditional
 old enough to drink
 - Ages 17 years old and below can't get into concerts at all
 - NOTE: Instructor's Version - The below follows unprofessional bad practices
-and validating data inside logic + nested conditionals should be avoided
+since validating data inside conditional logic + nested conditionals should be
+avoided
 '''
 
 # Ask for age
