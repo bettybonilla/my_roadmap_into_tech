@@ -11,20 +11,36 @@ Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz",
 "13","14","FizzBuzz"]
 '''
 
-# ----------------------------------------------------------------------------
+# ============================================================================
 # TODO Revisit after learning arrays and for loops
 # The code below is correct but incomplete so it would not be ready for
 # submission
-# ----------------------------------------------------------------------------
+# ============================================================================
+
+
+def process_data(n):
+    n = int(n)
+    if n % 3 == 0 and n % 5 == 0:
+        print("FizzBuzz")
+    elif n % 3 == 0:
+        print("Fizz")
+    elif n % 5 == 0:
+        print("Buzz")
+
 
 n = input("Enter a number: ")
-n = int(n)
+process_data(n)
+print(str(n), type(str(n)))
 
-if n % 3 == 0 and n % 5 == 0:
-    print("FizzBuzz")
-elif n % 3 == 0:
-    print("Fizz")
-elif n % 5 == 0:
-    print("Buzz")
-else:
-    print(str(n), type(str(n)))
+# The code below is alternative code to the code above
+# n = input("Enter a number: ")
+# n = int(n)
+
+# if n % 3 == 0 and n % 5 == 0:
+#     print("FizzBuzz")
+# elif n % 3 == 0:
+#     print("Fizz")
+# elif n % 5 == 0:
+#     print("Buzz")
+# else:
+#     print(str(n), type(str(n)))
