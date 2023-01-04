@@ -27,8 +27,8 @@ if validate_x not in [RED, BlUE, YELLOW]:
 # By using the None value, as shown below the pet_color variable can be
 # dynamically assigned in the conditional logic
 pet_color = None
-response = "Cool, my pets favorite color is {0}"
 n = randint(0, 2)
+response = "Cool, my pets favorite color is {}"
 
 if n == 0:
     pet_color = "green"
@@ -37,7 +37,7 @@ elif n == 1:
 elif n == 2:
     pet_color = "purple"
 
-if pet_color is not None:
+if pet_color:
     print(response.format(pet_color))
 
 quit(0)
