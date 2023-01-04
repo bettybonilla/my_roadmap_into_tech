@@ -33,6 +33,8 @@ def process_data(age):
 
 # Ask for age
 age = input("Stop right there! Enter your age: ").strip()
+
 if validate_data(age):
     process_data(age)
-# print("age:", age, type(age))
+
+print("age:", age, type(age))
