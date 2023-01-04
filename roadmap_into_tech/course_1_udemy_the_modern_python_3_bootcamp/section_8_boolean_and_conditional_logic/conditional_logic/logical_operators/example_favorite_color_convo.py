@@ -11,7 +11,7 @@ YELLOW = "yellow"
 # The validate_x variable is the modified user input data using the
 # .strip() method and .lower() method
 x = input("What's your favorite color?: ")
-validate_x = x.strip().lower()
+validate_x = x.lower().strip()
 
 if validate_x == "":
     print("Please provide a color")
