@@ -7,7 +7,7 @@ naturally falsy things then naturally truthy things will be False values and
 they lose their default inherit truthiness or falsiness
 '''
 
-animal = input("Enter your favorite animal: ")
+animal = input("Enter your favorite animal: ").lower().strip()
 
 if animal:
     print(animal + "s" + " are my favorite too!")
