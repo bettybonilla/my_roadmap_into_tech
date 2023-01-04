@@ -5,7 +5,7 @@ The program below acts as a concert bouncer using a nested conditional
 - Ages 18 to 20 years old have to wear special wristbands to show they're not
 old enough to drink
 - Ages 17 years old and below can't get into concerts at all
-- NOTE: Instructor's Version - The below follows unprofessional bad practices
+- NOTE: Instructor's Code - The below follows unprofessional bad practices
 since validating data inside conditional logic + nested conditionals should be
 avoided
 '''

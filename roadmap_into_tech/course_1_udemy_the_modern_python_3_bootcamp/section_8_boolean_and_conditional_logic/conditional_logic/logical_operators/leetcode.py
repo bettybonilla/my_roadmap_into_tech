@@ -32,7 +32,7 @@ n = input("Enter a number: ")
 process_data(n)
 print(str(n), type(str(n)))
 
-# The code below is alternative code to the code above
+# The code below has been refactored to the code above
 # n = input("Enter a number: ")
 # n = int(n)
 

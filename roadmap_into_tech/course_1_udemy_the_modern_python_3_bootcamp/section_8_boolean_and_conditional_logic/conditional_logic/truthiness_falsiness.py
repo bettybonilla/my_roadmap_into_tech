@@ -1,6 +1,6 @@
 '''
-Below is an example showing truthiness to show that certain things have a
-default inherit truthiness or falsiness
+Below is an example showing that certain things have a default inherit
+truthiness or falsiness
 - NOTE: Any empty string is naturally falsy, any string that isn't empty is
 naturally truthy however if your intention is to purposely set True values to
 naturally falsy things then naturally truthy things will be False values and
