@@ -1,9 +1,9 @@
-'''
+"""
 The program below is a rock, paper, scissors game for PvP (Player vs. Player)
 mode
-'''
+"""
 
-'''
+"""
 - Constants are written at the top of files to be accessible throughout your
 code below them
 - It's a good idea to make something into a constant when you know you will be
@@ -17,7 +17,7 @@ the user input variables to equal the string index as shown below
     instead of checking the string index for each user input variable
     repeatedly for each instance of the user input variable in the
     conditional logic below
-'''
+"""
 
 ROCK = "r"
 PAPER = "p"

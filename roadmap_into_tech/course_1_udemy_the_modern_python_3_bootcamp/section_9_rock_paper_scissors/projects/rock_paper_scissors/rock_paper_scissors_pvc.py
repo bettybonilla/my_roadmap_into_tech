@@ -1,7 +1,7 @@
-'''
+"""
 The program below is a rock, paper, scissors game for PvC (Player vs. Computer)
 mode
-'''
+"""
 
 # Imports the built-in Python random module which generates pseudo-random
 # numbers or elements based on the function or method used and the

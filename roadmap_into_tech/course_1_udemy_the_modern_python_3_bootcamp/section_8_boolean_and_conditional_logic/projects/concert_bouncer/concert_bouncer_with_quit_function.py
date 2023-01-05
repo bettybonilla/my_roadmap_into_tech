@@ -1,4 +1,4 @@
-'''
+"""
 The program below acts as a concert bouncer using the quit() function
 - In the US, you can get into concerts if you're 18 years old and older
 - However, you can't drink until you're 21 years old and older
@@ -6,12 +6,12 @@ The program below acts as a concert bouncer using the quit() function
 old enough to drink
 - Ages 17 years old and below can't get into concerts at all
 - NOTE: My Code - The below follows professional good practices
-'''
+"""
 
 # Ask for age
 age = input("Stop right there! Enter your age: ").strip()
 
-'''
+"""
 The quit() function (alias for the exit() function or vice versa) tells the
 computer to exit/quit running the program and it is important because it
 follows the return early rule of terminating a program early which avoids
@@ -25,7 +25,7 @@ there were errors since the data was invalid - Visually indicated with a red
 arrow in terminal
 - Using quit() means you told the program to exit/quit but don't want to
 reveal whether successful or unsuccessful
-'''
+"""
 
 # This accounts for user input errors with empty strings
 if age == "":

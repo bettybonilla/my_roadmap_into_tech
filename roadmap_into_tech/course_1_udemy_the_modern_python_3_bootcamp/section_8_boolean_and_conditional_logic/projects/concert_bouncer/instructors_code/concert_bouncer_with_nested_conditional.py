@@ -1,4 +1,4 @@
-'''
+"""
 The program below acts as a concert bouncer using a nested conditional
 - In the US, you can get into concerts if you're 18 years old and older
 - However, you can't drink until you're 21 years old and older
@@ -8,7 +8,7 @@ old enough to drink
 - NOTE: Instructor's Code - The below follows unprofessional bad practices
 since validating data inside conditional logic + nested conditionals should be
 avoided
-'''
+"""
 
 # Ask for age
 age = input("Stop right there! Enter your age: ").strip()

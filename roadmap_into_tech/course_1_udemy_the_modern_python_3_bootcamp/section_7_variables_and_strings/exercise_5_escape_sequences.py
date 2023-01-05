@@ -1,7 +1,7 @@
-'''
+"""
 Get some practice with escape sequences! No need to create new variables, just
 use the existing variables created for you and follow the instructions.
-'''
+"""
 
 # Set the message variable equal to any string containing a new-line escape
 # sequence
@@ -15,5 +15,7 @@ print(mountains)
 
 # Set the quotation variable to any string that contains an escaped double
 # quotation mark
+# fmt: off
 quotation = "he said \"I love you\""
+# fmt: on
 print(quotation)

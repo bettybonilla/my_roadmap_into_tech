@@ -1,8 +1,8 @@
-'''
+"""
 The below shows an example of implicit type conversion and how
 data type values are automatically converted in the background (implicitly)
 to another data type
-'''
+"""
 
 num_int = 123
 num_flo = 1.23

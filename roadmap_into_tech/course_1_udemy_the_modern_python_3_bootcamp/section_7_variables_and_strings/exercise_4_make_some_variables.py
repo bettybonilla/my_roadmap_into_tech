@@ -1,6 +1,6 @@
-'''
+"""
 Now that we've learned about variables and data types, let's get some practice!
-'''
+"""
 
 # Define a variable named city and set it equal to any string
 city = "New York City"

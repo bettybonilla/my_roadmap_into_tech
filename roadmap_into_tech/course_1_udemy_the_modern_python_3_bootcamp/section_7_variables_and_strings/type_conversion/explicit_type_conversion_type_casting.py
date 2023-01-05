@@ -1,9 +1,9 @@
-'''
+"""
 The below shows an example of explicit type conversion (type casting) and how
 you can convert data type values yourself (explicitly) to another data type by
 using type conversion functions
 - Ex: int(), float(), str(), etc.
-'''
+"""
 
 num_int = 123
 num_str = "456"

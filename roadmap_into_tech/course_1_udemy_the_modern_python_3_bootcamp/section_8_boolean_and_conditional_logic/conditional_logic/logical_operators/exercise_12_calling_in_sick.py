@@ -1,4 +1,4 @@
-'''
+"""
 - In this exercise you will be given a few variables that will be set randomly
 to boolean values (True or False):
     - actually_sick - When you legit have the flu!
@@ -14,11 +14,12 @@ True or False based on the following scenarios:
     - Otherwise, set to False if:
         - The tests check that the value of calling_in_sick is correct based
         on the conditions specified above
-'''
+"""
 
 # NO TOUCHING =================================================================
 # Randomly assigns values to these four variables
 from random import choice, randint
+
 actually_sick = choice([True, False])
 kinda_sick = choice([True, False])
 hate_your_job = choice([True, False])

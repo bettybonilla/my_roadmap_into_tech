@@ -1,4 +1,4 @@
-'''
+"""
 - In this exercise x and y are two random variables. The code at the top of
 the file randomly assigns them (we'll learn how it works later on) but for now
 just leave it alone :)
@@ -8,10 +8,11 @@ just leave it alone :)
 - Ex: "x is positive and y is negative"
 - NOTE: The print statements are filled in for you, just add logic - For the
 tests to pass, don't change the print statements!
-'''
+"""
 
 # NO TOUCHING =================================================================
 from random import randint
+
 x = randint(-100, 100)
 while x == 0:  # Makes sure x isn't zero
     x = randint(-100, 100)

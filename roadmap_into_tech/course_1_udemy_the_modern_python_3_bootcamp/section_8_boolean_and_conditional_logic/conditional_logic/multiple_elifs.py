@@ -1,7 +1,7 @@
-'''
+"""
 Below is an example of how you can use multiple elif conditionals in a
 conditional statement
-'''
+"""
 
 color = input("What's your favorite color? ").lower().strip()
 

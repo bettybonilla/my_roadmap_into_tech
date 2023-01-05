@@ -43,7 +43,7 @@ def compare_input(player1, player2):
 
 
 # Runs the code below only if you run the python command on this file
-if __name__ in '__main__':
+if __name__ in "__main__":
     print("Welcome!\n")
     print("rock?\npaper?\nscissors?\nshoot!\n")
 

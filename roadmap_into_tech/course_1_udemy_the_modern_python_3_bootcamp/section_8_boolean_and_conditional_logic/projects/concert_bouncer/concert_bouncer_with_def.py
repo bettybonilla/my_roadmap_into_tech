@@ -5,7 +5,7 @@ def validate_data(age):
     return True
 
 
-'''
+"""
 Validating data inside definitions with conditional logic is acceptable and
 the exception to the general rule
 - Doing type conversion inside the definition below also ensures that the
@@ -15,7 +15,7 @@ str from an int
 - This is because, even though type conversion inside this defintion converts
 the age variable from a str to an int, as shown below after this definition
 is executed the age variable goes back to it's original data type (str)
-'''
+"""
 
 
 def process_data(age):

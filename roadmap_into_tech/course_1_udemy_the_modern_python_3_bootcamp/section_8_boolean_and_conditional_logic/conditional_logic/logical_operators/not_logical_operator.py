@@ -1,9 +1,9 @@
-'''
+"""
 The below is a conditional statement using the not logical operator
 - Movie ticket price for ages 2 to 8 years old: 2 dollars
 - Movie ticket price for ages 65 years old and older: 5 dollars
 - Movie ticket price for everyone else: 10 dollars
-'''
+"""
 
 age = input("Enter your age: ").strip()
 age = int(age)

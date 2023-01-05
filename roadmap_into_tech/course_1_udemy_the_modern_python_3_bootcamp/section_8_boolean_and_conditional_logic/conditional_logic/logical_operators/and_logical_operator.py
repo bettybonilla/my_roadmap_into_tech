@@ -1,9 +1,9 @@
-'''
+"""
 The below is a conditional statement that checks someone's age by using
 the and logical operator
 - In the US, infants usually get into the movies for free up until 2 years old
 - For ages 2 to 8 years old, there is a child ticket price
-'''
+"""
 
 # When dealing with age, use the int() type conversion function instead of the
 # float() type conversion function since ages are meant to be whole numbers

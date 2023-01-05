@@ -1,7 +1,7 @@
-'''
+"""
 The below takes the temperature in celsius and converts it into fahrenheit by
 asking for user input on the temperature in celsius
-'''
+"""
 
 print("What's the temperature in celsius?")
 celsius = input()

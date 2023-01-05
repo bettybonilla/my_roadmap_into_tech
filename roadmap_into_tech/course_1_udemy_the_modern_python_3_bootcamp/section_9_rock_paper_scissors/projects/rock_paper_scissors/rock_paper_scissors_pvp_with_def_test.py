@@ -5,6 +5,7 @@
 import sys
 import io
 import unittest
+
 # Import definitions from your file
 from rock_paper_scissors_pvp_with_def import is_input_valid, compare_input
 
@@ -25,44 +26,32 @@ class MyTest(unittest.TestCase):
             {
                 "name": "empty string",
                 "player_input": "",
-                "expected_value": (
-                    False,
-                    "YOU DIDN'T ENTER ANYTHING, TRY AGAIN! >:-("
-                    )
+                "expected_value": (False, "YOU DIDN'T ENTER ANYTHING, TRY AGAIN! >:-("),
             },
             {
                 "name": "user entered gibberish, single letter",
                 "player_input": "x",
-                "expected_value": (
-                    False,
-                    "YOU ENTERED GIBBERISH, TRY AGAIN! >:-("
-                    )
+                "expected_value": (False, "YOU ENTERED GIBBERISH, TRY AGAIN! >:-("),
             },
             {
                 "name": "user entered gibberish, multi-letter",
                 "player_input": "eszxdcfvgbhnj",
-                "expected_value": (
-                    False,
-                    "YOU ENTERED GIBBERISH, TRY AGAIN! >:-("
-                    )
+                "expected_value": (False, "YOU ENTERED GIBBERISH, TRY AGAIN! >:-("),
             },
             {
                 "name": "user entered gibberish, numbers",
                 "player_input": "123",
-                "expected_value": (
-                    False,
-                    "YOU ENTERED GIBBERISH, TRY AGAIN! >:-("
-                    )
+                "expected_value": (False, "YOU ENTERED GIBBERISH, TRY AGAIN! >:-("),
             },
             {
                 "name": "r was entered and should be correct",
                 "player_input": "r",
-                "expected_value": (True, "")
+                "expected_value": (True, ""),
             },
             {
                 "name": "rock was entered and should be correct",
                 "player_input": "rock",
-                "expected_value": (True, "")
+                "expected_value": (True, ""),
             },
         ]
 
@@ -70,23 +59,10 @@ class MyTest(unittest.TestCase):
             the_value_returned = is_input_valid(case["player_input"])
             try:
                 # https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertTupleEqual
-                self.assertTupleEqual(
-                    the_value_returned,
-                    case["expected_value"]
-                    )
-                print(
-                    "test case: "
-                    + case["name"]
-                    + " ✅ passed"
-                    )
+                self.assertTupleEqual(the_value_returned, case["expected_value"])
+                print("test case: " + case["name"] + " ✅ passed")
             except Exception as e:
-                print(
-                    "test case: "
-                    + case["name"]
-                    + " ❌ failed"
-                    + ": "
-                    + str(e)
-                    )
+                print("test case: " + case["name"] + " ❌ failed" + ": " + str(e))
 
     def test_compare_input(self):
         testcases = [
@@ -148,29 +124,15 @@ class MyTest(unittest.TestCase):
 
         for case in testcases:
             the_value_returned = compare_input(
-                case["player1_input"],
-                case["player2_input"]
-                )
+                case["player1_input"], case["player2_input"]
+            )
             try:
                 # https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertEqual
-                self.assertEqual(
-                    the_value_returned,
-                    case["expected_value"]
-                    )
-                print(
-                    "test case: "
-                    + case["name"]
-                    + " ✅ passed"
-                    )
+                self.assertEqual(the_value_returned, case["expected_value"])
+                print("test case: " + case["name"] + " ✅ passed")
             except Exception as e:
-                print(
-                    "test case: "
-                    + case["name"]
-                    + " ❌ failed"
-                    + ": "
-                    + str(e)
-                    )
+                print("test case: " + case["name"] + " ❌ failed" + ": " + str(e))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
