@@ -50,3 +50,16 @@ elif age >= 21:
 elif age <= 17:
     # 17- No Entry: Sorry too young
     print("You can't enter: Sorry kid, you're too young!")
+
+# The code below is alternative code to the code above
+# Implements the DRY principle
+# if age >= 18 and age <= 20:
+#     entry = "You can enter:"
+#     message = "You can't drink and need a wristband!"
+# elif age >= 21:
+#     entry = "You can enter:"
+#     message = "You can drink and don't need a wristband!"
+# elif age <= 17:
+#     entry = "You can't enter:"
+#     message = "Sorry kid, you're too young!"
+# print(f"{entry} {message}")
