@@ -9,7 +9,7 @@ mom = int(mom)
 
 for i in range(mom):
     print("CLEAN UP YOUR ROOM!")
-    # This shows the position of the i item variable as it loops through the
+    # This shows the index of the i item variable as it loops through the
     # iterable and that's why it's able to return each print statement the
     # number of times entered from the user input
     # print(f"i = {i}: CLEAN UP YOUR ROOM!")

@@ -56,7 +56,7 @@ if player2 not in [ROCK, PAPER, SCISSORS]:
 
 # It's best to place definite clear-cut logic at the top of your
 # conditional logic to rule it out first since, if that condition is true, the
-# rest of your code won't have to run which follows the return early mindset
+# rest of your code won't have to run which follows the return early rule
 if player1 == player2:
     print("It's a tie, play again! :-)")
 elif player1 == ROCK and player2 != PAPER:
@@ -97,7 +97,7 @@ else:
 
 # It's best to place definite clear-cut logic at the top of your
 # conditional logic to rule it out first since, if that condition is true, the
-# rest of your code won't have to run which follows the return early mindset
+# rest of your code won't have to run which follows the return early rule
 # if player1 == player2:
 #     print("It's a tie, play again! :-)")
 # elif player1 == ROCK and player2 != PAPER:
@@ -125,7 +125,7 @@ else:
 
 # It's best to place definite clear-cut logic at the top of your
 # conditional logic to rule it out first since, if that condition is true, the
-# rest of your code won't have to run which follows the return early mindset
+# rest of your code won't have to run which follows the return early rule
 # if player1 == player2:
 #     print("It's a tie, play again! :-)")
 # elif player1 == "rock" and player2 != "paper":
