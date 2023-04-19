@@ -1,6 +1,6 @@
 """
 The program below is a rock, paper, scissors game for PvP (Player vs. Player)
-mode which clears the screen to deter cheating between the players
+which clears the screen to deter cheating between the players
 """
 
 import os

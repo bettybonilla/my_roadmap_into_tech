@@ -18,13 +18,14 @@ follows the return early rule of terminating a program early which avoids
 unnecessary bugs and this allows to safely implement logic later - When you
 terminate a program early on errors, it also avoids the possibility of more
 code being executed without intention and it is easier to bugfix
-- Using quit(0) means you told the program to exit/quit successfully because
-there were no errors - Visually indicated with a green arrow in terminal
-- Using quit(1) means you told the program to exit/quit unsuccessfully because
-there were errors since the data was invalid - Visually indicated with a red
+- Using exit (0) or quit(0) means you told the program to exit/quit
+successfully because there were no errors - Visually indicated with a green
 arrow in terminal
-- Using quit() means you told the program to exit/quit but don't want to
-reveal whether successful or unsuccessful
+- Using exit (1) or quit(1) means you told the program to exit/quit
+unsuccessfully because there were errors since the data was invalid - Visually
+indicated with a red arrow in terminal
+- Using exit () or quit() means you told the program to exit/quit but don't
+want to reveal whether successful or unsuccessful
 """
 
 # This accounts for user input errors with empty strings

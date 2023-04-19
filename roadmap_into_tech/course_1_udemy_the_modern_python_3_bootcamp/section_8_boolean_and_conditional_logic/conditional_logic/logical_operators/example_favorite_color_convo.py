@@ -5,10 +5,10 @@ BlUE = "blue"
 YELLOW = "yellow"
 
 # It can be a good idea to have 2 variables for your user input in case you
-# need to look at the original unmodified user input data for future
+# need to look at the original unaltered user input data for future
 # bugfixes, etc.
-# The x variable is the unmodified user input data
-# The validate_x variable is the modified user input data using the
+# The x variable is the unaltered user input data
+# The x_validated variable is the altered user input data using the
 # .strip() method and .lower() method
 x = input("What's your favorite color?: ")
 validate_x = x.lower().strip()

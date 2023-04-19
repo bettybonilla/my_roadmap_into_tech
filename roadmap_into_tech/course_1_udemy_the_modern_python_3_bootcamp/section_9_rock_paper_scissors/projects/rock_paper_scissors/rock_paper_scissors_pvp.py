@@ -1,6 +1,5 @@
 """
 The program below is a rock, paper, scissors game for PvP (Player vs. Player)
-mode
 """
 
 """
@@ -8,6 +7,9 @@ mode
 code below them
 - It's a good idea to make something into a constant when you know you will be
 repeating something throughout your code that won't change
+- Constants are also good practice especially if your file is really long
+since for convenience you can easily find them at the top of your file and
+change them instead of having to dig for variables throughout your file
 - To implement string indexing with constants, make your constants equal to
 the first character you expect in the string of the user input then reassign
 the user input variables to equal the string index as shown below
