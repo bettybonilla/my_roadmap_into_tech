@@ -2,8 +2,8 @@
 # TODO Revisit and test knowledge
 # =============================================================================
 
-import sys
 import io
+import sys
 import unittest
 
 # Import definitions from your file
