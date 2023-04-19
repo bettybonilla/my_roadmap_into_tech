@@ -12,7 +12,7 @@ the exception to the general rule
 original data type of the age variable (str) can be used if needed later
 without having to use type conversion again to convert it back to a
 str from an int
-- This is because, even though type conversion inside this defintion converts
+- This is because, even though type conversion inside this definition converts
 the age variable from a str to an int, as shown below after this definition
 is executed the age variable goes back to it's original data type (str)
 """
