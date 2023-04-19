@@ -11,15 +11,15 @@ YELLOW = "yellow"
 # The x_validated variable is the altered user input data using the
 # .strip() method and .lower() method
 x = input("What's your favorite color?: ")
-validate_x = x.lower().strip()
+x_validated = x.lower().strip()
 
-if validate_x == "":
+if x_validated == "":
     print("Please provide a color")
     quit(1)
 
 # If the user doesn't input what is in the list [] then print "Hmm I guess you
 # don't like primary colors"
-if validate_x not in [RED, BlUE, YELLOW]:
+if x_validated not in [RED, BlUE, YELLOW]:
     print("Hmm, I guess you don't like primary colors")
 
 # The None value acts as a placeholder for a variable so that you can
