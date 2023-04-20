@@ -3,7 +3,7 @@
 player has to guess the random number the computer picks between 1 and 10 and
 the computer gives hints to help the player guess the number by stating if the
 number guessed was too high or too low
-- The player is also given the option to exit the game by pressing Ctrl + C
+- The game will loop forever until the player presses Ctrl + C to exit the game
 """
 
 import random
@@ -53,6 +53,9 @@ time.sleep(0.5)
 # Generates a random number between 1 and 10 (inclusive)
 computer = random.randint(1, 10)
 
+# While True loops will loop forever until it hits the break keyword however
+# since there is no break keyword, you have to press Ctrl + C to exit the
+# program
 while True:
     player_input_str = input("Guess the number between 1 and 10: ").strip()
     player_input_int = int(player_input_str)

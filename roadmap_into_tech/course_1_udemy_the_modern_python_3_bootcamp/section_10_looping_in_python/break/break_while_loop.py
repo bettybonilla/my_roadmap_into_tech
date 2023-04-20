@@ -5,6 +5,7 @@ while loop
 continue to prompt infinitely
 """
 
+# While True loops will loop forever until it hits the break keyword
 while True:
     command = input("Type 'exit' to exit: ")
     if command == "exit":

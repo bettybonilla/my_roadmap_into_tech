@@ -7,7 +7,7 @@ user_input = input("Ah Ah Ah, you didn't say the magic word: ") until you
 enter “please” because the while condition will remain True and will only end
 until it is False by entering “please” which stops the execution of the loop
 - NOTE: You MUST stop the program from running either by ending the while loop
-or by using Ctrl + C to exit the program in terminal
+or by pressing Ctrl + C to exit the program in terminal
 """
 
 user_input = None
