@@ -55,10 +55,10 @@ while True:
             time.sleep(0.5)
             computer = random.randint(1, 10)
         elif play_again[0] == "n":
+            time.sleep(0.5)
+            print("Thanks for playing, Bye!")
             break
     elif player_input_int > computer:
         print("Too high, try again!")
     elif player_input_int < computer:
         print("Too low, try again!")
-time.sleep(0.5)
-print("Thanks for playing, Bye!")
