@@ -1,8 +1,8 @@
 """
-- The program below is a guessing game for PvC (Player vs. Computer) where the
-player has to guess the random number the computer picks between 1 and 10 and
-the computer gives hints to help the player guess the number by stating if the
-number guessed was too high or too low
+- The program below is a number guessing game for PvC (Player vs. Computer)
+where the player has to guess the random number the computer picks between 1
+and 10 and the computer gives hints to help the player guess the number by
+stating if the number guessed was too high or too low
 - The game will loop forever until the player presses Ctrl + C to exit the game
 """
 
@@ -11,17 +11,17 @@ import signal
 import time
 
 
-# A Signal Handler is a user defined function, as shown below, where Python
-# signals can be handled
+# A Signal Handler is a defined function, as shown below, where Python signals
+# can be handled
 # Below, the signal_handler() function gracefully exits the program and
-# provides an exit message to the user
+# provides an exit message to the player
 def signal_handler(signum, frame):
     time.sleep(0.5)
     print("")
     print("Thanks for playing, Bye!")
     # Using exit(0) or quit(0) tells the program to exit/quit successfully
-    # because there were no errors and also ensures you terminate any loops
-    # still running inside the program
+    # because there were no errors and also ensures that you terminate any
+    # loops still running inside the program
     exit(0)
 
 

@@ -21,5 +21,5 @@ while number != 5:
     number = randint(1, 10)
     print(number)
     # Alternative code to show each iteration through the loop
-    # print(number, f"loop #: {i + 1}")
+    # print(number, f"(loop #{i + 1})")
     i += 1

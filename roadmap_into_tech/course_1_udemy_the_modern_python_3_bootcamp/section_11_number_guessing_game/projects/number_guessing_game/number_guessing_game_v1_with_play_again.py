@@ -1,8 +1,8 @@
 """
-- The program below is a guessing game for PvC (Player vs. Computer) where the
-player has to guess the random number the computer picks between 1 and 10 and
-the computer gives hints to help the player guess the number by stating if the
-number guessed was too high or too low
+- The program below is a number guessing game for PvC (Player vs. Computer)
+where the player has to guess the random number the computer picks between 1
+and 10 and the computer gives hints to help the player guess the number by
+stating if the number guessed was too high or too low
 - The player is also asked if they would like to play again
 """
 
