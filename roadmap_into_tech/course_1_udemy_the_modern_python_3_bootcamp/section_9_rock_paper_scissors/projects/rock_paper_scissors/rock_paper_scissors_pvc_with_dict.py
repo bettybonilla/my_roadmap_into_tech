@@ -66,7 +66,7 @@ if player1 not in [ROCK, PAPER, SCISSORS]:
     print("YOU ENTERED GIBBERISH, TRY AGAIN! >:-(")
     quit(1)
 
-# Prints the computer's choice on the same line after 1 sec
+# Prints the computer's choice on the same line after 0.5 sec
 # https://www.pylenin.com/blogs/python-print/#:~:text=You%20can%20set%20the%20end%20argument%20to%20a%20whitespace%20character%20string%20to%20print%20to%20the%20same%20line%20in%20Python%203
 print("Computer, enter your choice:", end=" ", flush=True)
 time.sleep(0.5)
