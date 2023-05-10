@@ -53,7 +53,7 @@ time.sleep(0.5)
 # Generates a random number between 1 and 10 (inclusive)
 computer = random.randint(1, 10)
 
-# While True loops will loop forever until it hits the break keyword however
+# while True loops will loop forever until it hits the break keyword however
 # since there is no break keyword, you have to press Ctrl + C to exit the
 # program
 while True:

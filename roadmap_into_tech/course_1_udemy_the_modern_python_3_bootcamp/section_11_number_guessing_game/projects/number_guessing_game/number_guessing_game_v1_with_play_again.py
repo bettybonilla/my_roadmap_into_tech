@@ -23,7 +23,7 @@ time.sleep(0.5)
 # Generates a random number between 1 and 10 (inclusive)
 computer = random.randint(1, 10)
 
-# While True loops will loop forever until it hits the break keyword
+# while True loops will loop forever until it hits the break keyword
 while True:
     # Variable shadowing should be avoided which is when you reuse the same
     # exact variable name for altered data
