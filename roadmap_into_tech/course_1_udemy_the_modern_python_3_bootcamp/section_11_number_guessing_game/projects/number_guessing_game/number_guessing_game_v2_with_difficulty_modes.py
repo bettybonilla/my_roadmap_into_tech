@@ -21,11 +21,6 @@ time.sleep(0.5)
 print("number!\n")
 time.sleep(0.5)
 
-print("Difficulty Modes")
-print("- Easy mode (You get unlimited retries)")
-print("- Hard mode (You only get 3 retries)\n")
-time.sleep(0.5)
-
 """
 - The standard when writing terminal programs is to use 1 and 0 to represent
 boolean True/False values (1 = True/truthy, 0 = False/falsy)
@@ -40,8 +35,10 @@ a bool
     to the difficulty_mode_bool variable to look for the True/False value
 """
 
-print("Enter 1 for easy mode")
-print("Enter 0 for hard mode\n")
+print("Difficulty Modes")
+time.sleep(0.5)
+print("- Enter 1 for easy mode (You get unlimited retries)")
+print("- Enter 0 for hard mode (You only get 3 retries)\n")
 time.sleep(0.5)
 
 difficulty_mode_str = input("Please enter your difficulty mode: ").strip()
