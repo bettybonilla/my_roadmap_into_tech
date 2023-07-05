@@ -26,7 +26,15 @@ print(people[0])
 # Change "Geoffrey" to "Jeffrey"
 people[4] = "Jeffrey"
 print(people[4])
+# Alternative code to access the second to last element in the list using
+# negative indexing
+# people[-2] = "Jeffrey"
+# print(people[-2])
 
 # Change "aparna" to "Aparna"
 people[-1] = "Aparna"
 print(people[-1])
+# Alternative code to access the last element in the list using the
+# len() function
+# people[len(people) - 1] = "Aparna"
+# print(people[len(people) - 1])
