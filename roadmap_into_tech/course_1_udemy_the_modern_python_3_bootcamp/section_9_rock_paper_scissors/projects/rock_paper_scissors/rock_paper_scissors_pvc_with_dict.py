@@ -2,11 +2,11 @@
 The program below is a rock, paper, scissors game for PvC (Player vs. Computer)
 """
 
-# Imports the built-in Python random module which generates pseudo-random
-# numbers or elements based on the function or method used and the
-# deterministic parameters set - All imports should be done at the top of files
 # Below the import keyword is used to import everything from the random module
 # and the time module
+# The built-in Python random module generates pseudo-random numbers or
+# elements based on the function or method used and the deterministic
+# parameters set - All imports should be done at the top of files
 import random
 import time
 
@@ -67,7 +67,6 @@ if player1 not in [ROCK, PAPER, SCISSORS]:
     quit(1)
 
 # Prints the computer's choice on the same line after 0.5 sec
-# https://www.pylenin.com/blogs/python-print/#:~:text=You%20can%20set%20the%20end%20argument%20to%20a%20whitespace%20character%20string%20to%20print%20to%20the%20same%20line%20in%20Python%203
 print("Computer, enter your choice:", end=" ", flush=True)
 time.sleep(0.5)
 print(computer_dictionary[computer])

@@ -6,7 +6,7 @@ correct them!
 - Change "Geoffrey" to "Jeffrey"
 - Change "aparna" to "Aparna"
 - Hint: You can use the following syntax to change a value of an existing list
-element at the specific index position: lst[0] = "NewValue"
+element at the specific index: lst[0] = "NewValue"
     - Here, lst would represent the variable holding the list that we are
     modifying and the 0 in square brackets [] would be the index number of the
     targeted list element that we are changing. In addition, we would use the

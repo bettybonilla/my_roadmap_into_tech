@@ -43,9 +43,12 @@ time.sleep(0.5)
 
 difficulty_mode_str = input("Please enter your difficulty mode: ").strip()
 
-# Remember to place return early on errors logic right after where you expect
-# the particular errors to occur to clearly define where the errors would
-# originate and so that no other code executes without intention afterwards
+# Remember to implement the return early rule of error catching/handling and
+# terminating a program early on errors
+# Make sure to place error catching/handling logic right after where you
+# expect the particular error to occur to clearly define where the error would
+# originate and so that no other code continues to execute without intention,
+# which makes it easier to debug + bugfix later
 if difficulty_mode_str != "1" and difficulty_mode_str != "0":
     print("Invalid Input: Enter 1 for easy mode or 0 for hard mode")
     quit(1)

@@ -43,10 +43,12 @@ while y < 10:
 #         # variable to appear right next to each other - Try end="hello" to
 #         # see the difference
 #         # The flush parameter when set to True prints whatever data is in the
-#         # print() function one at a time - The default is set to False which
-#         # prints whatever data is in the print() function immediately all at
-#         # once since this is more memory efficient and it is costly to print
-#         # data one at a time
+#         # print() function one at a time - In this case each piece of data
+#         # prints one at a time after 0.25 sec since the time.sleep() method
+#         # is set to 0.25
+#         # The default is set to False which prints whatever data is in the
+#         # print() function immediately all at once since this is more memory
+#         # efficient and it is costly to print data one at a time
 #         print(EMOJI, end="", flush=True)
 #         # Sleeps/suspends execution of the program for 0.25 sec
 #         time.sleep(0.25)
