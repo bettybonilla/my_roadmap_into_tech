@@ -15,7 +15,7 @@ for sound in sounds:
     result += sound
 result = result.upper()
 print(result)
-# You can also put the result variable with the .upper() method in a
+# You can also wrap the result variable with the .upper() method in a
 # print() function
 # print(result.upper())
 
