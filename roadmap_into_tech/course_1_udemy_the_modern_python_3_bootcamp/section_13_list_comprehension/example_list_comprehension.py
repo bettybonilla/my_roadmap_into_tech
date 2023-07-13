@@ -4,7 +4,7 @@ print(numbers)
 # Uses list comprehension to multiply the even numbers by 2 in the numbers list
 print([i * 2 for i in numbers if i % 2 == 0])
 
-# Alternative code using for loop
+# Alternative code using a for loop
 numbers2 = []
 
 for i in numbers:
