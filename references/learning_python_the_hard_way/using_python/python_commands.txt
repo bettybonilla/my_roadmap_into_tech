@@ -1,7 +1,0 @@
-Python Commands
-
-
-To run python, simply type in "python" in termninal and hit enter
-exit() -> exits python
-python [name of python file e.g. the_setup.py] -> run python file; you can also drag and drop the file instead of writing it
-Option + arrow keys -> lets you skip around your code quickly
