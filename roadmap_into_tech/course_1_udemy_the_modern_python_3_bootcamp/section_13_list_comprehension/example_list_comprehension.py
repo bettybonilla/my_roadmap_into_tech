@@ -1,3 +1,8 @@
+"""
+The below shows the difference between using list comprehension vs. for loops
+when iterating over a range in a list to multiply the even numbers by 2
+"""
+
 numbers = list(range(1, 11))
 print(numbers)
 
