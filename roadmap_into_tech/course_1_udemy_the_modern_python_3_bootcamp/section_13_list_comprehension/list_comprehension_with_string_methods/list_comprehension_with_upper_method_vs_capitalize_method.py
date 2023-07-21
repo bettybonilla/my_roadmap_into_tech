@@ -4,8 +4,8 @@ along with string concatenation to uppercase the first letter in each string
 in the friends list
 - You can also just use the .capitalize() method to get the same result which
 doesn't need string concatenation since the .capitalize() method capitalizes
-the first letter in a string and the .upper() method is meant to uppercase all
-the letters in a string
+the first letter in a string whereas the .upper() method is meant to uppercase
+all the letters in a string
 """
 
 friends = ["ashley", "matt", "michael"]

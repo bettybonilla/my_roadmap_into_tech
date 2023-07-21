@@ -1,6 +1,7 @@
 """
-The below shows the difference between using list comprehension vs. for loops
-when iterating over a range in a list to multiply the even numbers by 2
+The below shows list comprehension vs. for loops to get the same result when
+iterating over a range in a list and using conditional logic to multiply the
+even numbers by 2
 """
 
 numbers = list(range(1, 11))

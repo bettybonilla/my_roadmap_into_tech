@@ -1,7 +1,7 @@
 """
 The below uses list comprehension and the .upper() method to uppercase each
 character as a single string in the string "colt" in the name variable and
-generates it in a new list
+generate it in a new list
 - NOTE: The .upper() method did not uppercase the whole string because as the
 char item variable iterates through the name variable (iterable) it is
 representing a single character in the string “colt” and generating each

@@ -1,5 +1,5 @@
 """
-The below shows the difference between using list comprehension vs. for loops
+The below shows list comprehension vs. for loops to get the same result
 """
 
 numbers = [1, 2, 3, 4, 5]
@@ -9,7 +9,7 @@ print(numbers)
 doubled_numbers = [number * 2 for number in numbers]
 print(doubled_numbers)
 
-# Uses a for loop to double each number in the numbers list
+# Alternative code using a for loop
 doubled_numbers = []
 
 for number in numbers:
