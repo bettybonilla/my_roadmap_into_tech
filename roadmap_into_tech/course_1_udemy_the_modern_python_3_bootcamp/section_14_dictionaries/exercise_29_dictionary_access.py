@@ -17,10 +17,16 @@
 # Picks a random food item
 from random import choice
 
-food = choice(["cheese pizza", "quiche", "morning bun", "gummy bear", "tea cake"])
-# NO TOUCHING =================================================================
+food = choice(
+    [
+        "cheese pizza",
+        "quiche",
+        "morning bun",
+        "gummy bear",
+        "tea cake",
+    ]
+)
 
-# NO TOUCHING =================================================================
 bakery_stock = {
     "almond croissant": 12,
     "toffee cookie": 3,

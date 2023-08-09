@@ -1,5 +1,5 @@
 """
-- Imagine we're creating a video game and want to model the initial starting
+Imagine we're creating a video game and want to model the initial starting
 state of our game - I've provided you with a list of strings called
 game_properties
 - Use dict.fromkeys to generate a new dictionary using the provided
