@@ -17,3 +17,7 @@ print(answer)
 # answer = zip(list1, list2)
 # answer = dict(answer)
 # print(answer)
+
+# Alternative code using double casting
+# answer = print(dict(zip(list1, list2)))
+# print(answer)
