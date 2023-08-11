@@ -2,7 +2,7 @@
 Given the dictionary below:
 1. artist = {
 2.     "first": "Neil",
-3.     "last": "Young"
+3.     "last": "Young",
 4. }
 - Declare a variable called full_name that is equal to artist's first and
 last name with a space in between
@@ -12,7 +12,10 @@ dictionary
     2. # Neil Young
 """
 
-artist = {"first": "Neil", "last": "Young"}
+artist = {
+    "first": "Neil",
+    "last": "Young",
+}
 print(artist)
 
 full_name = artist["first"] + " " + artist["last"]
