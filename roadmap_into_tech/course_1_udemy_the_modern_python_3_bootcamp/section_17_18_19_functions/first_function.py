@@ -12,8 +12,7 @@ def say_hi():
     print("hi!")
 
 
-# To run/call/invoke the function, you don’t need to wrap the function inside a
-# print() function, however instead you just need to type the name of the
+# To run/call/invoke the function, you just need to type the name of the
 # function including the parentheses - If you don’t include the parentheses,
 # it won’t run/call/invoke the function
 say_hi()

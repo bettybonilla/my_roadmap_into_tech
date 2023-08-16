@@ -10,7 +10,7 @@ functions below :-)
 import random
 
 
-# Uses the choice() function from the random module
+# Using the choice() function from the random module
 def coin_flip():
     coin_flip = random.choice(["heads", "tails"])
     return coin_flip
@@ -24,7 +24,7 @@ print(coin_flip())
 
 # Alternative code using the random() function from the random module
 def coin_flip():
-    # The random() function generates a random number from 0 to 1
+    # The random() function generates a random number between 0 and 1
     r = random.random()
 
     if r < 0.5:

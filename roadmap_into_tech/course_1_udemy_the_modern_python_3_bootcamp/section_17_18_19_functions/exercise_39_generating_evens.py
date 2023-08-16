@@ -9,13 +9,13 @@ comprehension
 """
 
 
-# Uses list comprehension
+# Using list comprehension
 def generate_evens():
     evens = [num for num in range(2, 50, 2)]
     return evens
 
 
-# Alternative code using modulo
+# Alternative code using modulo with list comprehension
 # def generate_evens():
 #     evens = [num for num in range(1, 50) if num % 2 == 0]
 #     return evens
@@ -24,7 +24,7 @@ def generate_evens():
 print(generate_evens())
 
 
-# Uses a for loop
+# Using a for loop
 def generate_evens():
     evens = []
 
@@ -33,7 +33,7 @@ def generate_evens():
     return evens
 
 
-# Alternative code using modulo
+# Alternative code using modulo with a for loop
 # def generate_evens():
 #     evens = []
 
