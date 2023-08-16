@@ -32,8 +32,8 @@ while y < 10:
 #     print("")
 # =============================================================================
 # The code below has been refactored to the code above
-# Solution using time.sleep() method with double for loop which is a for loop
-# nested in another for loop
+# Solution using time.sleep() method with a double for loop which is a for loop
+# nested inside another for loop
 # for y in range(1, 11):
 #     # This nested for loop along with print(EMOJI, end="") starts the path
 #     # for a right-angled triangle to form
