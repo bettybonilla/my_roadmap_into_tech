@@ -2,12 +2,12 @@
 Now that we've learned about tuples and sets, let's get some practice!
 """
 
-# Create a variable called numbers which is a tuple with the the values
-# 1, 2, 3, and 4 inside
+# Create a variable called numbers which is a tuple with the values 1, 2, 3,
+# and 4 inside
 numbers = (1, 2, 3, 4)
 print(numbers)
 
-# Create a variable called value which is a tuple with the the value 1 inside
+# Create a variable called value which is a tuple with the value 1 inside
 value = tuple([1])
 # Alternative code
 # If you have a single value, just add a comma to make it a tuple since tuples
