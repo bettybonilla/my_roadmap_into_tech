@@ -1,15 +1,15 @@
 """
 Below the add() function and the multiply() function both include type
-annotation to clearly specify the input expected for their arguments and the
-return type you can expect
+annotation/type hinting to clearly specify the input data type expected for
+their parameters and the return data type that can be expected
 """
 
 
-# Type annotation
+# Type Annotation/Type Hinting
 # In the add() function below, it takes 2 integers and returns an integer and
 # is annotated as follows:
-# The a argument is expected to be of type int
-# The b argument is expected to be of type int
+# The a parameter is expected to be of type int
+# The b parameter is expected to be of type int
 # The return type is also expected to be of type int
 def add(a: int, b: int) -> int:
     return a + b
@@ -21,11 +21,11 @@ print(add(2, 4))
 print(add(5, 5))
 
 
-# Type annotation
+# Type Annotation/Type Hinting
 # In the multiply() function below, it takes 2 integers and returns an integer
 # and is annotated as follows:
-# The first argument is expected to be of type int
-# The second argument is expected to be of type int
+# The first parameter is expected to be of type int
+# The second parameter is expected to be of type int
 # The return type is also expected to be of type int
 def multiply(first: int, second: int) -> int:
     return first * second

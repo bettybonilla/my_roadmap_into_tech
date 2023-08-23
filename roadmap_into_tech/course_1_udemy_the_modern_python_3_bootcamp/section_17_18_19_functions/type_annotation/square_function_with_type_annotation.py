@@ -1,13 +1,14 @@
 """
-Below the square() function includes type annotation to clearly specify the
-input expected in the num argument and the return type you can expect
+Below the square() function includes type annotation/type hinting to clearly
+specify the input data type expected for the num parameter and the return data
+type that can be expected
 """
 
 
-# Type annotation
+# Type Annotation/Type Hinting
 # In the square() function below, it takes and returns an integer and is
 # annotated as follows:
-# The num argument is expected to be of type int
+# The num parameter is expected to be of type int
 # The return type is also expected to be of type int
 def square(num: int) -> int:
     return num * num

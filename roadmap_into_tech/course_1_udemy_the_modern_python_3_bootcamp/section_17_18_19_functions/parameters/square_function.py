@@ -15,10 +15,10 @@ print(return_square_of_7())
 
 
 # Parameters are written inside the parentheses of your function’s signature
-# line and can be named anything you want just like naming a variable (this is
-# why they’re also known as parameter variables) - Make sure you follow the
-# same rules of variable naming (lowercase_snake_case, don’t start with a
-# number, etc.)
+# and can be named anything you want just like naming a variable (this is why
+# they’re also known as parameter variables) - Make sure you follow the same
+# rules of variable naming (lowercase_snake_case, don’t start with a number,
+# etc.)
 # In the function below, the num parameter represents the number that will be
 # provided (the input)
 # Then, like the name of the function suggests, when you call the function the

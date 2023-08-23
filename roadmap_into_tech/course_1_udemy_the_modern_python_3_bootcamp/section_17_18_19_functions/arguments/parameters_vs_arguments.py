@@ -4,7 +4,7 @@ In the happy_birthday() function below, name is the parameter and the
 """
 
 
-# In the signature line of the happy_birthday() function below, name is the
+# In the signature of the happy_birthday() function below, name is the
 # parameter (also known as a parameter variable)
 def happy_birthday(name):
     print("Happy birthday to you...")
