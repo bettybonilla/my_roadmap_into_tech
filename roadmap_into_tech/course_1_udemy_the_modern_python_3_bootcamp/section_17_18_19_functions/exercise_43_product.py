@@ -10,3 +10,4 @@ def product(num1: int | float, num2: int | float) -> int | float:
 
 print(product(2, 2))
 print(product(2, -2))
+print(product(2.5, 2))

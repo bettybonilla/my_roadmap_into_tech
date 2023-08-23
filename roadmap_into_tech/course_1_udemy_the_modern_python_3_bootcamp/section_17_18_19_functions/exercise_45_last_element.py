@@ -15,4 +15,7 @@ def last_element(your_list: list[Any]) -> Any | None:
 
 
 print(last_element([1, 2, 3]))
+print(last_element(["dog", "cat", "bird"]))
+print(last_element([True, False, True, False]))
+print(last_element([1, False, "cat", True]))
 print(last_element([]))
