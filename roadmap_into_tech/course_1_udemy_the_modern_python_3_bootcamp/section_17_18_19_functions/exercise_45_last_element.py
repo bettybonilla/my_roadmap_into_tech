@@ -14,6 +14,14 @@ def last_element(your_list: list[Any]) -> Any | None:
     return None
 
 
+# Alternative code using len() function to sanity check invisible characters
+# in an empty list
+# def last_element(your_list: list) -> Any | None:
+#     if len(your_list) != 0:
+#         return your_list[-1]
+#     return None
+
+
 print(last_element([1, 2, 3]))
 print(last_element(["dog", "cat", "bird"]))
 print(last_element([True, False, True, False]))
