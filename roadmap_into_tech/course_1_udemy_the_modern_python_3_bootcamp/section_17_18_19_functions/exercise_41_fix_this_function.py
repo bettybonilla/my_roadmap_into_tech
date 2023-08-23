@@ -32,16 +32,3 @@ def count_dollar_signs(word: str) -> int:
 
 
 print(count_dollar_signs("$uper $ize"))
-
-
-# Fixed code with type annotation
-# def count_dollar_signs(word: str) -> int:
-#     count = 0
-
-#     for char in word:
-#         if char == "$":
-#             count += 1
-#     return count
-
-
-# print(count_dollar_signs("$uper $ize"))
