@@ -22,7 +22,7 @@ work as intended
 
 
 # Fixed code
-def count_dollar_signs(word):
+def count_dollar_signs(word: str) -> int:
     count = 0
 
     for char in word:

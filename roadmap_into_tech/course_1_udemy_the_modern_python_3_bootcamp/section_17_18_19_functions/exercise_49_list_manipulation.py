@@ -13,8 +13,12 @@ value)
     add the value (fourth parameter) to the end of the list and return the list
 """
 
+from typing import Optional
 
-def list_manipulation(your_list: list, command: str, location: str, value: int = None):
+
+def list_manipulation(
+    your_list: list, command: str, location: str, value: Optional[int] = None
+):
     if command == "remove" and location == "end":
         return your_list.pop()
     elif command == "remove" and location == "beginning":

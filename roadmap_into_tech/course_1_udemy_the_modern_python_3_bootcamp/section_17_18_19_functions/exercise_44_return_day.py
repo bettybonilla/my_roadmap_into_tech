@@ -9,7 +9,7 @@ keys
 """
 
 
-def return_day(num: int) -> str:
+def return_day(num: int) -> str | None:
     days_of_week = {
         1: "Sunday",
         2: "Monday",

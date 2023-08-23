@@ -4,7 +4,7 @@ product of the two parameters (multiplies them together)
 """
 
 
-def product(num1: int, num2: int) -> int:
+def product(num1: int | float, num2: int | float) -> int | float:
     return num1 * num2
 
 

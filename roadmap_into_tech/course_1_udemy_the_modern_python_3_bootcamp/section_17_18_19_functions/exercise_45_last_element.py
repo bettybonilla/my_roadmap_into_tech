@@ -5,8 +5,10 @@ the list
 - It should return None if the list is empty
 """
 
+from typing import Any
 
-def last_element(your_list):
+
+def last_element(your_list: list[Any]) -> Any | None:
     if your_list:
         return your_list[-1]
     return None

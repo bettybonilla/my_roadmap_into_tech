@@ -5,7 +5,7 @@ sure you spell it exactly the same)
 """
 
 
-def make_noise():
+def make_noise() -> str:
     print("THE CROWD GOES WILD")
 
 
