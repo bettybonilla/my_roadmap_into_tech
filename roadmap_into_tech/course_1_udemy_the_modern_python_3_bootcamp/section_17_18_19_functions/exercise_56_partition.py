@@ -43,7 +43,7 @@ def partition(your_list: list[int], is_even: Callable[[int], bool]) -> list[list
 
 
 # Alternative code using list comprehension
-# Remember that using a list comprehension will be more CPU-efficient than
+# Remember that using a list comprehension will be more CPU efficient than
 # using a for loop
 # def partition(your_list: list[int], is_even: Callable[[int], bool]) -> list[list]:
 #     return [
