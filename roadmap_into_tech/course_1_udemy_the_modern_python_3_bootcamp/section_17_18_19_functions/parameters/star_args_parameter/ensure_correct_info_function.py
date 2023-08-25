@@ -8,9 +8,10 @@ from typing import Any
 
 
 # In the ensure_correct_info() function below, the *args parameter is used to
-# check if "Colt" and "Steele" were passed in as arguments and if they were it
-# will return "Welcome back Colt!" otherwise, it will return "Not sure who you
-# are..."
+# to check the values in the args tuple which returns a string depending on
+# the arguments provided
+# If "Colt" and "Steele" were passed in as arguments, it will return "Welcome
+# back Colt!" otherwise, it will return "Not sure who you are..."
 def ensure_correct_info(*args: Any) -> str:
     if "Colt" in args and "Steele" in args:
         return "Welcome back Colt!"

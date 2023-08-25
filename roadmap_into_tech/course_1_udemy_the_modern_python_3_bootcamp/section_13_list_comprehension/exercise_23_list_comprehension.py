@@ -1,7 +1,7 @@
 """
 - Given the string “amazing”, create a variable called answer, which is a list
-containing all the letters from “amazing” but not the vowels
-(Ex: a, e, i, o, u) - Use a list comprehension!
+containing all the letters from “amazing” but not the vowels - Use a list
+comprehension!
 - The answer should look like this: ['m', 'z', 'n', 'g']
 """
 

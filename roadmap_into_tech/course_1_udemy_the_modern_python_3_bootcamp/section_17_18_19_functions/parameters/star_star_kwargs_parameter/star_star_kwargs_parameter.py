@@ -20,8 +20,8 @@ fav_colors(Colt="purple", Ruby="red", Ethel="teal")
 # assigned directly to each individual parameter
 def fav_colors(**kwargs: str) -> str:
     # Just like with the *args parameter, we only need the ** star star
-    # operator in the parameter but outside of the parameter we don't need the
-    # ** star star operator as shown below in the print() function
+    # operator in the parameter but we don't need it outside of the parameter
+    # as shown below in the print() function
     # This prints the kwargs provided in the function call as a dictionary
     print(kwargs)
 

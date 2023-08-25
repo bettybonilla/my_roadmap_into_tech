@@ -16,9 +16,8 @@ print(sum_all_nums(4, 6, 9))
 # want instead of having separate parameters for each argument like the 3
 # originally provided above which corresponded to each individual parameter
 def sum_all_nums(*args: int) -> int:
-    # We need the * star operator in the parameter but outside of the
-    # parameter we don't need the * star operator as shown below in the
-    # print() function
+    # We need the * star operator in the parameter but we don't need it
+    # outside of the parameter as shown below in the print() function
     # This prints the args provided in the function call as a tuple
     print(args)
 
