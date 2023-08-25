@@ -2,15 +2,15 @@
 Write a function called partition
 - This function accepts a list and a callback function (which you can assume
 returns True or False)
-    - The function should iterate over each element in the list and invoke the
-    callback function at each iteration
-        - If the result of the callback function is True, the element should
-        go into the first list (the "truthy" list)
-        - If the result of the callback function is False, the element should
-        go into the second list (the "falsy" list)
-        - When it's finished, partition should return both lists inside of one
-        larger list, like so:
-        [truthy_list, falsy_list]
+- The function should iterate over each element in the list and invoke the
+callback function at each iteration
+    - If the result of the callback function is True, the element should
+    go into the first list (the "truthy" list)
+    - If the result of the callback function is False, the element should
+    go into the second list (the "falsy" list)
+    - When it's finished, partition should return both lists inside of one
+    larger list, like so:
+    [truthy_list, falsy_list]
 """
 
 from typing import Callable

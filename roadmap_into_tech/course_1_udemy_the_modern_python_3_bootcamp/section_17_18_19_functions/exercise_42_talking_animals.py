@@ -7,12 +7,12 @@ Write a function called speak that accepts a single parameter, animal
 - If animal is anything else, it should return "?"
 - If animal is not specified, it should default to "dog"
     - Ex:
-        - speak("pig")  # "oink"
-        - speak("duck")  # "quack"
-        - speak("cat")  # "meow"
-        - speak("dog")  # "woof"
-        - speak("banana")  # "?"
-        - speak()  # "woof"
+        speak("pig")  # "oink"
+        speak("duck")  # "quack"
+        speak("cat")  # "meow"
+        speak("dog")  # "woof"
+        speak("banana")  # "?"
+        speak()  # "woof"
 """
 
 

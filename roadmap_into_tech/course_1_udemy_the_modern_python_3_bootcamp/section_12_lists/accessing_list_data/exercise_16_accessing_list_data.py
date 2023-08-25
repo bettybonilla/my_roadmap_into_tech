@@ -1,5 +1,5 @@
 """
-- I'm having a party and made a list of people I want to invite. Unfortunately,
+I'm having a party and made a list of people I want to invite. Unfortunately,
 I'm a terrible friend and made a couple of spelling errors. Please help me
 correct them!
 - Change "Hanna" to "Hannah"

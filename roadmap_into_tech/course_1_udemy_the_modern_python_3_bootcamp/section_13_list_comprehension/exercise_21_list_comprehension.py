@@ -2,9 +2,9 @@
 - Given two lists, [1, 2, 3, 4] and [3, 4, 5, 6], create a variable called
 answer, which is a new list that is the intersection of the two - Your output
 should be [3, 4]
-    - Hint: Use the in operator to test whether an element is in a list
-        - Ex: 5 in [1, 5, 2] is True
-        - Ex: 3 in [1, 5, 2] is False
+- Hint: Use the in operator to test whether an element is in a list
+    - Ex: 5 in [1, 5, 2] is True
+    - Ex: 3 in [1, 5, 2] is False
 - Given a list of words, ["Elie", "Tim", "Matt"], create a variable called
 answer2, which is a new list with each word reversed and in lowercase (use a
 slice to do the reversal!) - Your output should be ['eile', 'mit', 'ttam']
