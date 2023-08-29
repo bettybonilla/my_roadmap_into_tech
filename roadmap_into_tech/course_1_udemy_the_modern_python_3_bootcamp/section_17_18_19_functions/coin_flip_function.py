@@ -35,5 +35,11 @@ def coin_flip():
     if r > 0.5:
         return "TAILS"
 
+    # We can also just use the return keyword since it will default to the
+    # next return keyword once the first return keyword doesn’t execute
+    # if r < 0.5:
+    #     return "HEADS"
+    # return "TAILS"
+
 
 print(coin_flip())
