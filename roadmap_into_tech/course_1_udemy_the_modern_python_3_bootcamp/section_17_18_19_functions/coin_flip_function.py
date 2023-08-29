@@ -26,6 +26,7 @@ print(coin_flip())
 def coin_flip():
     # The random() function generates a random number between 0 and 1
     r = random.random()
+    # print(r)
 
     # When only one conditional can be true, we should just use if statements
     # instead of using elif's
