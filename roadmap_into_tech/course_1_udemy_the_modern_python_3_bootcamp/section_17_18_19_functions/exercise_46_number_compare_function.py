@@ -12,7 +12,7 @@ Write a function called number_compare
 def number_compare(first: int, second: int) -> str:
     if first > second:
         return "First is greater"
-    elif second > first:
+    if second > first:
         return "Second is greater"
     return "Numbers are equal"
 

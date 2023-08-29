@@ -19,7 +19,7 @@ allowed!
 def combine_words(word: str, **kwargs: str) -> str:
     if "prefix" in kwargs:
         return kwargs["prefix"] + word
-    elif "suffix" in kwargs:
+    if "suffix" in kwargs:
         return word + kwargs["suffix"]
     return word
 

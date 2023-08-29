@@ -20,11 +20,11 @@ Write a function called speak that accepts a single parameter, animal
 def speak(animal: str = "dog") -> str:
     if animal == "pig":
         return "oink"
-    elif animal == "duck":
+    if animal == "duck":
         return "quack"
-    elif animal == "cat":
+    if animal == "cat":
         return "meow"
-    elif animal == "dog":
+    if animal == "dog":
         return "woof"
     return "?"
 

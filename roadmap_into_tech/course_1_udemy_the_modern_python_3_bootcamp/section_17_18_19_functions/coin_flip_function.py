@@ -27,9 +27,11 @@ def coin_flip():
     # The random() function generates a random number between 0 and 1
     r = random.random()
 
+    # When only one conditional can be true, we should just use if statements
+    # instead of using elif's
     if r < 0.5:
         return "HEADS"
-    elif r > 0.5:
+    if r > 0.5:
         return "TAILS"
 
 
