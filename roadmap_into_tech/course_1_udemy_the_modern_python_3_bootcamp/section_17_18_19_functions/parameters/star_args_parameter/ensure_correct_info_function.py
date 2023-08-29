@@ -20,4 +20,4 @@ def ensure_correct_info(*args: Any) -> str:
 
 print(ensure_correct_info())
 print(ensure_correct_info(1, True, "Steele", "Colt"))
-print(ensure_correct_info("hello", False, 78))
+print(ensure_correct_info("hello", "Colt", False, 78))
