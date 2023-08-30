@@ -29,7 +29,9 @@ def is_even(num: int) -> bool:
 
 
 # Using a for loop
-def partition(your_list: list[int], is_even: Callable[[int], bool]) -> list[list]:
+def partition(
+    your_list: list[int], is_even: Callable[[int], bool]
+) -> list[list[int], list[int]]:
     truthy_list = []
     falsy_list = []
 
@@ -45,7 +47,7 @@ def partition(your_list: list[int], is_even: Callable[[int], bool]) -> list[list
 # Alternative code using list comprehension
 # Remember that using a list comprehension will be more CPU efficient than
 # using a for loop
-# def partition(your_list: list[int], is_even: Callable[[int], bool]) -> list[list]:
+# def partition(your_list: list[int], is_even: Callable[[int], bool]) -> list[list[int], list[int]]:
 #     return [
 #         [i for i in your_list if is_even(i)],
 #         [i for i in your_list if not is_even(i)],
