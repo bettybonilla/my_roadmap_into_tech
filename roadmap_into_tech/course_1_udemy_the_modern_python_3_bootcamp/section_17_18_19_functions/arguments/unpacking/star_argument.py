@@ -1,6 +1,7 @@
 """
-The below shows how we can use the * star operator as an argument to "unpack"
-values in lists or tuples into separate individual arguments
+The below shows how we can use the * star operator as an argument to the *args
+parameter in a function to "unpack" values in lists or tuples as separate
+individual arguments
 """
 
 

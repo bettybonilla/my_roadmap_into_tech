@@ -1,7 +1,7 @@
 """
 The below shows how we can use the ** star star operator as an argument to
-"unpack" key-value pairs in dictionaries into separate individual keyword
-arguments
+pass in and "unpack" key-value pairs in dictionaries as separate individual
+keyword arguments to the parameters in a function
 """
 
 
