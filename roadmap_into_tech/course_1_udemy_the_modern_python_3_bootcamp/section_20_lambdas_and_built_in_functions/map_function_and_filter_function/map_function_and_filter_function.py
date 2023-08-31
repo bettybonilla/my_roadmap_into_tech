@@ -14,6 +14,16 @@ instructor = list(
 )
 print(instructor)
 
+# Remember that the * star operator is used to "unpack" values in lists and
+# tuples however it doesn't only have to be used as an argument to the *args
+# parameter in functions
+# As we can see, the * star operator "unpacked" the instructor list in the
+# print() function and the values were printed - In this case, the "Your
+# instructor is Colt" string was printed and is no longer in a list
+# For this reason, when the * star operator is used in this way it is also
+# known as the unpacking operator :-)
+print(*instructor)
+
 # Alternative code using list comprehension
 # instructor = [f"Your instructor is {name}" for name in names if len(name) < 5]
 # print(instructor)
