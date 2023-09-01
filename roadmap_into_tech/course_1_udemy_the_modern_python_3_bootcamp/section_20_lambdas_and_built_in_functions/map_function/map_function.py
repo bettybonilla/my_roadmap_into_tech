@@ -12,7 +12,7 @@ doubles = map(lambda x: x * 2, nums)
 # As we can see when we print the doubles variable, it prints a map object
 print(doubles)
 
-# In order to get the values in the doubles variable we an use a for loop to
+# In order to get the values in the doubles variable we can use a for loop to
 # print the values
 for num in doubles:
     print(num)
