@@ -10,8 +10,9 @@ names = ["Arya", "Samson", "Dora", "Tim", "Ollivander"]
 print(min(names))
 print(max(names))
 
-# Generator expression that returns the length of the shortest name in the
-# names list however it does not return the actual name which would be "Tim"
+# Uses a generator expression with the len() function in the min() function
+# that returns the length of the shortest name in the names list however it
+# does not return the actual name which would be "Tim"
 print(min((len(name) for name in names)))
 
 # However we can use a lambda with the len() function in the min() function or
