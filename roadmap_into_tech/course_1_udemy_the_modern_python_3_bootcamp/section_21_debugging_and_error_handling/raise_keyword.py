@@ -1,7 +1,8 @@
 """
-The below shows how you would use the raise keyword to raise your own errors
-to help other people using your function call your function appropriately
-depending on the particular errors you expect might occur
+The below shows how you would use the raise keyword to raise your own
+exceptions/errors to help other people using your function call your function
+appropriately depending on the particular exception/error you expect might
+occur
 """
 
 
@@ -27,10 +28,10 @@ def colorize(text: str, color: str) -> str:
 
 colorize("hello", "red")
 
-# For this type of error, we can raise a TypeError
+# For this type of exception/error, we can raise a TypeError
 # colorize(4, "red")
 # colorize("hello", 4)
 
-# For this type of error, we can raise a ValueError
+# For this type of exception/error, we can raise a ValueError
 # colorize("hello", "purple")
 # colorize("hello", "chicken")
