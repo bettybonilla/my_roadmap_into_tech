@@ -1,5 +1,5 @@
 """
-The below shows how you can use try/except blocks to do
+The below shows how you can use a try/except block to do
 error catching/handling in your program
 """
 
