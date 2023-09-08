@@ -5,7 +5,7 @@ The below mimicks the .get() dictionary method with a try/except block
 
 def get_key(dictionary: dict, key: str) -> str | None:
     # The try block contains code that may cause an exception/error if the
-    # dictionary key doesn't exist, otherwise it will return the dictionary key
+    # dictionary key doesn't exist otherwise, it will return the dictionary key
     try:
         return dictionary[key]
     # If the dictionary key doesn't exist, instead of returning an error

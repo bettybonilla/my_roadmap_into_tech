@@ -29,7 +29,7 @@ data1 = get_user_input("What's your 1st favorite color?")
 data2 = get_user_input("What's your 2nd favorite color?")
 
 # The pass keyword leaves a placeholder for your code so that you can come
-# back to it later without having to finish the indented code, otherwise
+# back to it later without having to finish the indented code otherwise,
 # Python will mark it as a problem
 if data1 == "red":
     # do something

@@ -5,7 +5,7 @@ Write a function called number_compare
     "First is greater"
     - If the second number is greater than the first, the function returns
     "Second is greater"
-    - Otherwise the function returns "Numbers are equal"
+    - Otherwise, the function returns "Numbers are equal"
 """
 
 
