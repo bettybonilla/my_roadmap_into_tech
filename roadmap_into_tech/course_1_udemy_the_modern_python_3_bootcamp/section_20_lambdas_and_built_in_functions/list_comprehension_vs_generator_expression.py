@@ -5,7 +5,7 @@ a generator expression
 
 import sys
 
-# The sys.getsizeof() method gets the size in bytes of memory being used
+# The sys.getsizeof() function gets the size in bytes of memory being used
 list_comp = sys.getsizeof([x * 10 for x in range(1000)])
 gen_expression = sys.getsizeof((x * 10 for x in range(1000)))
 

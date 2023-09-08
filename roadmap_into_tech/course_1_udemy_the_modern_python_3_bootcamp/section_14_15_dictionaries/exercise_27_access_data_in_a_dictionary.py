@@ -25,6 +25,6 @@ print(full_name)
 # full_name = "{} {}".format(artist["first"], artist["last"])
 # print(full_name)
 
-# Alternative code using f-string method
+# Alternative code using an f-string
 # full_name = f"{artist['first']} {artist['last']}"
 # print(full_name)

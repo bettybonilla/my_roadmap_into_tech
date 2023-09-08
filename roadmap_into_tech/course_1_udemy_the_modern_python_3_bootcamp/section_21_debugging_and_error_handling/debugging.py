@@ -1,6 +1,6 @@
 """
 The below shows how we can use the pdb built-in Python module with the
-pdb.set_trace() method to set breakpoints in our code which pauses execution of
+pdb.set_trace() function to set breakpoints in our code which pauses execution of
 our code to allow us to step through our code one line at a time in terminal
 """
 
@@ -18,10 +18,10 @@ import pdb
 
 first = "First"
 second = "Second"
-# It's best to place the pdb.set_trace() method a line before or a couple
+# It's best to place the pdb.set_trace() function a line before or a couple
 # lines before where our code is actually breaking
 # In terminal, it will point to the next line waiting to execute, which will
-# be the line after the pdb.set_trace() method, and then we can use the pdb
+# be the line after the pdb.set_trace() function, and then we can use the pdb
 # commands above to step through our code one line at a time - Terminal will
 # be waiting for you to enter a pdb command
 pdb.set_trace()

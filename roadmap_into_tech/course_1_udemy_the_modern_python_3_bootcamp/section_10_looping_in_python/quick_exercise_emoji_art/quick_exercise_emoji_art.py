@@ -1,7 +1,7 @@
 """
 Print the 😀 emoji incrementing from 1 to 10 using both a for loop and a
 while loop
-- NOTE: The time module is imported and the time.sleep() method is used to
+- NOTE: The time module is imported and the time.sleep() function is used to
 show the execution and formation of the loops
 """
 
@@ -9,7 +9,7 @@ import time
 
 EMOJI = "😀"
 
-# Solution using time.sleep() method with a for loop and a while loop
+# Solution using time.sleep() function with a for loop and a while loop
 y = 0
 
 while y < 10:
@@ -22,7 +22,7 @@ while y < 10:
 
 # =============================================================================
 # The code below has been refactored to the code above
-# Solution without using time.sleep() method with a for loop and a while loop
+# Solution without using time.sleep() function with a for loop and a while loop
 # y = 0
 
 # while y < 10:
@@ -32,7 +32,7 @@ while y < 10:
 #     print("")
 # =============================================================================
 # The code below has been refactored to the code above
-# Solution using time.sleep() method with a double for loop which is a for loop
+# Solution using time.sleep() function with a double for loop which is a for loop
 # nested inside another for loop
 # for y in range(1, 11):
 #     # This nested for loop along with print(EMOJI, end="") starts the path
@@ -44,7 +44,7 @@ while y < 10:
 #         # see the difference
 #         # The flush parameter when set to True prints whatever data is in the
 #         # print() function one at a time - In this case each piece of data
-#         # prints one at a time after 0.25 sec since the time.sleep() method
+#         # prints one at a time after 0.25 sec since the time.sleep() function
 #         # is set to 0.25
 #         # The default is set to False which prints whatever data is in the
 #         # print() function immediately all at once since this is more memory

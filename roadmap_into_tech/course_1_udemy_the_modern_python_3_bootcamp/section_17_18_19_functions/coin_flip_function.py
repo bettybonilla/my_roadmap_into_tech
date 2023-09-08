@@ -1,10 +1,8 @@
 """
 Define a function that randomly "flips" a coin to return heads or tails
 - Below there are 2 solutions:
-    - The first one uses the random.choice() method
-    - The second one uses the random.random() method
-- NOTE: Remember that all methods are functions so it's fine to call them
-functions below :-)
+    - The first one uses the random.choice() function
+    - The second one uses the random.random() function
 """
 
 import random

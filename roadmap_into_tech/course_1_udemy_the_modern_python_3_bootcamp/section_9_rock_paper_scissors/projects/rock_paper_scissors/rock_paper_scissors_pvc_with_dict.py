@@ -4,9 +4,9 @@ The program below is a rock, paper, scissors game for PvC (Player vs. Computer)
 
 # Below the import keyword is used to import everything from the random module
 # and the time module
+# All imports should be done at the top of files
 # The built-in Python random module generates pseudo-random numbers or
-# elements based on the function or method used and the deterministic
-# parameters set - All imports should be done at the top of files
+# elements based on the function used and the deterministic parameters set
 import random
 import time
 
@@ -25,7 +25,7 @@ computer_dictionary = {
     SCISSORS: "scissors",
 }
 
-# The random.choice() method is used to generate a random element from the
+# The random.choice() function is used to generate a random element from the
 # list [ROCK, PAPER, SCISSORS]
 computer = random.choice([ROCK, PAPER, SCISSORS])
 
