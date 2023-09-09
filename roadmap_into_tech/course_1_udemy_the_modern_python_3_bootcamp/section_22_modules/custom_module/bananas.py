@@ -1,5 +1,5 @@
 """
-The below are some functions for our custom module named bananas
+The below are some functions for our custom module named bananas (this file!)
 """
 
 
