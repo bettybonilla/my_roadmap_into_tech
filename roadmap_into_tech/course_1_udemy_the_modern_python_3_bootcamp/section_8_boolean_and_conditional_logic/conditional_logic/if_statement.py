@@ -14,7 +14,7 @@ elif name == "werewolves":
 else:
     print("Carry on, human")
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # The code above has been refactored to the code below
 # To further account for user input errors, string indexing can be used to
 # check for the first character you expect in the string of the user input

@@ -10,7 +10,7 @@ just leave it alone :)
 tests to pass, don't change the print statements!
 """
 
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 from random import randint
 
 x = randint(-100, 100)
@@ -19,7 +19,7 @@ while x == 0:  # Makes sure x isn't zero
 y = randint(-100, 100)
 while y == 0:  # Makes sure y isn't zero
     y = randint(-100, 100)
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 
 # YOUR CODE GOES HERE:
 print("x = {}".format(x))

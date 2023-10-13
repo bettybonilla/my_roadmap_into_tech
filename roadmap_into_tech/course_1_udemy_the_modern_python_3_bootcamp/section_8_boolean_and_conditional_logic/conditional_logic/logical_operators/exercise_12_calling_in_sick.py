@@ -16,7 +16,7 @@ True or False based on the following scenarios:
         on the conditions specified above
 """
 
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 # Randomly assigns values to these four variables
 from random import choice, randint
 
@@ -24,7 +24,7 @@ actually_sick = choice([True, False])
 kinda_sick = choice([True, False])
 hate_your_job = choice([True, False])
 sick_days = randint(0, 10)
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 
 # Set this to True or False with boolean logic and conditionals!
 # The None value acts as a placeholder for a variable so that you can

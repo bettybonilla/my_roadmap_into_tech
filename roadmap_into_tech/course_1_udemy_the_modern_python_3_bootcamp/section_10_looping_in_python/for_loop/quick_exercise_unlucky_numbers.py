@@ -14,7 +14,7 @@ for i in range(1, 21):
         state = "odd"
     print(f"{i} is {state}")
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # The code below has been refactored to the code above
 # Below there are 3 print statements being used however the code above follows
 # the DRY (Don't Repeat Yourself) principle by using 1 print statement instead

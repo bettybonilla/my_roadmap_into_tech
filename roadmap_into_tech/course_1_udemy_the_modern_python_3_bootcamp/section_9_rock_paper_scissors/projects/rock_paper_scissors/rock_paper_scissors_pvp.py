@@ -70,7 +70,7 @@ elif player1 == SCISSORS and player2 != ROCK:
 else:
     print("Player 2 wins!")
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # The code below has been refactored to the code above
 # ROCK = "r"
 # PAPER = "p"
@@ -110,7 +110,7 @@ else:
 #     print("Player 1 wins!")
 # else:
 #     print("Player 2 wins!")
-# =============================================================================
+# -----------------------------------------------------------------------------
 # The code below has been refactored to the code above
 # print("Welcome!\n")
 # print("rock?\npaper?\nscissors?\nshoot!\n")

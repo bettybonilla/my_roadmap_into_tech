@@ -7,9 +7,9 @@ dictionary method we've covered
 - Remove “cake” from stock_list using a dictionary method we've covered
 """
 
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 inventory = {"croissant": 19, "bagel": 4, "muffin": 8, "cake": 1}
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 
 # Make a copy of inventory and save it to a variable called stock_list
 stock_list = inventory.copy()

@@ -5,12 +5,12 @@
 - Hint: Use modulus % to figure out if the number is odd!
 """
 
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 # Picks random number from 1-1000
 from random import randint
 
 num = randint(1, 1000)
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 
 # YOUR CODE GOES HERE:
 print(num)

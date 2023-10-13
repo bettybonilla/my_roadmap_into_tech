@@ -15,9 +15,9 @@ element at the specific index: lst[0] = "NewValue"
     the necessary modifications as instructed above!
 """
 
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 people = ["Hanna", "Louisa", "Claudia", "Angela", "Geoffrey", "aparna"]
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 
 # Change "Hanna" to "Hannah"
 people[0] = "Hannah"

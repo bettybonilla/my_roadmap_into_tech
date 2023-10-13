@@ -13,7 +13,7 @@ donations = dict(
 to a variable called total_donations
 """
 
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 donations = dict(
     sam=25.0,
     lena=88.99,
@@ -23,7 +23,7 @@ donations = dict(
     lisa=50.25,
     harrison=10.0,
 )
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 
 # YOUR CODE GOES HERE:
 total_donations = 0

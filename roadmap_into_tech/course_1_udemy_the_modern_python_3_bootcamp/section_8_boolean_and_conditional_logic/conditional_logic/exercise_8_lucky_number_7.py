@@ -6,12 +6,12 @@ those lines! (please)
 - If choice is 7, print "lucky". Otherwise, print "unlucky".
 """
 
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 # Picks random number from 1-10
 from random import randint
 
 choice = randint(1, 10)
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 
 # YOUR CODE GOES HERE:
 print(choice)

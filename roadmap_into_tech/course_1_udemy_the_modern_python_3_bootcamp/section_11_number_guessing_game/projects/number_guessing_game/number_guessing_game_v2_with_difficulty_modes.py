@@ -57,7 +57,7 @@ difficulty_mode_bool = bool(int(difficulty_mode_str))
 time.sleep(0.5)
 print("")
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # The code below is alternative code to the code above
 # print("Enter 1 for easy mode")
 # print("Enter 2 for hard mode\n")
@@ -67,7 +67,7 @@ print("")
 # difficulty_mode_int = int(difficulty_mode_str)
 # time.sleep(0.5)
 # print("")
-# =============================================================================
+# -----------------------------------------------------------------------------
 
 # Generates a random number between 1 and 10 (inclusive)
 computer = random.randint(1, 10)

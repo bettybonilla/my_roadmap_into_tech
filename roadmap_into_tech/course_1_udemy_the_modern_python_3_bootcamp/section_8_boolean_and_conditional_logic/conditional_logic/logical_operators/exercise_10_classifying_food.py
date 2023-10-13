@@ -10,11 +10,11 @@ assigned. Your task is to write code that will classify the food variable.
 - If food is set to either “dirt” or “worm”, your code should print “yuck”
 """
 
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 from random import choice
 
 food = choice(["apple", "grape", "bacon", "steak", "worm", "dirt"])
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 
 # YOUR CODE GOES HERE:
 print(food)

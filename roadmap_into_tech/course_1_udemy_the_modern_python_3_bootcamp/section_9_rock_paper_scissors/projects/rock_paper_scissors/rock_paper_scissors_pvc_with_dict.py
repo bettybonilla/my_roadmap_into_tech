@@ -29,7 +29,7 @@ computer_dictionary = {
 # list [ROCK, PAPER, SCISSORS]
 computer = random.choice([ROCK, PAPER, SCISSORS])
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # The code below is alternative code to the code above
 # Below the from ... import statement is used to specifically import the
 # choice() function from the random module and used to generate a random
@@ -41,7 +41,7 @@ computer = random.choice([ROCK, PAPER, SCISSORS])
 # SCISSORS = "s"
 
 # computer = choice([ROCK, PAPER, SCISSORS])
-# =============================================================================
+# -----------------------------------------------------------------------------
 
 time.sleep(0.5)
 print("Welcome!\n")

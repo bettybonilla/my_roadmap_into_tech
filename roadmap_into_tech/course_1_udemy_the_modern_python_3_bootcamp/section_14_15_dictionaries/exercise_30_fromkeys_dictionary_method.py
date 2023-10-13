@@ -12,7 +12,7 @@ game_properties list - Initialize all values to 0
     'notifications': 0, 'achievements': 0}
 """
 
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 game_properties = [
     "current_score",
     "high_score",
@@ -27,7 +27,7 @@ game_properties = [
     "notifications",
     "achievements",
 ]
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 
 # YOUR CODE GOES HERE:
 initial_game_state = {}.fromkeys(game_properties, 0)

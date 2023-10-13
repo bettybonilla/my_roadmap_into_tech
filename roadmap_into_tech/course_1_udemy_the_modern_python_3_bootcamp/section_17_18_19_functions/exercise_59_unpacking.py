@@ -9,7 +9,7 @@ the result to a variable called result2
 """
 
 
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 def count_sevens(*args: int) -> int:
     return args.count(7)
 
@@ -137,7 +137,7 @@ nums = [
     1,
     7,
 ]
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 
 # YOUR CODE GOES HERE:
 result1 = count_sevens(1, 4, 7)

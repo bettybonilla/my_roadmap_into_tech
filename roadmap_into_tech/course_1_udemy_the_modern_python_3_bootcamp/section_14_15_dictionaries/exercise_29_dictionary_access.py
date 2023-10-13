@@ -12,7 +12,7 @@ bakery_stock
     - If food is not contained in bakery_stock, print out "We don't make that"
 """
 
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 # Picks a random food item
 from random import choice
 
@@ -33,7 +33,7 @@ bakery_stock = {
     "chocolate chunk cookie": 9,
     "tea cake": 25,
 }
-# NO TOUCHING =================================================================
+# NO TOUCHING -----------------------------------------------------------------
 
 # YOUR CODE GOES HERE:
 if food in bakery_stock:

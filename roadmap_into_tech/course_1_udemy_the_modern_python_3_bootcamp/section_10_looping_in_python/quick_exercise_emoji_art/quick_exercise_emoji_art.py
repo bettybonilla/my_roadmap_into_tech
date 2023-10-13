@@ -20,7 +20,7 @@ while y < 10:
     print("")
     time.sleep(1)
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # The code below has been refactored to the code above
 # Solution without using time.sleep() function with a for loop and a while loop
 # y = 0
@@ -30,7 +30,7 @@ while y < 10:
 #     for x in range(y):
 #         print(EMOJI, end="")
 #     print("")
-# =============================================================================
+# -----------------------------------------------------------------------------
 # The code below has been refactored to the code above
 # Solution using time.sleep() function with a double for loop which is a for loop
 # nested inside another for loop
@@ -57,7 +57,7 @@ while y < 10:
 #     print("")
 #     # Sleeps/suspends execution of the program for 1 sec
 #     time.sleep(1)
-# =============================================================================
+# -----------------------------------------------------------------------------
 # The code below has been refactored to the code above
 # Solution with one for loop (preferred code)
 # for i in range(1, 11):
