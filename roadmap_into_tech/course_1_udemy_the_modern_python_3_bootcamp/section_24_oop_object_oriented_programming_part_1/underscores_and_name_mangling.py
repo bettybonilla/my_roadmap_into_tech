@@ -37,8 +37,8 @@ print(p._secret)
 
 # The dir() function returns a list of the attributes and methods of an object
 # Python will put attributes or methods with double underscores in the
-# beginning as "_ClassName__attributeORmethod"
-# print(dir(p))
+# beginning as "_ClassName__attributeORmethod" in alphabetical order
+print(dir(p))
 
 # As mentioned above, these private attributes can still be accessed since
 # nothing is actually private in Python
