@@ -36,7 +36,7 @@ class User:
         return f"{self.first_name[0]}.{self.last_name[0]}."
 
     # Instance method (getter)
-    def food_likes(self, food) -> str:
+    def food_likes(self, food: str) -> str:
         return f"{self.first_name} likes {food}"
 
     # Instance method (getter)
