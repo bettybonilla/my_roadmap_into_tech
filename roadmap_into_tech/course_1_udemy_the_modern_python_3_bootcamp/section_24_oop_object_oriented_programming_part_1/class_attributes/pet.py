@@ -8,7 +8,8 @@ class Pet:
 
     def __init__(self, name: str, species: str):
         self.name = name
-        self.set_species(species)
+        self._set_species(species)
+
     # Instance method (setter)
     # Proper setter method which sets an allowed species to an instance/object
     def _set_species(self, species: str):
@@ -76,12 +77,12 @@ print(cat.species)
 print(cat.get_allowed_species())
 Pet._allowed_species.append("mouse")
 print(cat.get_allowed_species())
-cat.set_species("mouse")
+cat._set_species("mouse")
 print(cat.species)
 
 print(dog.species)
 print(dog.get_allowed_species())
-dog.set_species(" BiRd  ")
+dog._set_species(" BiRd  ")
 print(dog.species)
 print("")
 
