@@ -9,6 +9,20 @@ class Pet:
     def __init__(self, name: str, species: str):
         self.name = name
         self.set_species(species)
+    # Instance method (setter)
+    # Proper setter method which sets an allowed species to an instance/object
+    def _set_species(self, species: str):
+        # Validation
+        species = species.lower().strip()
+
+        # Error catching/handling
+        if species not in self._allowed_species:
+            raise ValueError(f"You can't have a {species} as a pet!")
+        # Instead of setting and initializing this instance attribute in the
+        # __init__ dunder method above, it is placed in this method which is
+        # called in the __init__ dunder method above and does validation and
+        # error catching/handling so that's why it's placed after these steps
+        self.species = species
 
     # Instance method (getter)
     # Proper getter method which returns the _allowed_species private class
@@ -34,21 +48,6 @@ class Pet:
     # make sure they are ALWAYS made private like this one
     def _print_allowed_species(self):
         print(self._allowed_species)
-
-    # Instance method (setter)
-    # Proper setter method which sets an allowed species to an instance/object
-    def set_species(self, species: str):
-        # Validation
-        species = species.lower().strip()
-
-        # Error catching/handling
-        if species not in self._allowed_species:
-            raise ValueError(f"You can't have a {species} as a pet!")
-        # Instead of setting and initializing this instance attribute in the
-        # __init__ dunder method above, it is placed in this method which is
-        # called in the __init__ dunder method above and does validation and
-        # error catching/handling so that's why it's placed after these steps
-        self.species = species
 
 
 cat = Pet("Sadie", "cat")
