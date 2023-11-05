@@ -6,13 +6,13 @@ Below we've added a class attribute to the User class
 # A class attribute is defined once and it lives in the class itself and is
 # shared with all instances/objects of a class and the class itself
 class User:
-    # Class attribute
+    # Public class attribute
     # As mentioned, class attributes are defined once and go at the very top
     # of a class typically above the __init__ dunder method
     active_users = 0
 
     def __init__(self, first_name: str, last_name: str, age: int):
-        # Instance attributes
+        # Initialized all instance attributes
         self.first_name = first_name
         self.last_name = last_name
         self.age = age

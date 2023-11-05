@@ -11,13 +11,13 @@ Below we've added class methods to the User class
 # create a new instance of a class or validate data before the instance/object
 # is created (which is different from validating a specific instance attribute)
 class User:
-    # Class attribute
+    # Public class attribute
     # As mentioned, class attributes are defined once and go at the very top
     # of a class typically above the __init__ dunder method
     active_users = 0
 
     def __init__(self, first_name: str, last_name: str, age: int):
-        # Instance attributes
+        # Initialized all instance attributes
         self.first_name = first_name
         self.last_name = last_name
         self.age = age

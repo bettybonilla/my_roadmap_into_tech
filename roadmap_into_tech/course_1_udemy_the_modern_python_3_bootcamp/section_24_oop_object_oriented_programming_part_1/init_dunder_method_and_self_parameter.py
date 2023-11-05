@@ -36,10 +36,13 @@ class User:
     # individual instance/object
     # Instance methods that ONLY retrieve and return (get) attributes are
     # known as getters
-    # Instance methods that ONLY pass in (set) attributes once and don't
-    # return or change/update attributes are known as setters
+    # Instance methods that ONLY pass in (set) attributes and don't return
+    # attributes are known as setters
+    # All instance attributes should be initialized inside the __init__ dunder
+    # method for convenience and visibility purposes so that you can easily
+    # find them without having to dig for them throughout your file
     def __init__(self, first_name: str, last_name: str, age: int):
-        # Instance attributes
+        # Initialized all instance attributes
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
@@ -65,12 +68,10 @@ class User:
     # they can be changed/updated
     # However this is not a getter or setter since getters ONLY return data
     # and setters ONLY set data - This method does not only return data so it's
-    # not considered a true getter and because it returns and changes/updates
-    # data it's not considered a true setter since setters don't return data
-    # and they don't change/update data, they are used to just pass it in to
-    # set once not to return or change/update the data after it has already
-    # been set (Validation logic and error catching/handling is often used in
-    # setters to make sure the data is set correctly the first time)
+    # not considered a true getter and because it returns data it's not
+    # considered a true setter since setters don't return data, they are used
+    # to just pass it into set (Validation logic and error catching/handling
+    # is often used in setters to make sure the data is set correctly)
     def happy_birthday(self) -> str:
         self.age += 1
         return f"Happy {self.age} birthday, {self.first_name}!"

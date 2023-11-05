@@ -4,6 +4,7 @@ Below we've defined the Pet class to only allow certain species as pets
 
 
 class Pet:
+    # Private class attribute
     _allowed_species = ["cat", "dog", "fish", "bird"]
 
     def __init__(self, name: str, species: str):
@@ -19,19 +20,17 @@ class Pet:
         # Error catching/handling
         if species not in self._allowed_species:
             raise ValueError(f"You can't have a {species} as a pet!")
-        # Instead of setting and initializing this instance attribute in the
-        # __init__ dunder method above, it is placed in this method which is
+        # This instance attribute is placed in this method which is
         # called in the __init__ dunder method above and does validation and
         # error catching/handling so that's why it's placed after these steps
         self.species = species
 
     # Instance method (getter)
-    # Proper getter method which returns the _allowed_species private class
-    # attribute
+    # Returns the _allowed_species private class attribute
     # Users are supposed to ONLY use this getter method to access the
     # _allowed_species private class attribute
     # Private class attributes always contain getter + setter methods since
-    # users are not supposed to directly access them - Below is a setter
+    # users are not supposed to directly access them - Above is a setter
     # method which is called in the __init__ dunder method above
     # Public class attributes don't need getter + setter methods since users
     # are supposed to directly access them by using the . dot operator
@@ -39,7 +38,7 @@ class Pet:
         return self._allowed_species
 
     # Instance method (convenience - intended for internal use only)
-    # Made private since users should ONLY use the proper getter method above
+    # Made private since users should ONLY use the getter method above
     # This is not a getter method since getter methods always return data,
     # not print data
     # When you have a function or method ALWAYS use a return statement instead
@@ -62,10 +61,8 @@ print(dog.name, dog.species)
 # attributes with the . dot operator and therefore you shouldn't use
 # print(Pet._allowed_species) - Users should only directly access public class
 # attributes with the . dot operator
-# Instead, you should use a proper getter method to access private class
-# attributes - Above, a proper getter method is provided which should be used
-# to access the _allowed_species private class attribute
 print(Pet._allowed_species)
+# Instead, you should use a getter method to access private class attributes
 # Returns the _allowed_species private class attribute
 print(cat.get_allowed_species())
 # Prints the _allowed_species private class attribute
