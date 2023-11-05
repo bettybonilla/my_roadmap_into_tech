@@ -15,6 +15,7 @@ dunder method and the self parameter
 # user1 = User()
 # user2 = User()
 
+
 # However the above was just to prove that Python automatically runs the code
 # inside the __init__ dunder method since you wouldn't actually use print
 # statements in __init__ dunder methods
