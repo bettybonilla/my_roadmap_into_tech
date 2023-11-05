@@ -79,16 +79,16 @@ class Deck:
     def __repr__(self) -> str:
         return f"Deck of {len(self.cards)} cards"
 
+    # Returns a count of how many cards remain in the deck
+    def count(self) -> int:
+        return len(self.cards)
+
     # Returns a shuffled full deck
     def shuffle(self) -> list[Card]:
         if self.count() == 52:
             random.shuffle(self.cards)
             return self.cards
         raise ValueError("Only full decks can be shuffled")
-
-    # Returns a count of how many cards remain in the deck
-    def count(self) -> int:
-        return len(self.cards)
 
     # Returns one card from the deck using the _deal private instance method
     def deal_card(self) -> Card:
