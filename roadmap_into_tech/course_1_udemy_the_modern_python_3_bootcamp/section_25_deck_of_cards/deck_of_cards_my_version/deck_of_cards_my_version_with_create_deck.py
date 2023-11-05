@@ -26,14 +26,12 @@ class Deck:
         return f"Deck of {len(self._cards)} cards"
 
     def _create_deck(self):
-        self._values = [i for i in range(2, 11)]
-        self._values.extend(["Ace", "Jack", "Queen", "King"])
-        self._suits = ["Diamonds", "Hearts", "Clubs", "Spades"]
+        VALUES = [i for i in range(2, 11)]
+        VALUES.extend(["Ace", "Jack", "Queen", "King"])
+        SUITS = ["Diamonds", "Clubs", "Hearts", "Spades"]
         # Creates a Card instance/object for each of the 52 card combinations
         # and saves it to the self._cards private instance list attribute
-        self._cards = [
-            Card(value, suit) for suit in self._suits for value in self._values
-        ]
+        self._cards = [Card(value, suit) for suit in SUITS for value in VALUES]
         # Sanity check to ensure there are 52 cards in the deck
         assert len(self._cards) == 52
         # Shuffles full deck

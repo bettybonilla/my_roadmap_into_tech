@@ -51,22 +51,8 @@ class Card:
 
 class Deck:
     def __init__(self):
-        self._suits = ["Diamonds", "Hearts", "Clubs", "Spades"]
-        self._values = [
-            "A",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "J",
-            "Q",
-            "K",
-        ]
+        VALUES = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+        SUITS = ["Diamonds", "Clubs", "Hearts", "Spades"]
         # Creates a Card instance/object for each of the 52 card combinations
         # and saves it to the self.cards public instance list attribute - Made
         # public to pass instructor's tests
