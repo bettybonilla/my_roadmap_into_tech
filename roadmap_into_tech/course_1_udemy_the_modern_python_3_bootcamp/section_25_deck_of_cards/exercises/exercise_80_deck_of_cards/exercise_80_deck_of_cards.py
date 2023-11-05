@@ -41,9 +41,9 @@ import random
 
 
 class Card:
-    def __init__(self, suit: str, value: str):
-        self._suit = suit
+    def __init__(self, value: str, suit: str):
         self._value = value
+        self._suit = suit
 
     def __repr__(self) -> str:
         return f"{self._value} of {self._suit}"
