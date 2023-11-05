@@ -7,7 +7,7 @@ from dataclasses import dataclass
 # being used to hold data/attributes
 @dataclass
 class Card:
-    def __init__(self, value: str, suit: str):
+    def __init__(self, value: str | int, suit: str):
         self._value = value
         self._suit = suit
 
