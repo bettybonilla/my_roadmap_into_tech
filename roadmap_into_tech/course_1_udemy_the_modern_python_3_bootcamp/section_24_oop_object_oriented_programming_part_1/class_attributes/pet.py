@@ -8,8 +8,10 @@ class Pet:
     _allowed_species = ["cat", "dog", "fish", "bird"]
 
     def __init__(self, name: str, species: str):
+        # Initialized all instance attributes
         self.name = name
-        self._set_species(species)
+        self.species = None
+        self.set_species(species)
 
     # Instance method (setter)
     # Sets an allowed species to an instance/object

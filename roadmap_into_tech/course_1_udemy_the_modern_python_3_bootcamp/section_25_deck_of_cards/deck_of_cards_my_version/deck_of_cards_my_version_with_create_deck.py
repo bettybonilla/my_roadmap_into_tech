@@ -17,6 +17,8 @@ class Card:
 
 class Deck:
     def __init__(self):
+        # Initialized instance attribute
+        self._cards = None
         self._create_deck()
 
     # Returns a string of how many cards remain in the deck
