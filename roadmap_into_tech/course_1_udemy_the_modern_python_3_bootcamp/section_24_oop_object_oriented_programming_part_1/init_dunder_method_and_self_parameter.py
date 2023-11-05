@@ -81,13 +81,13 @@ class User:
 # in your signature - The self parameter must always be used as the first
 # parameter when we define methods however you don’t ever pass anything into
 # the self parameter and instead whatever you pass in first will be passed
-# in to the second parameter
+# into the second parameter
 # Remember that the below is also how you instantiate a class since you need to
 # create an instance/object of the class except now we are actually passing in
 # arguments since our User class is no longer empty
 # Anytime we create a new instance of a class, Python will look for the
 # __init__ dunder method inside the class and then the arguments will be
-# automatically passed in to the __init__ dunder method to set and initialize
+# automatically passed into the __init__ dunder method to set and initialize
 # the data (attributes) that each User instance/object should have
 user1 = User("Joe", "Smith", 68)
 user2 = User("Blanca", "Lopez", 41)

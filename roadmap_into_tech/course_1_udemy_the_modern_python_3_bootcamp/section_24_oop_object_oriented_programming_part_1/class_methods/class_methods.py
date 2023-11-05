@@ -28,11 +28,11 @@ class User:
     # Class method (getter)
     # As mentioned, there’s no particular place you should define class
     # methods however just make sure you’re consistent
-    # With class methods, the class will be automatically passed in to the
+    # With class methods, the class will be automatically passed into the
     # class method when you call it so the standard parameter name most
     # commonly used is cls, which stands for class, instead of using the self
     # parameter - Instance methods use the self parameter since
-    # instances/objects are automatically passed in to instance methods
+    # instances/objects are automatically passed into instance methods
     @classmethod
     def display_active_users(cls) -> str:
         # The cls parameter is the class User not an instance/object of User
@@ -47,7 +47,7 @@ class User:
     # When this class method is called, it can be used to create a new
     # instance of the User class by taking in one string that has the
     # arguments required for a User instance/object, splitting it, and then it
-    # will return the new User instance/object which will be passed in to the
+    # will return the new User instance/object which will be passed into the
     # __init__ dunder method to be set and initialized
     @classmethod
     def from_string(cls, data_str: str):
@@ -61,7 +61,7 @@ class User:
         # User(first_name, last_name, age) which will automatically run the
         # __init__ dunder method above since, as mentioned, the cls parameter
         # is the class User and anytime we create a new instance of a class
-        # the arguments will be automatically passed in to the __init__ dunder
+        # the arguments will be automatically passed into the __init__ dunder
         # method to set and initialize the data (attributes) for the new User
         # instance/object
         return cls(first, last, age)
