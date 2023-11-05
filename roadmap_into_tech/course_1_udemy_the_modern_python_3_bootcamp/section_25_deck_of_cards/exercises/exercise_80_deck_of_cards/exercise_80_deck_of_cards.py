@@ -68,10 +68,9 @@ class Deck:
             "K",
         ]
         # Creates a Card instance/object for each of the 52 card combinations
-        # and saves it to the self._cards private instance list attribute
-        self.cards = [
-            Card(suit, value) for suit in self._suits for value in self._values
-        ]
+        # and saves it to the self.cards public instance list attribute - Made
+        # public to pass instructor's tests
+        self.cards = [Card(value, suit) for suit in SUITS for value in VALUES]
         # Sanity check to ensure there are 52 cards in the deck
         assert len(self.cards) == 52
 

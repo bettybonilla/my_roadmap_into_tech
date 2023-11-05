@@ -12,8 +12,8 @@ class Pet:
         self._set_species(species)
 
     # Instance method (setter)
-    # Proper setter method which sets an allowed species to an instance/object
-    def _set_species(self, species: str):
+    # Sets an allowed species to an instance/object
+    def set_species(self, species: str):
         # Validation
         species = species.lower().strip()
 
@@ -74,12 +74,12 @@ print(cat.species)
 print(cat.get_allowed_species())
 Pet._allowed_species.append("mouse")
 print(cat.get_allowed_species())
-cat._set_species("mouse")
+cat.set_species("mouse")
 print(cat.species)
 
 print(dog.species)
 print(dog.get_allowed_species())
-dog._set_species(" BiRd  ")
+dog.set_species(" BiRd  ")
 print(dog.species)
 print("")
 
