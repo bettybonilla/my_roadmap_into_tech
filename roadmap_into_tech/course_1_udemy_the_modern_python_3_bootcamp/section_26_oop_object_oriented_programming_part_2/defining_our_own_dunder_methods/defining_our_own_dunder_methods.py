@@ -54,22 +54,21 @@ print("")
 
 
 # Above we defined our own __add__ dunder method to override the + addition
-# operator to add 2 Human instances/objects which returns a new Human
-# instance/object
+# operator to add 2 Human instances which returns a new Human instance
 print(j + k)
 print("")
 
 # Above we defined our own __mul__ dunder method to override the *
-# multiplication operator to clone a Human instance/object by the number
-# provided for the clone_num argument which returns a list of the clones for
-# that Human instance/object
+# multiplication operator to clone a Human instance by the number provided for
+# the clone_num argument which returns a list of the clones for that Human
+# instance
 print(j * 2)
 print("")
 
 # Even though we tried to change the first name to Jessica for the Human
-# instance/object in the list with the index of 1, it changed it for all the
-# Human instances/objects since they are all referencing the same object in
-# memory (self) therefore the change was applied to all of them
+# instance in the list with the index of 1, it changed it for all the Human
+# instances since they are all referencing the same object in memory (self)
+# therefore the change was applied to all of them
 # In order to separate the objects in memory so that they're copies instead of
 # being the exact same object, we would import the built-in Python copy.copy
 # module then pass self into the copy() function and now they will each be
