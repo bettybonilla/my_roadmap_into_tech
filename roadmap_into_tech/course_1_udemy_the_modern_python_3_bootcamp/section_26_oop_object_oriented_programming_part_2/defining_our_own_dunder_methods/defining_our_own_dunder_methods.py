@@ -3,7 +3,7 @@ Below we've defined our own dunder methods to override them to do something
 special
 """
 
-from __future__ import annotations
+from typing import Self
 from copy import copy
 
 # from copy import deepcopy
@@ -21,13 +21,24 @@ class Human:
     def __len__(self) -> int:
         return self.age
 
-    def __add__(self, parent2: Human) -> Human:
-        # Checks that the second argument is a Human instance/object
+    # The Self type hint allows you to specify that a class instance can be
+    # expected
+    # The parent2 parameter is expected to be of type Self (Human instance)
+    # The return type is also expected to be of type Self (Human instance)
+    # The Self type hint also allows you to specify that a class object can be
+    # expected by using the type[Self] type hint however there is no use case
+    # in this program
+    def __add__(self, parent2: Self) -> Self:
+        # Checks that the second argument is a Human instance
         if isinstance(parent2, Human):
             return Human(first="Baby", last=self.last, age=0)
         raise TypeError("You can't add that!")
 
-    def __mul__(self, clone_num: int) -> list[Human]:
+    # As mentioned above, the Self type hint allows you to specify that a
+    # class instance can be expected
+    # The return type is expected to be of type list[Self] (list of Human
+    # instances)
+    def __mul__(self, clone_num: int) -> list[Self]:
         if isinstance(clone_num, int):
             # return [self for i in range(clone_num)]
             return [copy(self) for i in range(clone_num)]
