@@ -32,9 +32,8 @@ class Cat(Animal):
         # functionality again to avoid duplication
         # You don’t have to provide the self parameter since it will be
         # automatically passed in so instead you just provide the parameters
-        # you want from the method you’re calling on the super() function - In
-        # this case, the __init__ dunder method from the Animal base parent
-        # class
+        # from the method you’re calling on the super() function - In this
+        # case, the __init__ dunder method from the Animal base parent class
         # Since the species for a Cat instance will always be "cat", we can
         # also set a default value of "cat" to the species parameter below and
         # therefore we don't need the species parameter in the __init__ dunder
