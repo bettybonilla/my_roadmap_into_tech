@@ -1,5 +1,5 @@
 """
-The below mimicks the .get() dictionary method with a try/except block
+The below mimics the .get() dictionary method with a try/except block
 """
 
 
@@ -9,7 +9,7 @@ def get_key(dictionary: dict, key: str) -> str | None:
     try:
         return dictionary[key]
     # If the dictionary key doesn't exist, instead of returning an error
-    # message, we will return None which mimicks the .get() dictionary method
+    # message, we will return None which mimics the .get() dictionary method
     # The KeyError error type is used since this is the particular
     # exception/error that would occur
     except KeyError:

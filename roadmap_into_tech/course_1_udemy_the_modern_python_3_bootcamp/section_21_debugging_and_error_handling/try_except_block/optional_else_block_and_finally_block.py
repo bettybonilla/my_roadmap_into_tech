@@ -18,9 +18,9 @@ while True:
     # As mentioned, you can have multiple except blocks in a try/except block
     # so that you can error catch/handle each exception/error differently
     except ValueError:
-        print("Error: that's not a number!")
+        print("Error: That's not a number!")
     except AssertionError:
-        print("Error: that's not an even number!")
+        print("Error: That's not an even number!")
     else:
         reciprocal = 1 / num
         print(reciprocal)

@@ -18,11 +18,11 @@ def colorize(text: str, color: str) -> str:
     # Instead, below they have been raised individually with their own
     # explicit and concise error message
     if type(text) != str:
-        raise TypeError("text must be instance of str")
+        raise TypeError("Text must be instance of str")
     if type(color) != str:
-        raise TypeError("color must be instance of str")
+        raise TypeError("Color must be instance of str")
     if color not in colors:
-        raise ValueError("color is invalid color")
+        raise ValueError("Color is invalid color")
     print(f"Printed {text} in {color}")
 
 
