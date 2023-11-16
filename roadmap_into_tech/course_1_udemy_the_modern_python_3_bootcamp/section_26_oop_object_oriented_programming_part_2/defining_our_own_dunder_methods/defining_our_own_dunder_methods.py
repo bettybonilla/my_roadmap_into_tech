@@ -66,9 +66,9 @@ print(j * 2)
 print("")
 
 # Even though we tried to change the first name to Jessica for the Human
-# instance in the list with the index of 1, it changed it for all the Human
-# instances since they are all referencing the same object in memory (self)
-# therefore the change was applied to all of them
+# instance in the list at index 1, it changed it for all the Human instances
+# since they are all referencing the same object in memory (self) therefore
+# the change was applied to all of them
 # In order to separate the objects in memory so that they're copies instead of
 # being the exact same object, we would import the built-in Python copy.copy
 # module then pass self into the copy() function and now they will each be
