@@ -6,7 +6,7 @@ from dataclasses import dataclass
 # not supposed to change or be changed - Typically used when a class is just
 # being used to hold data/attributes
 @dataclass
-class Card:
+class _Card:
     def __init__(self, value: str | int, suit: str):
         self._value = value
         self._suit = suit
@@ -31,14 +31,14 @@ class Deck:
         SUITS = ["Diamonds", "Clubs", "Hearts", "Spades"]
         # Creates a Card instance/object for each of the 52 card combinations
         # and saves it to the self._cards private instance list attribute
-        self._cards = [Card(value, suit) for suit in SUITS for value in VALUES]
+        self._cards = [_Card(value, suit) for suit in SUITS for value in VALUES]
         # Sanity check to ensure there are 52 cards in the deck
         assert len(self._cards) == 52
         # Shuffles full deck
         self._shuffle_deck()
 
     # Returns a shuffled full deck
-    def _shuffle_deck(self) -> list[Card]:
+    def _shuffle_deck(self) -> list[_Card]:
         if self.deck_count() == 52:
             random.shuffle(self._cards)
             return self._cards
@@ -49,15 +49,15 @@ class Deck:
         return len(self._cards)
 
     # Returns one card from the deck using the _draw private instance method
-    def draw_card(self) -> Card:
+    def draw_card(self) -> _Card:
         return self._draw(1)[0]
 
     # Returns a list of cards from the deck using the _draw private instance
     # method
-    def draw_hand(self, draw_num: int) -> list[Card]:
+    def draw_hand(self, draw_num: int) -> list[_Card]:
         return self._draw(draw_num)
 
-    def _draw(self, draw_num: int) -> list[Card]:
+    def _draw(self, draw_num: int) -> list[_Card]:
         hand = []
         max_draw = min(draw_num, self.deck_count())
 
