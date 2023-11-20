@@ -17,7 +17,7 @@ class User:
 
     # Class method (getter)
     @classmethod
-    def display_active_users(cls) -> str:
+    def get_active_users(cls) -> str:
         return f"There are currently {cls.active_users} active users"
 
     # Class method (setter)
@@ -68,7 +68,7 @@ class Moderator(User):
 
     # Class method (getter)
     @classmethod
-    def display_active_mods(cls) -> str:
+    def get_active_mods(cls) -> str:
         return f"There are currently {cls.active_mods} active moderators"
 
     def remove_post(self) -> str:
@@ -79,17 +79,17 @@ class Moderator(User):
 # parent class, it inherits everything from the User base parent class
 # including the active_users class attribute and User.active_users += 1 in the
 # __init__ dunder method
-print(User.display_active_users())
+print(User.get_active_users())
 mod1 = Moderator("Jasmine", "O'Connor", 61, "Piano")
 print(mod1.full_name())
 print(mod1.community)
-print(User.display_active_users())
+print(User.get_active_users())
 user1 = User("Tom", "Garcia", 35)
-print(User.display_active_users())
+print(User.get_active_users())
 print("")
 
 user2 = User("Tom", "Garcia", 35)
 user3 = User("Tom", "Garcia", 35)
 mod2 = Moderator("Jasmine", "O'Connor", 61, "Piano")
-print(User.display_active_users())
-print(Moderator.display_active_mods())
+print(User.get_active_users())
+print(Moderator.get_active_mods())

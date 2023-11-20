@@ -34,7 +34,7 @@ class User:
     # parameter - Instance methods use the self parameter since
     # instances/objects are automatically passed into instance methods
     @classmethod
-    def display_active_users(cls) -> str:
+    def get_active_users(cls) -> str:
         # The cls parameter is the class User not an instance/object of User
         # As we can see, when we call this class method and it prints the cls
         # parameter, it prints <class '__main__.User'> however it does not
@@ -101,12 +101,12 @@ user2 = User("Blanca", "Lopez", 41)
 # To access specific class methods on a class, you can use the . dot
 # operator and run:
 # print(class_name.class_method_name())
-print(User.display_active_users())
+print(User.get_active_users())
 
 # Instantiates a new User using the from_string class method above
 user3 = User.from_string("Tom, Jones, 89")
 print(user3.first_name, user3.last_name, user3.age)
 print(user3.full_name())
-print(User.display_active_users())
+print(User.get_active_users())
 print(user3.is_senior())
 print(user3.happy_birthday())
