@@ -10,12 +10,13 @@ class Wood(Enum):
 
     @classmethod
     def display_wood_choice(cls):
-        print("Enter your choice to select wood type:")
+        print("Enter your choice to select wood type\n")
         for item in [(e.name, e.value) for e in cls]:
             print(f"{item[1]} -> {item[0]}")
 
 
 Wood.display_wood_choice()
+print("")
 user_choice = int(input())
 print(Wood(user_choice))
 
