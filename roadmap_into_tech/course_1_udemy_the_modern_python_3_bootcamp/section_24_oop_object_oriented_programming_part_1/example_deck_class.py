@@ -61,6 +61,5 @@ if __name__ in "__main__":
     # create an instance/object
     UnoDeck.game_type()
 
-
 # References
 # https://www.geeksforgeeks.org/abstract-classes-in-python/
