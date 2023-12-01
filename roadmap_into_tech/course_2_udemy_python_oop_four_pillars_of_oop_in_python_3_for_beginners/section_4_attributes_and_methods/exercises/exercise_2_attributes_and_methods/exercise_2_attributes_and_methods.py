@@ -12,7 +12,7 @@ class PreciousStone:
 
     def __init__(self, birthstone: str):
         self.birthstone = birthstone
-        PreciousStone.stones.append(self.birthstone)
+        PreciousStone.stones.append(birthstone)
         self._only_five_stones()
 
     @staticmethod
