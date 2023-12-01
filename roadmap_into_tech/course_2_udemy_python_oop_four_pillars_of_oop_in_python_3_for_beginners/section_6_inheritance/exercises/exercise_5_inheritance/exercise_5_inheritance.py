@@ -28,9 +28,8 @@ class Chair(Furniture):
         return False
 
     def display_specifications(self):
-        print("\nChair Specifications\n")
         print(f"Type of Wood: {self.type_of_wood}")
-        print(f"Number of Legs: {self._Chair__number_of_legs}\n")
+        print(f"Number of Legs: {self._Chair__number_of_legs}")
 
 
 chair1 = Chair()
@@ -44,7 +43,9 @@ while True:
 
     match user:
         case 1:
+            print("\nChair Specifications\n")
             chair1.display_specifications()
+            print("")
         case 2:
             print("\nThe default type of wood is Teakwood\n")
             print("Press enter to keep the default (Teakwood)\n")
