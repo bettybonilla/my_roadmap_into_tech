@@ -3,6 +3,8 @@ The below shows operator overloading and how to overload the + addition
 operator in your class
 """
 
+from typing import Self
+
 
 class Square:
     def __init__(self, side_inches: int):
@@ -10,7 +12,7 @@ class Square:
 
     # Overloading the + addition operator so that it can add the sides of the
     # s1 and s2 Square instances/objects
-    def __add__(s1, s2) -> int:
+    def __add__(s1: Self, s2: Self) -> int:
         return (4 * s1.side_inches) + (4 * s2.side_inches)
 
 
