@@ -41,3 +41,8 @@ s = Square()
 # print(s.area())
 r = Rectangle()
 print(r.area())
+
+# However, you don't need to instantiate these classes in order to call these
+# methods
+# print(Square().area())
+# print(Rectangle().area())

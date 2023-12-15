@@ -18,6 +18,8 @@ class User:
     # Class method (getter)
     @classmethod
     def get_active_users(cls) -> str:
+        # As mentioned, using cls.active_users is bad practice since you
+        # shouldn't use class methods to access class attributes
         return f"There are currently {cls.active_users} active users"
 
     # Class method (setter)

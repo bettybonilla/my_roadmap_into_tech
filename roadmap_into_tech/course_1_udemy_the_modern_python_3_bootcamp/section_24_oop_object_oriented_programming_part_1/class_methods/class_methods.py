@@ -6,10 +6,11 @@ Below we've added class methods to the User class
 # Just like class attributes, a class method is not concerned with
 # instances/objects but the class itself and can be defined with the
 # @classmethod decorator right above it
-# Class methods are most often used when you don’t need access to a particular
-# instance/object of a class or their instance attributes but when you want to
-# create a new instance of a class or validate data before the instance/object
-# is created (which is different from validating a specific instance attribute)
+# Class methods can be used when you don’t need access to a particular
+# instance/object of a class or their instance/class attributes but when you
+# want to create a new instance of a class or validate data before the
+# instance/object is created (which is different from validating a specific
+# instance attribute)
 class User:
     # Public class attribute
     # As mentioned, class attributes are defined once and go at the very top
@@ -41,6 +42,12 @@ class User:
         # print the memory address of the object since it's not an
         # instance/object of User
         print(cls)
+        # Using cls.active_users is bad practice since you shouldn't use class
+        # methods to access class attributes
+        # Class methods are meant to be used to access the built-in’s offered
+        # for all classes (found in the builtins.pyi file by stepping into
+        # object when passed into any class signature) NOT to access the class
+        # attributes you’ve defined
         return f"There are currently {cls.active_users} active users"
 
     # Class method (setter)

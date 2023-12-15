@@ -1,6 +1,14 @@
 from enum import Enum
 
 
+# Class methods are meant to be used to access the built-in’s offered
+# for all classes (found in the builtins.pyi file by stepping into
+# object when passed into any class signature) NOT to access the class
+# attributes you’ve defined
+# class test(object):
+#     pass
+
+
 class Wood(Enum):
     DARK = 0
     LIGHT = 1
