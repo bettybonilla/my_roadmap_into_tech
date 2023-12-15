@@ -25,6 +25,10 @@ class Library:
     }
 
     @staticmethod
+    def get_book_collection() -> dict[str, list[_BookInformation]]:
+        return {key: value for key, value in Library._book_collection.items()}
+
+    @staticmethod
     def borrow_book(author: str, book_title: str):
         author_found = Library._book_collection.get(author)
         if author_found:
@@ -39,10 +43,6 @@ class Library:
             for i in author_found:
                 if i.title == book_title:
                     i.number_of_copies += 1
-
-    @staticmethod
-    def get_book_collection() -> dict[str, list[_BookInformation]]:
-        return {key: value for key, value in Library._book_collection.items()}
 
 
 customer1 = Library()

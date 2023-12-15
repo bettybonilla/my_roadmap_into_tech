@@ -33,6 +33,11 @@ class CarRental:
     ]
 
     @staticmethod
+    def display_cars_for_rent_per_day():
+        for car in CarRental._cars_for_rent_per_day:
+            print(car)
+
+    @staticmethod
     def pricing_details(
         requested_car_for_rent: str, requested_days_for_rent: int
     ) -> bool:
@@ -46,11 +51,6 @@ class CarRental:
                 print(f"Total: ${total}")
                 return True
         return False
-
-    @staticmethod
-    def display_cars_for_rent_per_day():
-        for car in CarRental._cars_for_rent_per_day:
-            print(car)
 
 
 class Customer:

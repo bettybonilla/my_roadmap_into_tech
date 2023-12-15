@@ -11,18 +11,6 @@ class Library:
         "Stephenie Meyer": ["Twilight", "New Moon", "Eclipse", "Breaking Dawn"]
     }
 
-    @staticmethod
-    def borrow_book(author: str, book_title: str):
-        author_found = Library._book_collection.get(author)
-        if author_found:
-            author_found.remove(book_title)
-
-    @staticmethod
-    def return_book(author: str, book_title: str):
-        author_found = Library._book_collection.get(author)
-        if author_found:
-            author_found.append(book_title)
-
     # As mentioned, using get vs. display is a method naming convention that
     # implies how your method should behave and retrieve data so that the
     # reader of your code knows what to expect - This applies to instance
@@ -35,6 +23,18 @@ class Library:
     @staticmethod
     def get_book_collection() -> dict[str, list[str]]:
         return {key: value for key, value in Library._book_collection.items()}
+
+    @staticmethod
+    def borrow_book(author: str, book_title: str):
+        author_found = Library._book_collection.get(author)
+        if author_found:
+            author_found.remove(book_title)
+
+    @staticmethod
+    def return_book(author: str, book_title: str):
+        author_found = Library._book_collection.get(author)
+        if author_found:
+            author_found.append(book_title)
 
 
 customer1 = Library()
