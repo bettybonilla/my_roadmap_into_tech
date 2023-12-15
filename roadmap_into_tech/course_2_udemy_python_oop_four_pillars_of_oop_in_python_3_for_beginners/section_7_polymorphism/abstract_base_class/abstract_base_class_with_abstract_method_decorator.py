@@ -23,8 +23,9 @@ class Square(Shape):
     side = 4
 
     # Commented out to purposely raise an error
-    # def area(self) -> int:
-    #     return self.side * self.side
+    # @staticmethod
+    # def area() -> int:
+    #     return Square.side * Square.side
 
 
 # Subclass child class AKA derived class
@@ -32,8 +33,9 @@ class Rectangle(Shape):
     length = 10
     width = 5
 
-    def area(self) -> int:
-        return self.length * self.width
+    @staticmethod
+    def area() -> int:
+        return Rectangle.length * Rectangle.width
 
 
 s = Square()

@@ -8,8 +8,9 @@ class Apple:
     manufacturer = "Apple, Inc."
     contact_website = "www.apple.com/contact"
 
-    def display_contact_details(self):
-        print(f"To contact us, log on to {self.contact_website}")
+    @staticmethod
+    def display_contact_details():
+        print(f"To contact us, log on to {Apple.contact_website}")
 
 
 # Subclass child class AKA derived class
