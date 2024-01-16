@@ -24,8 +24,10 @@ class _AccountInformation:
         return f"Name: {self.name}, Balance: ${self.balance:.2f}"
 
 
-# Type alias for int
-# AccountNumber is now a type of int
+# AccountNumber is now its own type which inherits from the int class
+# This creates a new type called AccountNumber which wraps an int and therefore
+# can do anything an int does, so it allows you to ask for a type of
+# AccountNumber vs. asking for any type of int
 class AccountNumber(int):
     pass
 
