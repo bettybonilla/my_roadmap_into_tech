@@ -74,9 +74,9 @@ class _Account:
                 return account.balance
             return None
 
-    # Validating by account number is sufficient enough since it is the
-    # dictionary key in self.accounts_opened which pairs with
-    # AccountInformation and will contain the account name and balance
+    # Validating by account number is sufficient since it is the dictionary key
+    # in self.accounts_opened which pairs with AccountInformation and will
+    # contain the account name and balance
     # Having to also validate the name entered by the user, which would be a
     # string, is more prone to user error and adds unnecessary complexity
     def validate_account(self, account_number: AccountNumber) -> bool:
