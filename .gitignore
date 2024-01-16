@@ -356,3 +356,6 @@ MigrationBackup/
 
 # JetBrains
 .idea
+
+# local python env
+/venv
