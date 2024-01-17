@@ -3,8 +3,9 @@ Below we've defined our own dunder methods to override them to do something
 special
 """
 
-from typing import Self
 from copy import copy
+from typing import Self
+
 
 # from copy import deepcopy
 

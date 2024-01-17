@@ -12,5 +12,7 @@ with open("new_kv_map.json", "r") as kv_file:
             if creative_type in kv_data:
                 kv_value = rows[4]
                 if kv_value not in kv_data[creative_type]:
-                    print(f"{kv_value} was not present in the current kv mapping, creative_type: {creative_type}, line # {line_number}")
+                    print(
+                        f"{kv_value} was not present in the current kv mapping, creative_type: {creative_type}, line # {line_number}"
+                    )
             line_number += 1

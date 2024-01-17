@@ -1,6 +1,7 @@
 from datetime import datetime
-import pandas
+
 import matplotlib.pyplot as plt
+import pandas
 
 # headers
 # Date,Publisher,Billing Type,Filled Rate,Unfilled Rate,Total Auctions,Successful,Unfilled,Completed Auctions Rate,Publisher Revenue,Nimbus Revenue

@@ -1,8 +1,7 @@
-from json import JSONDecodeError
-from typing import TypedDict
-
 import json
 import uuid
+from json import JSONDecodeError
+from typing import TypedDict
 
 
 # found_aps looks inside the data to determine if APS data is present within the dictionary

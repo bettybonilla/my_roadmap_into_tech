@@ -1,6 +1,6 @@
 from abc import abstractmethod
-from typing import Optional
 from random import choice, shuffle
+from typing import Optional
 
 
 class Card:
