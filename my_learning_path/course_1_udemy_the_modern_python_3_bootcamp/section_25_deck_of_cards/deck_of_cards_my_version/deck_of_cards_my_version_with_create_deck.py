@@ -67,7 +67,7 @@ class Deck:
             # runs out of cards
             if self.deck_count() == 0:
                 self._create_deck()
-                for i in range(draw_num - 52):
+                for i in range(draw_num - max_draw):
                     hand.append(self._cards.pop())
         return hand
 
