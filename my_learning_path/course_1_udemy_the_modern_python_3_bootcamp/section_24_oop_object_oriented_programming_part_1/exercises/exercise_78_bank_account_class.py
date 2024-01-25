@@ -19,9 +19,9 @@ subtracts it from the balance - It should return the new balance
 
 
 class BankAccount:
-    def __init__(self, owner: str, balance: float = 0.0):
+    def __init__(self, owner: str):
         self.owner = owner
-        self.balance = balance
+        self.balance = 0.0
 
     def deposit(self, deposit_amount: int | float) -> float:
         self.balance += deposit_amount

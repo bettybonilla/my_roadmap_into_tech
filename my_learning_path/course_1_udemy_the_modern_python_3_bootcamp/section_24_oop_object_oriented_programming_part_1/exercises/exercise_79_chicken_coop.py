@@ -24,10 +24,10 @@ track the total number of eggs all hens have laid.
 class Chicken:
     total_eggs = 0
 
-    def __init__(self, name: str, species: str, eggs: int = 0):
+    def __init__(self, name: str, species: str):
         self.name = name
         self.species = species
-        self.eggs = eggs
+        self.eggs = 0
 
     def lay_egg(self) -> int:
         Chicken.total_eggs += 1
