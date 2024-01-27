@@ -56,7 +56,7 @@ print("")
 
 # Some different ways you can find out the MRO (Method Resolution Order) of a
 # class:
-# Using the __mro__ attribute
+# Using the .__mro__ attribute
 print(Penguin.__mro__)
 print("")
 # Using the .mro() method

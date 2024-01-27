@@ -20,7 +20,7 @@ class Animal:
 # Subclass child class
 class Cat(Animal):
     def __init__(self, name: str, breed: str, fav_toy: str):
-        # This is duplication since the Animal base parent class already
+        # This would be duplication since the Animal base parent class already
         # initializes these instance attributes in its __init__ dunder method
         # self.name = name
         # self.species = species
