@@ -24,12 +24,12 @@ class Cat(Animal):
         # initializes these instance attributes in its __init__ dunder method
         # self.name = name
         # self.species = species
-        # Instead, we can use the super() function which allows us to access
-        # methods of the base parent class that the current subclass child
-        # class is inheriting from in its signature which makes class
-        # inheritance more manageable and extensible since you can extend the
-        # functionality of previously built classes without implementing their
-        # functionality again to avoid duplication
+        # Instead, we can use the super() function which allows us to call methods
+        # and access attributes of the base parent class that the current subclass
+        # child class is inheriting from which makes class inheritance more organized,
+        # maintainable, and extensible since you can extend the functionality of
+        # previously built base parent classes to subclass child classes to practice
+        # code reusability and avoid repetition/duplication
         # You don’t have to provide the self parameter since it will be
         # automatically passed in so instead you just provide the parameters
         # from the method you’re calling on the super() function - In this

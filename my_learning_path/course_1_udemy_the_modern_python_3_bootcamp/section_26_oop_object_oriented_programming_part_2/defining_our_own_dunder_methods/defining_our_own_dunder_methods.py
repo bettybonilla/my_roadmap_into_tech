@@ -1,5 +1,5 @@
 """
-Below we've defined our own dunder methods to override them to do something
+Below we've defined our own dunder/magic methods to override them to do something
 special
 """
 
