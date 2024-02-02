@@ -16,7 +16,7 @@ def count_up_to(max_num: int) -> Iterator[int]:
 
 # Unlike a regular function which will return the same result each time you run it, a generator function will store the
 # most recent yield result in memory and then when you run it again, it will return the next yield result - Since it is
-# a generator object, which is an iterator, you must keep using the next() function wrapped in a print() function
+# a generator object, which is an iterator, you must keep using the next() function wrapped in a print statement
 counter = count_up_to(5)
 print(counter)
 print(next(counter))
