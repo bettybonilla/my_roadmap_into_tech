@@ -1,5 +1,7 @@
 """
 The below shows how to make a decorator
+- NOTE: Using func as your parameter name and wrapper as your “wrapper” function name is the typical naming convention
+when making decorators
 """
 
 from typing import Callable
