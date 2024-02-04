@@ -5,10 +5,10 @@ The below shows how to make a decorator
 from typing import Callable
 
 
-def be_polite(fn: Callable) -> Callable:
+def be_polite(func: Callable) -> Callable:
     def wrapper():
         print("What a pleasure to meet you!")
-        print(fn())
+        print(func())
         print("Have a great day!")
 
     return wrapper
