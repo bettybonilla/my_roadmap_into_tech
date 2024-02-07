@@ -4,10 +4,9 @@ The below shows a higher order function which uses another function as its own r
 """
 
 import random
-from typing import Callable
 
 
-def make_laugh() -> Callable[[], str]:
+def make_laugh() -> str:
     def get_laugh() -> str:
         laugh_type = random.choice(("hahaha", "lol", "tehehe"))
         return laugh_type
@@ -22,7 +21,7 @@ print("")
 
 
 # As mentioned above, inner functions can also access outer function scope
-def make_laugh_at(person: str) -> Callable[[], str]:
+def make_laugh_at(person: str) -> str:
     def get_laugh() -> str:
         laugh_type = random.choice(("hahaha", "lol", "tehehe"))
         return f"{laugh_type} {person}"
