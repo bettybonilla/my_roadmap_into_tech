@@ -60,7 +60,7 @@ class User:
     def from_string(cls, data_str: str):
         # Assigns the 3 variables (first, last, age) at once to the string
         # being passed in for the data_str parameter which will be split with
-        # a comma using the .split() method so that it can be assinged to each
+        # a comma using the .split() method so that it can be assigned to each
         # of the 3 corresponding variables (first, last, age)
         first, last, age = data_str.split(",")
         age = int(age)
