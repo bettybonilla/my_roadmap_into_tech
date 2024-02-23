@@ -17,19 +17,19 @@ def cm_to_in(cm: Any) -> float:
 
 
 with open("street_fighter_fighters.csv") as file:
-    csv_dictreader_file = csv.DictReader(file)
-    data = list(csv_dictreader_file)
+    csv_DictReader = csv.DictReader(file)
+    csv_data = list(csv_DictReader)
 
 with open("street_fighter_fighters_height_in_inches.csv", "w") as file:
     headers = ["Name", "Country", "Height (in inches)"]
-    csv_dictwriter_file = csv.DictWriter(file, fieldnames=headers)
-    csv_dictwriter_file.writeheader()
+    csv_DictWriter = csv.DictWriter(file, fieldnames=headers)
+    csv_DictWriter.writeheader()
 
-    for fighter in data:
-        csv_dictwriter_file.writerow(
+    for row_OrderedDict in csv_data:
+        csv_DictWriter.writerow(
             {
-                "Name": fighter["Name"],
-                "Country": fighter["Country"],
-                "Height (in inches)": cm_to_in(fighter["Height (in cm)"]),
+                "Name": row_OrderedDict["Name"],
+                "Country": row_OrderedDict["Country"],
+                "Height (in inches)": cm_to_in(row_OrderedDict["Height (in cm)"]),
             }
         )

@@ -18,12 +18,12 @@ import csv
 
 def find_user(first_name: str, last_name: str) -> int | str:
     with open("users.csv") as file:
-        csv_reader_file = csv.reader(file)
+        csv_reader = csv.reader(file)
+        csv_data = list(csv_reader)
 
-        data = list(csv_reader_file)
-        for row in data:
-            if row[0] == first_name and row[1] == last_name:
-                return data.index(row)
+        for row_list in csv_data:
+            if row_list[0] == first_name and row_list[1] == last_name:
+                return csv_data.index(row_list)
         return f"{first_name} {last_name} not found."
 
 

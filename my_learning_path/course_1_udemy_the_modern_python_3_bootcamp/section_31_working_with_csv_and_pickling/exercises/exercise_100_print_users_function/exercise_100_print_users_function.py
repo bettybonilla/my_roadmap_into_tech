@@ -16,11 +16,11 @@ import csv
 
 def print_users():
     with open("users.csv") as file:
-        csv_reader_file = csv.reader(file)
+        csv_reader = csv.reader(file)
 
-        next(csv_reader_file)
-        for row in csv_reader_file:
-            print(f"{row[0]} {row[1]}")
+        next(csv_reader)
+        for row_list in csv_reader:
+            print(f"{row_list[0]} {row_list[1]}")
 
 
 if __name__ == "__main__":

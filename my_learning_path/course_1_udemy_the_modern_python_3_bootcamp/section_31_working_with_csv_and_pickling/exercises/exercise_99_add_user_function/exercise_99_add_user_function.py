@@ -18,8 +18,8 @@ import csv
 
 def add_user(first_name: str, last_name: str):
     with open("users.csv", "a") as file:
-        csv_writer_file = csv.writer(file)
-        csv_writer_file.writerow([first_name, last_name])
+        csv_writer = csv.writer(file)
+        csv_writer.writerow([first_name, last_name])
 
 
 if __name__ == "__main__":
