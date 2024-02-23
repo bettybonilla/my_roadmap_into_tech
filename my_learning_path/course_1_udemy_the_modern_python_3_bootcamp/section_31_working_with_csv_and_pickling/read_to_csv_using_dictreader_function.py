@@ -19,7 +19,7 @@ with open("street_fighter_fighters.csv") as file:
 
     # If you want to access specific values in the CSV file, you must reference their key (like a dictionary)
     # The keys are set up automatically to be the headers if headers were provided in the CSV file
-    # Since the keys are the headers we don't have to worry about skipping unlike when using the reader() function
+    # Since the keys are the headers we don't have to worry about skipping them unlike when using the reader() function
     # Each row is an OrderedDict since the keys are always in the same order (Ex: Name, Country, Height (in cm))
     # However as previously mentioned, when we loop over the csv.DictReader object, since it is an iterator not an
     # iterable we have to comment out the previous for loop since we can only loop over an iterator once before it gets

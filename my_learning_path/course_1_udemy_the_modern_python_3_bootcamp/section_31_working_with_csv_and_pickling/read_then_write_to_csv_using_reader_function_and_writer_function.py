@@ -10,6 +10,8 @@ with open("street_fighter_fighters.csv") as file:
 
     # We need to use a nested list comprehension since, when we iterate using a list comprehension in for row_list in
     # csv_reader, it gets converted to a list of nested lists so that's why the nested list comprehension is needed
+    # As mentioned, all row data inside each row list is a string therefore we can use the .upper() string method on the
+    # row data
     csv_data_uppercased = [
         [row_data.upper() for row_data in row_list] for row_list in csv_reader
     ]

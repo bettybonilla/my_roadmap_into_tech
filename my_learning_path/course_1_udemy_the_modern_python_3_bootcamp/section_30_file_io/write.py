@@ -1,6 +1,6 @@
 """
-The below shows how we can write to files by writing text to an existing file or writing text to a non-existing file
-which gets newly created for you
+The below shows how you can write to files using the .write() method by writing text to an existing file or writing text
+to a non-existing file which gets newly created for you
 - NOTE: When you pass in “w” as an argument to the mode parameter, it will overwrite anything that was already in the
 file
 """

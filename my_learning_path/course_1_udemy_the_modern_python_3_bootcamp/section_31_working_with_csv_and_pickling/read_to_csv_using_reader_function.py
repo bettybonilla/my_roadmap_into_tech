@@ -34,6 +34,7 @@ with open("street_fighter_fighters.csv") as file:
     csv_data = list(csv_reader)
     # This will print the csv_data as a list of nested lists with each row in the CSV file being its own nested list
     # inside the list
+    # All row data inside each row list in the csv_data is a string
     # csv_data: list[list[str]]
     print(csv_data)
     print("")

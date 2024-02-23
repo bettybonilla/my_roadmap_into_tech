@@ -1,5 +1,6 @@
 """
-The below shows how you can read files using a Python program instead of the terminal Python interpreter
+The below shows how you can read to files using the .read() method by using a Python program instead of the terminal
+Python interpreter
 """
 
 file = open("hello_world.txt")

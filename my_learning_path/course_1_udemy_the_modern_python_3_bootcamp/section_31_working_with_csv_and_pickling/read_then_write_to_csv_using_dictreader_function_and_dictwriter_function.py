@@ -9,8 +9,8 @@ from typing import Any
 
 
 def cm_to_in(cm: Any) -> float:
-    # The cm argument that is being passed in from the csv_dictreader_file is a string therefore we have to convert it
-    # to a float - This way any data type that is passed in will be converted properly before it's used
+    # All row data inside each row OrderedDict in the csv_data is a string therefore the cm argument that is being
+    # passed in is a string so we have to convert it to a float before it can be used
     inches = float(cm) * 0.393701
     inches_rounded = round(inches, 2)
     return inches_rounded
