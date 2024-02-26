@@ -3,12 +3,18 @@ The below shows how you would use the raise keyword to raise your own
 exceptions/errors to help other people using your function call your function
 appropriately depending on the particular exception/error you expect might
 occur
+- NOTE: When you raise an exception, the error message you provide does not
+return a str type or a None type, it does not return anything so you would use
+the NoReturn type hint in your function’s signature
 """
 
+from typing import NoReturn
 
-# In the colorize() function below, it takes 2 strings and returns a string
+
+# In the colorize() function below, it takes 2 strings and returns a string or
+# an error message if an exception is raised which is signified with NoReturn
 # This is just an example, it doesn't actually colorize the text
-def colorize(text: str, color: str) -> str:
+def colorize(text: str, color: str) -> str | NoReturn:
     colors = ("red", "blue", "green", "yellow")
 
     # When raising your own errors and writing error messages, it's best to do
@@ -23,15 +29,18 @@ def colorize(text: str, color: str) -> str:
         raise TypeError("Color must be instance of str")
     if color not in colors:
         raise ValueError("Color is invalid color")
-    print(f"Printed {text} in {color}")
+    return f"Printed {text} in {color}"
 
 
-colorize("hello", "red")
+print(colorize("hello", "red"))
 
 # For this type of exception/error, we can raise a TypeError
-# colorize(4, "red")
-# colorize("hello", 4)
+# print(colorize(4, "red"))
+# print(colorize("hello", 4))
 
 # For this type of exception/error, we can raise a ValueError
-# colorize("hello", "purple")
-# colorize("hello", "chicken")
+# print(colorize("hello", "purple"))
+# print(colorize("hello", "chicken"))
+
+# References
+# https://youtu.be/GHa4x7BO25I
