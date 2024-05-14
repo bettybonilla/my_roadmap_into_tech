@@ -27,10 +27,10 @@ computer = random.randint(1, 10)
 while True:
     # Variable shadowing should be avoided which is when you reuse the same
     # exact variable name for altered data
-    # When you validate data, it's good practice to rename variables
-    # separately with the altered data since the data has been altered from
-    # the original variable and this way you can still access the original
-    # variable with the unaltered data if needed
+    # When you validate data or in general alter data in any way, it's good
+    # practice to rename variables separately with the altered data since the
+    # raw data has been altered from the original variable and this way you can
+    # still access the original variable with the unaltered raw data if needed
     # However, if you don't need to have 2 separate variables, you can also
     # cast the input() function inside the int() type conversion function
     # player_input = int(input("Guess the number between 1 and 10: ").strip())

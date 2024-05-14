@@ -38,11 +38,16 @@ print(type(soup))
 # Using tags:
 # - .find() method - Returns first matching tag
 # - .find_all() method - Returns a list of all matching tags
+# - Finding attributes:
+# - find by id: .find(id="foo")
+# - find by class: .find_all(class_="bar")
+# - find by other attribute: .find_all(attrs={"data-baz": True})
 # Using CSS selectors:
 # - .select() method - Returns a list of elements matching a CSS selector
 # - CSS selectors:
 # - select by id: "#foo"
 # - select by class: ".bar"
+# - select by other attribute: "[data-baz]"
 # - select children: div > p
 # - select descendants: div p
 # ----------------------------------------------------------------------------------------------------------------------
