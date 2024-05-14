@@ -3,9 +3,6 @@ from dataclasses import dataclass
 
 @dataclass
 class _BookInformation:
-    title = str
-    number_of_copies = int
-
     def __init__(self, title: str, number_of_copies: int):
         self.title = title
         self.number_of_copies = number_of_copies
