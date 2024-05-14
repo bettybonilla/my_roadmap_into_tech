@@ -14,7 +14,7 @@ import unittest
 from activities import eat, nap, is_funny, laugh
 
 
-class TestActivity(unittest.TestCase):
+class Test(unittest.TestCase):
     def test_eat_healthy(self):
         """eat should have a positive message for healthy eating"""
         self.assertEqual(
