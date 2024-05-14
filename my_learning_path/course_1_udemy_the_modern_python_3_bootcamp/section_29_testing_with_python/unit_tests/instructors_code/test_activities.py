@@ -1,6 +1,6 @@
 """
 - NOTE: The below doesn't follow the standard naming convention and the instructor chose to separate each assertion into
-it’s own unit test method to have each assertion as a separate test instead of grouping them in a unit test method
+its own unit test method to have each assertion as a separate test instead of grouping them in a unit test method
 corresponding to the function/method
 - Ex: How I would modify the instructor’s code
     # This would run as one unit test

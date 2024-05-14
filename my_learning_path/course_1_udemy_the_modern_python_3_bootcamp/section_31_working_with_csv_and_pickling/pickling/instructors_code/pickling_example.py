@@ -42,7 +42,7 @@ with open("pets.pickle", "wb") as file:
     # Then you can use the pickle.dump() function and pass in the object you want to dump into the pickle file (you can
     # also use a tuple to pass in multiple objects) and then pass in the pickle file
     # Those objects will be stored and serialized in the pickle file you passed in - For convenience, you should always
-    # open pickle files in Sublime
+    # open pickle files in Sublime Text
     pickle.dump(blue, file)
 
 # To unpickle an object:
