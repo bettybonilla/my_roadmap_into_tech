@@ -16,8 +16,7 @@
 """
 
 from functools import wraps
-from typing import Any
-from typing import Callable
+from typing import Any, Callable
 
 
 def double_return(func: Callable) -> Callable:

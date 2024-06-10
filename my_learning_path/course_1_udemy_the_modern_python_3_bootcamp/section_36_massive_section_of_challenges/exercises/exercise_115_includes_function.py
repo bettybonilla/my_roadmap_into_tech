@@ -16,8 +16,7 @@
     includes('abcd', 'e')  # False
 """
 
-from typing import Any
-from typing import Optional
+from typing import Any, Optional
 
 
 def includes(
