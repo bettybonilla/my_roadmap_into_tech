@@ -1,7 +1,7 @@
 """
 The below represents a node and a singly-linked list in code
 
-References:
+References
 - https://www.geeksforgeeks.org/python-linked-list/
 """
 
