@@ -33,6 +33,7 @@ if __name__ == "__main__":
     stack = create_stack()
     print(stack)
     insert_to_front(stack, 4)
+    insert_to_front(stack, 7)
     print(stack)
     print(remove_from_front(stack))
     print(stack)
