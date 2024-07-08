@@ -37,4 +37,3 @@ if __name__ == "__main__":
     print(stack)
     print(remove_from_front(stack))
     print(stack)
-    print(remove_from_front(stack))
