@@ -8,8 +8,10 @@ References
 
 def factorial(num: int) -> int:
     print(f"We are at: {num}")
+    # Base case (exit condition)
     if num == 1:
         return 1
+    # Recursive case
     else:
         return num * factorial(num - 1)
 
