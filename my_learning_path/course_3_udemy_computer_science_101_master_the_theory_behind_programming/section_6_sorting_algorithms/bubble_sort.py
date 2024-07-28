@@ -25,8 +25,7 @@ def bubble_sort(your_list: list[int]):
                 # Keep track of swapping
                 swapped = True
 
-        # If no swapping occurred this means the list is already sorted, so we can early escape since there's no need
-        # for further comparison
+        # If no swapping occurred this means the list is already sorted therefore we can early escape
         if not swapped:
             break
 

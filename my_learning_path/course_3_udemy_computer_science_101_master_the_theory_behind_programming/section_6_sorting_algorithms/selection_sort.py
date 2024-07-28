@@ -30,5 +30,5 @@ def selection_sort(your_list: list[int]):
 if __name__ == "__main__":
     data = [-2, 45, 0, 11, -9]
     selection_sort(data)
-    print("Sorted list in ascending order")
+    print("List sorted in ascending order")
     print(data)
