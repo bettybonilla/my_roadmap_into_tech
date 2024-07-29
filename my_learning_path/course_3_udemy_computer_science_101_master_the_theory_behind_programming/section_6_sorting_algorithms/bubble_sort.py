@@ -6,11 +6,11 @@ The below represents bubble sort in code
 def bubble_sort(your_list: list[int]):
     n = len(your_list)
 
+    # Keep track of swapping
+    swapped = False
+
     # Loop through the list n times according to the number of elements in the list
     for i in range(0, n):
-
-        # Keep track of swapping
-        swapped = False
 
         # Loop through all elements in the list, minus the already sorted at the end, to compare elements
         for j in range(0, n - i - 1):
@@ -27,11 +27,15 @@ def bubble_sort(your_list: list[int]):
 
         # If no swapping occurred this means the list is already sorted therefore we can early escape
         if not swapped:
+            print("List is already sorted")
             break
+
+    if swapped:
+        print("List sorted in ascending order")
 
 
 if __name__ == "__main__":
     data = [-2, 45, 0, 11, -9]
+    # data = [1, 2, 3, 4, 5]
     bubble_sort(data)
-    print("Sorted list in ascending order")
     print(data)
