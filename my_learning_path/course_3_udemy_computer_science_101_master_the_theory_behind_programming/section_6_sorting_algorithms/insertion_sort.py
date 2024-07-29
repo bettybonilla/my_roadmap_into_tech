@@ -14,7 +14,7 @@ def insertion_sort(your_list: list[int]):
         # make room to insert key in the correct position
         while j >= 0 and key < your_list[j]:
             your_list[j + 1] = your_list[j]
-            j = j - 1
+            j -= 1
 
         # Insert key in the correct position
         your_list[j + 1] = key
