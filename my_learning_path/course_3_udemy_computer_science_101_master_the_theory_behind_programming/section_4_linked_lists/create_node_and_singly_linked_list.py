@@ -45,9 +45,21 @@ class SinglyLinkedList:
 if __name__ == "__main__":
     singly_linked_list = SinglyLinkedList()
     singly_linked_list.insert_at_front(6)
+    print("head node:", singly_linked_list.head)
+    print("head node data point:", singly_linked_list.head.data)
+    print("head node next link:", singly_linked_list.head.next)
+    print("")
+
     singly_linked_list.display_singly_linked_list()
     print("")
 
     # Now this new Node is at the front of the SinglyLinkedList object
     singly_linked_list.insert_at_front(72)
+    print("head node:", singly_linked_list.head)
+    print("head node data point:", singly_linked_list.head.data)
+    print("head node next link:", singly_linked_list.head.next)
+    print("next node data point:", singly_linked_list.head.next.data)
+    print("next node next link:", singly_linked_list.head.next.next)
+    print("")
+
     singly_linked_list.display_singly_linked_list()
