@@ -20,16 +20,16 @@ class Node:
 class SinglyLinkedList:
     # Initializes the SinglyLinkedList object
     def __init__(self):
-        # Initializes the head node which points to null atm since it needs to be initialized first
+        # Initializes the head node which points to null atm since it just needs to be initialized first
         self.head = None
 
-    # Adds a new Node to the front of a SinglyLinkedList object (after the head node)
+    # Adds a new Node to the front of a SinglyLinkedList object
     def insert_at_front(self, data: Any):
         # Creates the new Node and saves the data point to it
         new_node = Node(data)
-        # Points the new Node's next link to the head node which points to null atm but would point to the next node
+        # Points the new Node's next link to the head node which points to null atm
         new_node.next = self.head
-        # Points the head node to the new Node which is now the next node
+        # Points the head node to the new Node
         self.head = new_node
 
     # Prints the data of each Node of the SinglyLinkedList object by traversing the singly-linked list (iterating
