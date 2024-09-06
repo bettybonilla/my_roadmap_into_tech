@@ -24,7 +24,7 @@ class SinglyLinkedList:
         self.head = None
 
     # Adds a new Node to the front of a SinglyLinkedList object
-    def insert_at_front(self, data: Any):
+    def insert_to_front(self, data: Any):
         # Creates the new Node and saves the data point to it
         new_node = Node(data)
         # Points the new Node's next link to the head node which points to null atm
@@ -44,7 +44,7 @@ class SinglyLinkedList:
 
 if __name__ == "__main__":
     singly_linked_list = SinglyLinkedList()
-    singly_linked_list.insert_at_front(6)
+    singly_linked_list.insert_to_front(6)
     print("head node:", singly_linked_list.head)
     print("head node data point:", singly_linked_list.head.data)
     print("head node next link:", singly_linked_list.head.next)
@@ -54,7 +54,7 @@ if __name__ == "__main__":
     print("")
 
     # Now this new Node is at the front of the SinglyLinkedList object
-    singly_linked_list.insert_at_front(72)
+    singly_linked_list.insert_to_front(72)
     print("head node:", singly_linked_list.head)
     print("head node data point:", singly_linked_list.head.data)
     print("head node next link:", singly_linked_list.head.next)
