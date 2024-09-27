@@ -6,16 +6,16 @@ including, the provided integer
 - The function signature should be: def print_items(n):
 - Ex:
     - If you call print_items(10), your function should print:
-    0
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
+        0
+        1
+        2
+        3
+        4
+        5
+        6
+        7
+        8
+        9
 """
 
 
