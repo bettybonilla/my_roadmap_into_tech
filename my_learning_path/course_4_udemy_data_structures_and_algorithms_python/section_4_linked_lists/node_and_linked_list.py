@@ -163,13 +163,16 @@ class LinkedList:
 
     # Prints the value of each node of the LinkedList object
     def display_linked_list(self):
-        values = []
-        current_node = self.head
-        while current_node:
-            values.append(str(current_node.value))
-            current_node = current_node.next
-        values.append("None")
-        print(" -> ".join(values))
+        if self.head is None:
+            print("Empty linked list")
+        else:
+            values = []
+            current_node = self.head
+            while current_node:
+                values.append(str(current_node.value))
+                current_node = current_node.next
+            values.append("None")
+            print(" -> ".join(values))
 
         # The code below has been refactored to the code above
         # current_node = self.head
