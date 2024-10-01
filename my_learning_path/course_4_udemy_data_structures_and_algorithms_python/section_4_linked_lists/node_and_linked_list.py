@@ -12,7 +12,7 @@ class Node:
         self.next = None
 
 
-class LinkedList:
+class SinglyLinkedList:
     # Initializer AKA constructor
     def __init__(self, value: Any):
         new_node = Node(value)
