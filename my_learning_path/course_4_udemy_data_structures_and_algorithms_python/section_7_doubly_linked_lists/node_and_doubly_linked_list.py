@@ -27,14 +27,14 @@ class DoublyLinkedList:
         if index < 0 or index >= self.length:
             return None
         temp = self.head
-        # If the specified index is towards the front of the DoublyLinkedList object, we start at the front
+        # If the specified index is less than half of the DoublyLinkedList length, we start at the front
         if index < self.length / 2:
             # Usually an i would be used as the variable in a for loop however, if it's not going to be used, in general
             # it's good practice to use an _ underscore instead when ANY variable is not going to be used in code since
             # you're only supposed to use a variable in code if it's actually going to be used
             for _ in range(index):
                 temp = temp.next
-        # If the specified index is towards the end of the DoublyLinkedList object, we start at the end
+        # If the specified index is greater than or equal to half of the DoublyLinkedList length, we start at the end
         else:
             temp = self.tail
             for _ in range(self.length - 1, index, -1):
