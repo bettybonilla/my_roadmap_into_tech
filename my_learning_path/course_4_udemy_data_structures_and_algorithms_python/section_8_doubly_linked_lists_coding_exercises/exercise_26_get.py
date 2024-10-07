@@ -101,6 +101,7 @@ class DoublyLinkedList:
         else:
             values = []
             current_node = self.head
+            values.append("None")
             while current_node:
                 values.append(str(current_node.value))
                 current_node = current_node.next
