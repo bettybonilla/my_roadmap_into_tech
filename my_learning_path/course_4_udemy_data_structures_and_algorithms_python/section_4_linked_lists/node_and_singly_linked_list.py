@@ -153,7 +153,6 @@ class SinglyLinkedList:
         temp = self.head
         self.head = self.tail
         self.tail = temp
-        after_node = temp.next
         before_node = None
         for _ in range(self.length):
             after_node = temp.next
