@@ -44,7 +44,7 @@ class LinkedList:
         self.length += 1
 
     def reverse_between(self, start_index: int, end_index: int):
-        if self.head is None or self.length == 1:
+        if self.length <= 1:
             return None
         list1 = []
         temp = self.head
