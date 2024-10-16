@@ -1,16 +1,16 @@
 """
 Give the final output and the remaining elements on the queue
-- push(10)
-- pop(0)
-- push(2)
-- push(5)
-- push("C")
-- pop(0)
-- pop(0)
-- push(14)
-- push("Dog")
-- pop(0)
-- pop(0)
+- enqueue(10)
+- dequeue()
+- enqueue(2)
+- enqueue(5)
+- enqueue("C")
+- dequeue()
+- dequeue()
+- enqueue(14)
+- enqueue("Dog")
+- dequeue()
+- dequeue()
 """
 
 queue = []

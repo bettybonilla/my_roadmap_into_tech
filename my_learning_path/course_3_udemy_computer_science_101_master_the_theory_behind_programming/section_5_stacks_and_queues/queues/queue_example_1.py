@@ -1,17 +1,17 @@
 """
 Give the final output and the remaining elements on the queue
-- push(4)
-- push(2)
-- push(15)
-- pop(0)
-- push(27)
-- pop(0)
-- pop(0)
-- push(3)
-- push(4)
-- pop(0)
-- pop(0)
-- pop(0)
+- enqueue(4)
+- enqueue(2)
+- enqueue(15)
+- dequeue()
+- enqueue(27)
+- dequeue()
+- dequeue()
+- enqueue(3)
+- enqueue(4)
+- dequeue()
+- dequeue()
+- dequeue()
 """
 
 queue = []
