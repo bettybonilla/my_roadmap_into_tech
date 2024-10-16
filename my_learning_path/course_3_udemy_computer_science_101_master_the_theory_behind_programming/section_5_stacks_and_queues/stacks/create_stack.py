@@ -1,5 +1,5 @@
 """
-The below represents a stack in code
+The below represents a stack using a list in code
 """
 
 from typing import Any, NoReturn, Optional
@@ -16,24 +16,28 @@ def is_empty(your_stack: list[Any]) -> bool:
     return len(your_stack) == 0
 
 
-# Inserts item/element to the front of the stack
-def insert_to_front(your_stack: list[Any], item: Any):
-    your_stack.insert(0, item)
-    print(f"{item} was inserted to the front of the stack")
+# Adds an item/element to the top of the stack
+def push(your_stack: list[Any], item: Any):
+    your_stack.append(item)
+    print(f"{item} was added to the top of the stack")
 
 
-# Removes item/element at the front of the stack
-def remove_from_front(your_stack: list[Any]) -> Optional[Any]:
+# Removes an item/element from the top of the stack
+def pop(your_stack: list[Any]) -> Optional[Any]:
     if is_empty(your_stack):
         return None
-    return your_stack.pop(0)
+    return your_stack.pop()
 
 
 if __name__ == "__main__":
     stack = create_stack()
     print(stack)
-    insert_to_front(stack, 4)
-    insert_to_front(stack, 7)
+    push(stack, 4)
+    push(stack, 7)
     print(stack)
-    print(remove_from_front(stack))
+    print("popped item:", pop(stack))
+    print("empty stack?", is_empty(stack))
+    print(stack)
+    print("popped item:", pop(stack))
+    print("empty stack?", is_empty(stack))
     print(stack)
