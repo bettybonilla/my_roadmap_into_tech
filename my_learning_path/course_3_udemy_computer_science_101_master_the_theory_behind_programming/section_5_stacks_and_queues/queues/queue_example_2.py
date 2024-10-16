@@ -34,6 +34,7 @@ if __name__ == "__main__":
     removed_elements.append(queue.pop(0))
     removed_elements.append(queue.pop(0))
     # print(queue)
+    # print("")
 
     print("Output")
     print("Removed elements:", removed_elements)
