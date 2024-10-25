@@ -58,7 +58,7 @@ class HashTable:
         return all_keys
 
     # Prints the HashTable object
-    def display_table(self):
+    def display_hash_table(self):
         for i, val in enumerate(self.data_map):
             print(i, ":", val)
 
@@ -67,12 +67,12 @@ if __name__ == "__main__":
     print("\n----- Test: Instantiates a Hash Table -----\n")
     my_hash_table = HashTable()
     print("hash table:")
-    my_hash_table.display_table()
+    my_hash_table.display_hash_table()
 
     print("\n----- Test: Sets/stores a key-value pair in the Hash Table -----\n")
     my_hash_table.set_item("bolts", 1400)
     print("hash table:")
-    my_hash_table.display_table()
+    my_hash_table.display_hash_table()
 
     print(
         "\n----- Test: Sets/stores multiple key-value pairs in the Hash Table -----\n"
@@ -80,7 +80,7 @@ if __name__ == "__main__":
     my_hash_table.set_item("washers", 50)
     my_hash_table.set_item("lumber", 70)
     print("hash table:")
-    my_hash_table.display_table()
+    my_hash_table.display_hash_table()
 
     print("\n----- Test: Gets the value for the key in the Hash Table -----\n")
     print("value for bolts:", my_hash_table.get_item("bolts"))
