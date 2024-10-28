@@ -5,10 +5,10 @@ The below represents a hash table in code
 from typing import Optional
 
 
-# You should always have a prime number of addresses - A prime number increases the amount of randomness for how the
-# key-value pairs are going to be distributed in the hash table and reduces collisions
 class HashTable:
     # Initializer AKA constructor
+    # You should always have a prime number of addresses - A prime number increases the amount of randomness for how the
+    # key-value pairs are going to be distributed in the hash table and reduces collisions
     def __init__(self, size: int = 7):
         # Creates the data_map list with 7 items initialized to None
         self.data_map = [None] * size
