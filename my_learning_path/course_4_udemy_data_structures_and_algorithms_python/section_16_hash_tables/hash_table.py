@@ -24,11 +24,11 @@ class HashTable:
                     return self.data_map[index][i][1]
         return None
 
-    # Sets/stores the key-value pair to the address index in the HashTable object with separate chaining
+    # Sets/stores the key-value pair to the address index in the HashTable object using separate chaining
     def set_item(self, key: str, value: int):
         # Sets the index variable to the address index in the data_map list
         index = self.__hash(key)
-        # Initializes an empty list at the index in the data_map list if a list hasn't already been created
+        # Initializes an empty list at the index in the data_map list if a list doesn't already exist
         if self.data_map[index] is None:
             self.data_map[index] = []
         # Otherwise, adds the key-value pair to the newly created or already existing list at the index in the data_map
