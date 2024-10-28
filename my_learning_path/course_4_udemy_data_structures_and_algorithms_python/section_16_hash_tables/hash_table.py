@@ -13,7 +13,8 @@ class HashTable:
         # Creates the data_map list with 7 items initialized to None
         self.data_map = [None] * size
 
-    # Returns the value for the specified key of the key-value pair at the address index in the HashTable object
+    # Performs a key lookup (search by key) to return the value for the specified key of the key-value pair at the
+    # address index in the HashTable object
     def get_item(self, key: str) -> Optional[int]:
         # Sets the index variable to the address index in the data_map list
         index = self.__hash(key)
@@ -39,11 +40,11 @@ class HashTable:
     def __hash(self, key: str) -> int:
         my_hash = 0
         for letter in key:
-            # The ord() function gets the ASCII integer value for each letter as you iterate through the loop
+            # The ord() function gets the ASCII integer value for each letter in the key as you iterate through the loop
             # Then you multiply by prime number 23 - You can use any prime number here
-            # Then the % modulo operator is used with prime number 7 since, if you divide any number by 7, the remainder
-            # will be between 0 and 6 and this will give you the address index in the data_map list where your key-value
-            # pair will be stored
+            # Then the % modulo operator is used with prime number 7 (data_map list size) since, if you divide any
+            # number by 7, the remainder will be between 0 and 6 and this will give you the address index in the
+            # data_map list where your key-value pair will be stored
             my_hash = (my_hash + ord(letter) * 23) % len(self.data_map)
         return my_hash
 
