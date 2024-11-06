@@ -65,11 +65,11 @@ class LinkedList:
 
     def binary_to_decimal(self) -> int:
         list1 = []
-        deca_num = 0
         temp = self.head
         for _ in range(self.length):
             list1.append(temp.value)
             temp = temp.next
+        deca_num = 0
         for i, num in enumerate(list1[::-1]):
             if num == 1:
                 deca_num += 2**i
