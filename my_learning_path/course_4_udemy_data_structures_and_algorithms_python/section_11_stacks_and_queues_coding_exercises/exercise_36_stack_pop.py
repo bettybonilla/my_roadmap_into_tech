@@ -68,3 +68,21 @@ if __name__ == "__main__":
 
     print("\nStack after pop():")
     my_stack.print_stack()
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    Stack before pop():
+    1
+    2
+    3
+    4
+
+    Popped node:
+    1
+
+    Stack after pop():
+    2
+    3
+    4
+    """

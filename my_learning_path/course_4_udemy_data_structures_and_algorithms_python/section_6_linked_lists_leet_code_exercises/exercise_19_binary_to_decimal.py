@@ -141,3 +141,13 @@ if __name__ == "__main__":
         print("Test case 5 passed, returned: ", result)
     except AssertionError:
         print("Test case 5 failed, returned: ", result)
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    Test case 1 passed, returned:  6
+    Test case 2 passed, returned:  8
+    Test case 3 passed, returned:  0
+    Test case 4 passed, returned:  1
+    Test case 5 passed, returned:  13
+    """

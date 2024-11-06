@@ -53,3 +53,14 @@ if __name__ == "__main__":
 
     print("\nStack after push(1):")
     my_stack.print_stack()
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    Stack before push(1):
+    2
+
+    Stack after push(1):
+    1
+    2   
+    """

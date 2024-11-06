@@ -160,3 +160,29 @@ if __name__ == "__main__":
 
     print("\nDLL after insert(4) at end:")
     my_doubly_linked_list.print_list()
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    DLL before insert():
+    1
+    3
+
+    DLL after insert(2) in middle:
+    1
+    2
+    3
+
+    DLL after insert(0) at beginning:
+    0
+    1
+    2
+    3
+
+    DLL after insert(4) at end:
+    0
+    1
+    2
+    3
+    4
+    """

@@ -160,3 +160,35 @@ if __name__ == "__main__":
     print(my_linked_list.remove(2).value)
     print("LL after remove() of last node:")
     my_linked_list.print_list()
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    LL before remove():
+    1
+    2
+    3
+    4
+    5
+
+    Removed node:
+    3
+    LL after remove() in middle:
+    1
+    2
+    4
+    5
+
+    Removed node:
+    1
+    LL after remove() of first node:
+    2
+    4
+    5
+
+    Removed node:
+    5
+    LL after remove() of last node:
+    2
+    4
+    """

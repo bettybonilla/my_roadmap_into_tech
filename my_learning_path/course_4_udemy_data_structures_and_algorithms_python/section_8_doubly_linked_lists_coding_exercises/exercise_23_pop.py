@@ -83,3 +83,11 @@ if __name__ == "__main__":
     print(my_doubly_linked_list.pop().value)
     # (0) Items - Returns None
     print(my_doubly_linked_list.pop())
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    2
+    1
+    None
+    """

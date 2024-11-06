@@ -176,3 +176,35 @@ if __name__ == "__main__":
     print(my_doubly_linked_list.remove(2).value)
     print("DLL after remove() of last node:")
     my_doubly_linked_list.print_list()
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    DLL before remove():
+    1
+    2
+    3
+    4
+    5
+
+    Removed node:
+    3
+    DLL after remove() in middle:
+    1
+    2
+    4
+    5
+
+    Removed node:
+    1
+    DLL after remove() of first node:
+    2
+    4
+    5
+
+    Removed node:
+    5
+    DLL after remove() of last node:
+    2
+    4
+    """

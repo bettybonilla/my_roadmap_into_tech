@@ -88,3 +88,9 @@ if __name__ == "__main__":
     # Raises an error when None is returned
     # AttributeError: 'NoneType' object has no attribute 'value'
     # print(result.value)  # Output: 4
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    4
+    """

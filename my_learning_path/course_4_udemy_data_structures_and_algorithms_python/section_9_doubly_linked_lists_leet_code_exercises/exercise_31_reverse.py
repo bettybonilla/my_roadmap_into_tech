@@ -78,3 +78,21 @@ if __name__ == "__main__":
 
     print("\nDLL after reverse():")
     my_doubly_linked_list.print_list()
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    DLL before reverse():
+    1
+    2
+    3
+    4
+    5
+
+    DLL after reverse():
+    5
+    4
+    3
+    2
+    1
+    """

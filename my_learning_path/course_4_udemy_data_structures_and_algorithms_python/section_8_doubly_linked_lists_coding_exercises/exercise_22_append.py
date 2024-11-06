@@ -67,3 +67,15 @@ if __name__ == "__main__":
 
     print("Doubly Linked List:")
     my_doubly_linked_list.print_list()
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    Head: 1
+    Tail: 2
+    Length: 2 
+
+    Doubly Linked List:
+    1
+    2
+    """

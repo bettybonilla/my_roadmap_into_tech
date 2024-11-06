@@ -128,3 +128,19 @@ if __name__ == "__main__":
 
     print("\nDLL after set_value():")
     my_doubly_linked_list.print_list()
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    DLL before set_value():
+    11
+    3
+    23
+    7
+
+    DLL after set_value():
+    11
+    4
+    23
+    7
+    """

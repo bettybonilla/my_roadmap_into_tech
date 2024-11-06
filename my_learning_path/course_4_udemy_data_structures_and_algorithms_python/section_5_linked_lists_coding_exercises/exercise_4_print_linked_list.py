@@ -40,3 +40,11 @@ if __name__ == "__main__":
     my_linked_list.append(2)
     my_linked_list.append(3)
     my_linked_list.print_list()
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    1
+    2
+    3
+    """

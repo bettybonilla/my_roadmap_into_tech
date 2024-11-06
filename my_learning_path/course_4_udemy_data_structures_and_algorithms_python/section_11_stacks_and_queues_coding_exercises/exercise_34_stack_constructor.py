@@ -34,3 +34,10 @@ if __name__ == "__main__":
 
     print("Top:", my_stack.top.value)
     print("Height:", my_stack.height)
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    Top: 4
+    Height: 1
+    """

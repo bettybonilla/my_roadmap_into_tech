@@ -91,3 +91,16 @@ if __name__ == "__main__":
 
     print("\nmy_dll_2 is_palindrome:")
     print(my_dll_2.is_palindrome())
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    my_dll_1 is_palindrome:
+    True
+    
+    my_dll_1 is_palindrome:
+    True
+
+    my_dll_2 is_palindrome:
+    False
+    """

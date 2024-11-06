@@ -59,3 +59,14 @@ if __name__ == "__main__":
 
     print("\nQueue after enqueue(2):")
     my_queue.print_queue()
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    Queue before enqueue(2):
+    1
+
+    Queue after enqueue(2):
+    1
+    2
+    """

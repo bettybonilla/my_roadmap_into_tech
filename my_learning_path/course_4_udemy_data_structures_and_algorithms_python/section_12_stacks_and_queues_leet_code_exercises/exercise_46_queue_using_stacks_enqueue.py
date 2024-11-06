@@ -53,3 +53,10 @@ if __name__ == "__main__":
 
     # Check if the queue is empty
     print("Is the queue empty?", q.is_empty())
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    Front of the queue: 1
+    Is the queue empty? False
+    """

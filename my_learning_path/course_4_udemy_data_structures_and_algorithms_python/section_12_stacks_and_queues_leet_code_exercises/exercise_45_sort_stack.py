@@ -77,3 +77,21 @@ if __name__ == "__main__":
 
     print("\nStack after sort_stack:")
     my_stack.print_stack()
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    Stack before sort_stack():
+    2
+    4
+    5
+    1
+    3
+
+    Stack after sort_stack:
+    1
+    2
+    3
+    4
+    5
+    """

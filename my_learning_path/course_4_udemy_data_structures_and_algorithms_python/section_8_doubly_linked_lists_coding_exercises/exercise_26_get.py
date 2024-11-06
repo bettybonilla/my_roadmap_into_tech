@@ -120,3 +120,13 @@ if __name__ == "__main__":
 
     print("\nGet node from second half of DLL:")
     print(my_doubly_linked_list.get(2).value)
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    Get node from first half of DLL:
+    1
+
+    Get node from second half of DLL:
+    2
+    """

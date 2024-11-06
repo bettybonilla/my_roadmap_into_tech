@@ -69,3 +69,19 @@ if __name__ == "__main__":
 
     print("\nDLL after swap_first_last():")
     my_doubly_linked_list.print_list()
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    DLL before swap_first_last():
+    1
+    2
+    3
+    4
+
+    DLL after swap_first_last():
+    4
+    2
+    3
+    1
+    """

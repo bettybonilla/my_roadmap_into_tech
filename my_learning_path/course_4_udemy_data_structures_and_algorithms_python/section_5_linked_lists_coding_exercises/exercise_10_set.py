@@ -118,3 +118,19 @@ if __name__ == "__main__":
 
     print("\nLL after set_value():")
     my_linked_list.print_list()
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    LL before set_value():
+    11
+    3
+    23
+    7
+
+    LL after set_value():
+    11
+    4
+    23
+    7
+    """

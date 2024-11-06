@@ -74,3 +74,11 @@ if __name__ == "__main__":
     print(my_queue.dequeue().value)
     # (0) Items - Returns None
     print(my_queue.dequeue())
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    1
+    2
+    None
+    """

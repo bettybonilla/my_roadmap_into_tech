@@ -104,3 +104,26 @@ if __name__ == "__main__":
     print("Length:", my_doubly_linked_list.length, "\n")
     print("Doubly Linked List:")
     my_doubly_linked_list.print_list()
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    Before prepend():
+    Head: 2
+    Tail: 3
+    Length: 2 
+
+    Doubly Linked List:
+    2
+    3
+
+    After prepend():
+    Head: 1
+    Tail: 3
+    Length: 3 
+
+    Doubly Linked List:
+    1
+    2
+    3
+    """

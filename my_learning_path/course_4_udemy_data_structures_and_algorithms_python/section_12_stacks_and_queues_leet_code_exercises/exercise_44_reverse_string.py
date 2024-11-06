@@ -41,3 +41,9 @@ def reverse_string(string: str) -> str:
 if __name__ == "__main__":
     my_string = "hello"
     print(reverse_string(my_string))
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    olleh
+    """

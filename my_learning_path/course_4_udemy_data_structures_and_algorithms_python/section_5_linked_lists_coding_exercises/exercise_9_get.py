@@ -107,3 +107,9 @@ if __name__ == "__main__":
     my_linked_list.append(3)
 
     print(my_linked_list.get(3).value)
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    3
+    """

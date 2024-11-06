@@ -69,3 +69,10 @@ if __name__ == "__main__":
     my_linked_list_2.append(3)
     my_linked_list_2.append(4)
     print(my_linked_list_2.has_loop())  # Output: False
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    True
+    False
+    """

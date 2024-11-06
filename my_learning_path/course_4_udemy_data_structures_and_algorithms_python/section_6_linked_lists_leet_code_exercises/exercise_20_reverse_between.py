@@ -123,3 +123,34 @@ if __name__ == "__main__":
     empty_list.reverse_between(0, 0)
     print("Reversed empty linked list: ")
     empty_list.print_list()
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    Original linked list: 
+    1
+    2
+    3
+    4
+    5
+    Reversed sublist (2, 4): 
+    1
+    2
+    5
+    4
+    3
+    Reversed entire linked list: 
+    3
+    4
+    5
+    2
+    1
+    Reversed sublist of length 1 (3, 3): 
+    3
+    4
+    5
+    2
+    1
+    Reversed empty linked list: 
+    None
+    """

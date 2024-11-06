@@ -24,3 +24,11 @@ if __name__ == "__main__":
     my_stack.push(3)
 
     my_stack.print_stack()
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    3 
+    2
+    1
+    """

@@ -145,3 +145,29 @@ if __name__ == "__main__":
 
     print("\nLL after insert(4) at end:")
     my_linked_list.print_list()
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    LL before insert():
+    1
+    3
+
+    LL after insert(2) in middle:
+    1
+    2
+    3
+
+    LL after insert(0) at beginning:
+    0
+    1
+    2
+    3
+
+    LL after insert(4) at end:
+    0
+    1
+    2
+    3
+    4
+    """

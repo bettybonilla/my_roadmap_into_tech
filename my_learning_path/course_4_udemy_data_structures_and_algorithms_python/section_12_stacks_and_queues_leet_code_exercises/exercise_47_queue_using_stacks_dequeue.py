@@ -63,3 +63,16 @@ if __name__ == "__main__":
 
     # Dequeue from an empty queue and check if it returns None
     print("Dequeued value from empty queue:", q.dequeue())
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    Front of the queue: 1
+    Dequeued value: 1
+    Dequeued value: 2
+    Front of the queue: 3
+    Dequeued value: 3
+    Dequeued value: 4
+    Is the queue empty? True
+    Dequeued value from empty queue: None
+    """

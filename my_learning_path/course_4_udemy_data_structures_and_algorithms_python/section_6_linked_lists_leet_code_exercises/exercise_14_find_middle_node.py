@@ -114,3 +114,9 @@ if __name__ == "__main__":
     # my_linked_list.append(6)  # Output: 4
 
     print(my_linked_list.find_middle_node().value)
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    3
+    """

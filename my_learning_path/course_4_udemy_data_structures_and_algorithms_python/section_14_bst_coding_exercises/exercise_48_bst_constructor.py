@@ -27,3 +27,9 @@ class BinarySearchTree:
 if __name__ == "__main__":
     my_tree = BinarySearchTree()
     print("Root:", my_tree.root)
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    Root: None
+    """

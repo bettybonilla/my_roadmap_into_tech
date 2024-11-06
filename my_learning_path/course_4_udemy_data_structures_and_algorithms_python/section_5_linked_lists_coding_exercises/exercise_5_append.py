@@ -64,3 +64,15 @@ if __name__ == "__main__":
 
     print("Linked List:")
     my_linked_list.print_list()
+
+    """
+    EXPECTED OUTPUT:
+    ----------------
+    Head: 1
+    Tail: 2
+    Length: 2 
+
+    Linked List:
+    1
+    2
+    """
