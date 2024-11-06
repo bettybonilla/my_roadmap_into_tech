@@ -96,7 +96,7 @@ def application_logic():
         print("Enter 3 to return a book")
         print("Enter 4 to exit\n")
         user_choice = int(input())
-        # Since this choice quits/exits the program it is not unit testable and
+        # Since this choice exits/quits the program it is not unit testable and
         # it's why it's not a match-case statement in the user_action function
         # since all of those match-case statements are unit testable
         if user_choice == 4:

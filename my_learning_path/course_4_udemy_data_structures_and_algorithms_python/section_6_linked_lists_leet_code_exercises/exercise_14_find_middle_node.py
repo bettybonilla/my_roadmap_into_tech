@@ -44,8 +44,8 @@ class LinkedList:
             fast = fast.next
             slow = slow.next
             # Alternative code
-            # If you are ONLY expecting a None falsy value in your conditional logic then you should use is None for
-            # clarity and readability otherwise, you can use if not which encompasses all falsy values
+            # If you are ONLY expecting a None falsy value in your conditional logic then it's good practice to use
+            # is None for clarity and readability otherwise, you can use if not which encompasses all falsy values
             # if not fast.next:
             if fast.next is None:
                 break
