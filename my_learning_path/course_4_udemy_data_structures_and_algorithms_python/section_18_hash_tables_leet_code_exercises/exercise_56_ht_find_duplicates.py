@@ -33,8 +33,8 @@ from typing import NoReturn
 
 
 def find_duplicates(nums: list[int]) -> list[int | NoReturn]:
-    my_list = []
     my_dict = {i: nums.count(i) for i in nums}
+    my_list = []
     for key, value in my_dict.items():
         if value > 1:
             my_list.append(key)
