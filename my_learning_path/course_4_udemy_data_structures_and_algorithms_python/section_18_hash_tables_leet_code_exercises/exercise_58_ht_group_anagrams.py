@@ -10,7 +10,7 @@ You have been given an array of strings, where each string may contain only lowe
 
 
 def group_anagrams(strings: list[str]) -> list[list[str]]:
-    # Remember it's good practice to have your variables right above the logic your going to use it with to minimize the
+    # Remember it's good practice to have your variables right above the logic you're going to use it with to minimize
     # vertical distance within your code
     anagram_dict = {}
     for word in strings:
