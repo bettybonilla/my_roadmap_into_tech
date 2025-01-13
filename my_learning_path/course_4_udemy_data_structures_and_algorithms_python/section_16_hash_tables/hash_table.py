@@ -65,28 +65,26 @@ class HashTable:
 
 
 if __name__ == "__main__":
-    print("\n----- Test: Instantiates a Hash Table -----\n")
+    print("\n----- Test: Instantiates a HashTable -----\n")
     my_hash_table = HashTable()
     print("hash table:")
     my_hash_table.display_hash_table()
 
-    print("\n----- Test: Sets/stores a key-value pair in the Hash Table -----\n")
+    print("\n----- Test: Sets/stores a key-value pair in a HashTable -----\n")
     my_hash_table.set_item("bolts", 1400)
     print("hash table:")
     my_hash_table.display_hash_table()
 
-    print(
-        "\n----- Test: Sets/stores multiple key-value pairs in the Hash Table -----\n"
-    )
+    print("\n----- Test: Sets/stores multiple key-value pairs in a HashTable -----\n")
     my_hash_table.set_item("washers", 50)
     my_hash_table.set_item("lumber", 70)
     print("hash table:")
     my_hash_table.display_hash_table()
 
-    print("\n----- Test: Gets the value for the key in the Hash Table -----\n")
+    print("\n----- Test: Gets the value for the key in a HashTable -----\n")
     print("value for bolts:", my_hash_table.get_item("bolts"))
     print("value for washers:", my_hash_table.get_item("washers"))
     print("value for nails:", my_hash_table.get_item("nails"))
 
-    print("\n----- Test: .keys() on Hash Table -----\n")
+    print("\n----- Test: .keys() on HashTable -----\n")
     print("keys in hash table:", my_hash_table.keys())
