@@ -7,7 +7,7 @@ from abc import ABC, abstractmethod
 
 
 # Abstract base parent class
-# Uses ABC (stands for ABstractClass) to signify that the whole class is
+# Uses ABC (stands for AbstractBaseClass) to signify that the whole class is
 # abstract
 class Vehicle(ABC):
     # Private class attribute

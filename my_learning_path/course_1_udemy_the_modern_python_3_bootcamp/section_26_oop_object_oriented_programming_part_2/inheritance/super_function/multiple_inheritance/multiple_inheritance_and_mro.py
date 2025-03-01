@@ -56,6 +56,6 @@ print(piplup.walk())
 print(piplup.greet())
 print("")
 
-print(f"Piplup is an instance of Penguin: {isinstance(piplup, Aquatic)}")
-print(f"Piplup is an instance of Penguin: {isinstance(piplup, Ambulatory)}")
+print(f"Piplup is an instance of Aquatic: {isinstance(piplup, Aquatic)}")
+print(f"Piplup is an instance of Ambulatory: {isinstance(piplup, Ambulatory)}")
 print(f"Piplup is an instance of Penguin: {isinstance(piplup, Penguin)}")

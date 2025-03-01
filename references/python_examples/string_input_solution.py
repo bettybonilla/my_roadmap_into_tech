@@ -1,9 +1,11 @@
 """
-- This could be included in a my_utilities module and you would also have a
-private github repo for it
-- The my_utilities module should include convenient functions and code
-snippets so that you can import it into your own files for your convenience
-instead of copying and pasting your code around
+- Create a my_utilities private GitHub repo
+- The my_utilities repo should include convenient functions and code snippets
+so that you can pull and import it into future projects for your convenience
+instead of copying and pasting your code around and to discourage use now to
+cement learnings
+- You can implement helper functions in your my_utilities file as methods in a
+class with OOP or as functions with functional programming
 """
 
 # -----------------------------------------------------------------------------
