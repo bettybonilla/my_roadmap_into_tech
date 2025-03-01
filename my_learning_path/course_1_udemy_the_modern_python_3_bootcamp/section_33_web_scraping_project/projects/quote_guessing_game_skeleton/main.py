@@ -6,15 +6,18 @@ from scripts.scraper import retrieve_quotes
 
 SAVED_DATA_LOCATION = "data.pickle"
 
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(
-        prog='QuoteGame',
-        description='Guess a quote')
-    parser.add_argument('-d', '--download_quotes', action='store_true', help='Download quotes from the web')
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(prog="QuoteGame", description="Guess a quote")
+    parser.add_argument(
+        "-d",
+        "--download_quotes",
+        action="store_true",
+        help="Download quotes from the web",
+    )
     args = parser.parse_args()
 
     if args.download_quotes:
-        print('Downloading quotes...')
+        print("Downloading quotes...")
         _ = retrieve_quotes()
 
     quotes = []

@@ -4,10 +4,10 @@ which defines a function so you can reuse it again throughout your code
 """
 
 # -----------------------------------------------------------------------------
-# TODO Step 1: Revisit and test knowledge once conditional programming courses
-# are completed
-# TODO Step 2: Revisit and test knowledge once definition programming courses
-# are completed
+# TODO: Step 1 - Revisit and test knowledge once conditional programming courses
+#  are completed
+# TODO: Step 2 - Revisit and test knowledge once definition programming courses
+#  are completed
 # -----------------------------------------------------------------------------
 
 

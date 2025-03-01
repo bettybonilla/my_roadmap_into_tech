@@ -7,7 +7,7 @@ instead of copying and pasting your code around
 """
 
 # -----------------------------------------------------------------------------
-# TODO Revisit and finalize then add to my_utilities module
+# TODO: Revisit and finalize then add to my_utilities repo
 # -----------------------------------------------------------------------------
 
 

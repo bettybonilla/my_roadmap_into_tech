@@ -12,7 +12,7 @@ Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz",
 """
 
 # -----------------------------------------------------------------------------
-# TODO Revisit after learning arrays and for loops
+# TODO: Revisit after learning arrays and for loops
 # The code below is correct but incomplete so it would not be ready for
 # submission
 # -----------------------------------------------------------------------------

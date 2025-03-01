@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# TODO Revisit and test knowledge
+# TODO: Revisit and test knowledge
 # -----------------------------------------------------------------------------
 
 # my_list_of_fruits = ["apples", "pears", "grapes", "avocados"]

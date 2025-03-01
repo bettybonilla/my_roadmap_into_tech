@@ -5,7 +5,7 @@ within your code to describe anything complex.
 """
 
 # This is an inline comment
-# TODO This is a TODO comment
+# TODO: This is a TODO comment
 
 # Division returns float, even when dividing two ints
 print(1 / 3)
