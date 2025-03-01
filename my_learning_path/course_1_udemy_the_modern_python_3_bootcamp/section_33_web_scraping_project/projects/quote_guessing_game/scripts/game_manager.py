@@ -26,9 +26,6 @@ class GameManager:
         self.score = 0
         self.shuffle_quotes_data()
 
-    def shuffle_quotes_data(self):
-        random.shuffle(self.quotes_data)
-
     def get_quotes_data(self) -> GameQuoteDataInformation:
         quote_data = self.quotes_data.pop(0)
         self.quotes_data.append(quote_data)
@@ -40,6 +37,15 @@ class GameManager:
         hint_2 = author.split()[0][0]
         hint_3 = author.split()[-1][0]
         return GameQuoteDataInformation(quote_text, author, hint_1, hint_2, hint_3)
+
+    def get_quotes_data_count(self) -> int:
+        return len(self.quotes_data)
+
+    def get_guesses_remaining(self) -> int:
+        return self.GUESS_LIMIT - self.guess_counter
+
+    def shuffle_quotes_data(self):
+        random.shuffle(self.quotes_data)
 
     def check_user_answer_correct(
         self, user_input: str, game_quote_data: GameQuoteDataInformation
@@ -104,24 +110,18 @@ class GameManager:
                     quit(0)
             return False
 
+    def used_all_quote_data(self) -> bool:
+        if self.used_quote_data_counter == self.get_quotes_data_count():
+            return True
+        return False
+
     def display_guesses_remaining(self):
         print(f"\nGuesses remaining: {self.get_guesses_remaining()}")
-
-    def get_guesses_remaining(self) -> int:
-        return self.GUESS_LIMIT - self.guess_counter
 
     def display_score_keeping(self):
         print(
             f"\nYou've correctly guessed {self.score} out of {self.get_quotes_data_count()} quotes!\n"
         )
-
-    def get_quotes_data_count(self) -> int:
-        return len(self.quotes_data)
-
-    def used_all_quote_data(self) -> bool:
-        if self.used_quote_data_counter == self.get_quotes_data_count():
-            return True
-        return False
 
     def reset_game(self):
         self.used_quote_data_counter = 0
