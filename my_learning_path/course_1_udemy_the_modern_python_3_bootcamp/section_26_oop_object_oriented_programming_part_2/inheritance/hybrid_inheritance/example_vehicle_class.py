@@ -23,7 +23,8 @@ class Vehicle(ABC):
 # LandVehicle is a child of Vehicle and therefore inherits everything from the
 # Vehicle abstract base parent class
 class LandVehicle(Vehicle):
-    pass
+    def __str__(self) -> str:
+        pass
 
 
 # Subclass child class
@@ -65,7 +66,8 @@ class CityBus(LandVehicle):
 # WaterVehicle is a child of Vehicle and therefore inherits everything from the
 # Vehicle abstract base parent class
 class WaterVehicle(Vehicle):
-    pass
+    def __str__(self) -> str:
+        pass
 
 
 # Subclass child class
