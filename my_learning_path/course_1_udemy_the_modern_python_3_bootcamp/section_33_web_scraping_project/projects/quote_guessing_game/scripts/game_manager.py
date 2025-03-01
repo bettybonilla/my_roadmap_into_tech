@@ -29,7 +29,7 @@ class GameManager:
     def shuffle_quotes_data(self):
         random.shuffle(self.quotes_data)
 
-    def get_quote_data(self) -> GameQuoteDataInformation:
+    def get_quotes_data(self) -> GameQuoteDataInformation:
         quote_data = self.quotes_data.pop(0)
         self.quotes_data.append(quote_data)
         self.used_quote_data_counter += 1
