@@ -3,7 +3,7 @@ The below shows hybrid inheritance since it contains multi-level inheritance
 and hierarchical inheritance
 """
 
-from abc import ABC
+from abc import ABC, abstractmethod
 
 
 # Abstract base parent class
@@ -13,6 +13,7 @@ class Vehicle(ABC):
     # Private class attribute
     _wheels = 0
 
+    @abstractmethod
     def __str__(self) -> str:
         pass
 

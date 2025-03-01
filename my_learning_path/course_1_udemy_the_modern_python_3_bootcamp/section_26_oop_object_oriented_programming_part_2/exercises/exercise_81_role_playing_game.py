@@ -32,7 +32,8 @@ class NPC(Character):
     def __init__(self, name: str, hp: int, level: int):
         super().__init__(name, hp, level)
 
-    def speak(self) -> str:
+    @staticmethod
+    def speak() -> str:
         return "I heard there were monsters running around last night!"
 
 
