@@ -10,14 +10,23 @@
 import collections
 
 
-def mode(your_list: list[int]) -> int:
+def mode(your_list: list[int]) -> int | None:
     count_nums = collections.Counter(your_list)
     # print(count_nums)
-    max_value = max(count_nums)
+    max_value = max(count_nums.values())
     # print(max_value)
     for key, value in count_nums.items():
         if value == max_value:
             return key
+    return None
+
+    # Alternative code without the Python built-in collections.Counter() method
+    # count_nums = {i: your_list.count(i) for i in your_list}
+    # max_value = max(count_nums.values())
+    # for key, value in count_nums.items():
+    #     if value == max_value:
+    #         return key
+    # return None
 
 
 if __name__ == "__main__":
