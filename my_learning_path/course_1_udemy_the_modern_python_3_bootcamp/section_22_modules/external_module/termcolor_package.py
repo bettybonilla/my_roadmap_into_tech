@@ -7,7 +7,7 @@ VS Code or iTerm and only work in the actual Mac terminal
 
 from termcolor import colored
 
-# The help() function is a built-in Python function that shows documentation
+# The help() function is a Python built-in function that shows documentation
 # for whatever we pass into it
 # In order to view the documentation conveniently while you code, open a
 # separate terminal window and go into the terminal Python interpreter then

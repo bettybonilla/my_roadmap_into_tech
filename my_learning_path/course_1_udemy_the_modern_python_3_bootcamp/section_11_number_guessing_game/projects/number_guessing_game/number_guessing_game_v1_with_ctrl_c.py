@@ -4,7 +4,7 @@ where the player has to guess the random number the computer picks between 1
 and 10 and the computer gives hints to help the player guess the number by
 stating if the number guessed was too high or too low
 - The game will loop forever until the player presses Ctrl + C to exit the game
-- NOTE: An alternative and good practice is to use the built-in Python atexit module
+- NOTE: An alternative and good practice is to use the Python built-in atexit module
 when signal handling so that it covers ALL exit signals to do graceful exits whereas
 the below is only specific to the Ctrl + C exit signal
 """

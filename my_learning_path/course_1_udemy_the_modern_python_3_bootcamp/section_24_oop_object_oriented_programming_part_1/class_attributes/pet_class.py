@@ -90,7 +90,7 @@ print("")
 # Therefore, each instance/object will have it's own _allowed_species
 # attribute and, since it is shared, it references and points to the same
 # memory ID as Pet._allowed_species
-# To prove this, we can use the id() function which is a built-in Python
+# To prove this, we can use the id() function which is a Python built-in
 # function that returns the memory ID of an object - This would be an integer
 # which also represents the memory address of the object so it can be used to
 # check if two variables/objects refer to the same address/location in memory

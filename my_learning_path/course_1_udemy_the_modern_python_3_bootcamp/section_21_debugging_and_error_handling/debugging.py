@@ -1,5 +1,5 @@
 """
-The below shows how we can use the pdb built-in Python module with the
+The below shows how we can use the pdb Python built-in module with the
 pdb.set_trace() function to set breakpoints in our code which pauses execution of
 our code to allow us to step through our code one line at a time in terminal
 """

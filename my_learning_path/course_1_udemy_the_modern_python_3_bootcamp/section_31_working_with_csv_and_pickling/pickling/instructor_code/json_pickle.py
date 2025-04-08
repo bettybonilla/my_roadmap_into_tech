@@ -1,5 +1,5 @@
 """
-- NOTE: Although you can use this package for complex Python objects, YOU SHOULD STILL ONLY USE THE BUILT-IN JSON MODULE
+- NOTE: Although you can use this package for complex Python objects, YOU SHOULD STILL ONLY USE THE JSON BUILT-IN MODULE
 AND NOT RELY ON AN EXTERNAL MODULE
 """
 

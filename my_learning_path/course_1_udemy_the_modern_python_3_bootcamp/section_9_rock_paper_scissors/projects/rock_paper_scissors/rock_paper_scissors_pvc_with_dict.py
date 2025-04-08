@@ -5,7 +5,7 @@ The program below is a rock, paper, scissors game for PvC (Player vs. Computer)
 # Below the import keyword is used to import everything from the random module
 # and the time module
 # All imports should be done at the top of files
-# The built-in Python random module generates pseudo-random numbers or
+# The Python built-in random module generates pseudo-random numbers or
 # elements based on the function used and the deterministic parameters set
 import random
 import time

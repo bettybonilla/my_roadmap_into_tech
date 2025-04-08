@@ -24,7 +24,7 @@ print(Cat.cool)
 print(Animal.cool)
 print("")
 
-# The isinstance() built-in Python function returns a boolean True or False
+# The isinstance() Python built-in function returns a boolean True or False
 # value if an object is an instance of a class or of a subclass
 print(isinstance(sadie, Cat))
 print(isinstance(sadie, Animal))

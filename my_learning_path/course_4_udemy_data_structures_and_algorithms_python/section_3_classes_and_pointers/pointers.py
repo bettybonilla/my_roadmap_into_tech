@@ -13,7 +13,7 @@ print("num2 =", num2)
 print("num1 == num2:", num1 == num2)
 print("")
 
-# The id() function is a built-in Python function which returns the memory ID of a variable/object - This is an integer
+# The id() function is a Python built-in function which returns the memory ID of a variable/object - This is an integer
 # which also represents the memory address of the variable/object so it can be used to check if two variables/objects
 # refer to the same address/location in memory
 # However, keep in mind that everytime you run your program your variable/object will return a different memory ID

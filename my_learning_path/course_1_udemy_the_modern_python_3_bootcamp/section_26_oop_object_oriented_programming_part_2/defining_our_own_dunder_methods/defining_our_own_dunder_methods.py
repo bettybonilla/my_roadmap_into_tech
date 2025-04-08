@@ -71,7 +71,7 @@ print("")
 # since they are all referencing the same object in memory (self) therefore
 # the change was applied to all of them
 # In order to separate the objects in memory so that they're copies instead of
-# being the exact same object, we would import the built-in Python copy.copy
+# being the exact same object, we would import the Python built-in copy.copy
 # module then pass self into the copy() function and now they will each be
 # copies and be separate objects in memory which means they will be stored in
 # their own unique addresses/locations in memory
