@@ -20,7 +20,7 @@ def mode(your_list: list[int]) -> int | None:
             return key
     return None
 
-    # Alternative code without the Python built-in collections.Counter() method
+    # Alternative code without the Python built-in collections.Counter() module
     # count_nums = {i: your_list.count(i) for i in your_list}
     # max_value = max(count_nums.values())
     # for key, value in count_nums.items():
