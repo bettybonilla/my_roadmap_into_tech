@@ -6,25 +6,26 @@ from typing import Optional
 
 from fastapi import FastAPI, Body
 
-# app = FastAPI() should be in it’s own main.py file therefore the if __name__ == "__main__" statement is not used so
-# that the app variable is not indented and can be directly visible when you run this file in terminal
+# The if __name__ == "__main__" statement is not used so that the app variable is not indented within this if statement
+# since it needs to be globally scoped and directly accessible when you run this file in terminal - For this reason,
+# this is why app = FastAPI() should be in its own main.py file
 app = FastAPI()
 
 
-# This is considered a GET HTTP request method since it can get (read) data to return as a response back to the client
+# This is considered a GET HTTP request method since it can read and get data to return as a response back to the client
 # However the @app.get() decorator needs to be added above the function along with passing in the specified API endpoint
 # which will call this function - The specified API endpoint can be named according to what it will return as a response
 # back to the client
-# When we start our FastAPI application (backend server), FastAPI will spin up all API endpoints - This is called
-# spinning up our server :-)
-# To start our FastAPI application (backend server) and spin up our server, you must run this file in terminal using the
-# following command:
-# uvicorn project_1_books:app --reload
+# When you start your FastAPI application (backend server), FastAPI will spin up all API endpoints - This is called
+# spinning up your server :-)
+# To start your FastAPI application (backend server) and spin up your server, you must run this file in terminal using
+# the following command:
+# uvicorn books_v1:app --reload
 # - uvicorn is the web server that comes installed with FastAPI which is used to start a FastAPI application
 # (backend server)
-# - project_1_books is the Python file we're referring to
-# - app is the app variable in our Python file which is assigned to FastAPI
-# - --reload will allow our FastAPI application (backend server) to reload everytime there's a code change
+# - books_v1 is the Python file we're referring to
+# - app is the app variable in your Python file which is assigned to FastAPI
+# - --reload will allow your FastAPI application (backend server) to reload everytime there's a code change
 # To kill your server, press CTRL + C
 # In FastAPI, if a function is asynchronous FastAPI will add the async functionality in the background even if the async
 # keyword is not used however you should ALWAYS use the async keyword explicitly with ALL your functions no matter what
