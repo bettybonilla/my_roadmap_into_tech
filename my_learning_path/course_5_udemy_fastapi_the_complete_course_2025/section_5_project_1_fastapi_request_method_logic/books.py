@@ -126,15 +126,15 @@ async def read_author_category_by_query(
 
 
 # The API endpoint below is a static path and its function will take in a request body from the client to create data
-# URL: 127.0.0.1:8000/books/create_book
-@app.post("/books/create_book")
+# URL: 127.0.0.1:8000/books/create-book
+@app.post("/books/create-book")
 async def create_book(new_book=Body()):
     BOOKS.append(new_book)
 
 
 # The API endpoint below is a static path and its function will take in a request body from the client to update data
-# URL: 127.0.0.1:8000/books/update_book
-@app.put("/books/update_book")
+# URL: 127.0.0.1:8000/books/update-book
+@app.put("/books/update-book")
 async def update_book(updated_book=Body()):
     for i in range(len(BOOKS)):
         if BOOKS[i].get("title").casefold() == updated_book.get("title").casefold():
@@ -143,8 +143,8 @@ async def update_book(updated_book=Body()):
 
 # The API endpoint below is a dynamic path since the function has a path parameter in its decorator to take in a request
 # argument from the client to change its path and delete data
-# URL: 127.0.0.1:8000/books/delete_book/{book_title}
-@app.delete("/books/delete_book/{book_title}")
+# URL: 127.0.0.1:8000/books/delete-book/{book_title}
+@app.delete("/books/delete-book/{book_title}")
 async def delete_book(book_title: str):
     for i in range(len(BOOKS)):
         if BOOKS[i].get("title").casefold() == book_title.casefold():
