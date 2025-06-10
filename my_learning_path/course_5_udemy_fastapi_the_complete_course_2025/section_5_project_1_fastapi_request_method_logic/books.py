@@ -41,7 +41,7 @@ async def first_api() -> dict[str, str]:
     return {"message": "Hello Eric!"}
 
 
-books = [
+BOOKS = [
     {"title": "Title_One", "author": "Author_One", "category": "science"},
     {"title": "Title_Two", "author": "Author_Two", "category": "science"},
     {"title": "Title_Three", "author": "Author_Three", "category": "history"},
@@ -59,7 +59,7 @@ books = [
 # URL: 127.0.0.1:8000/books
 @app.get("/books")
 async def read_all_books() -> list[dict[str, str]]:
-    return books
+    return BOOKS
 
 
 # The API endpoint below is a dynamic path since the function has a path parameter in its decorator to take in a request
@@ -68,7 +68,7 @@ async def read_all_books() -> list[dict[str, str]]:
 # URL: 127.0.0.1:8000/books/{book_title}
 @app.get("/books/{book_title}")
 async def read_book(book_title: str) -> Optional[dict[str, str]]:
-    for book in books:
+    for book in BOOKS:
         # The .casefold() method is a more aggressive string method than the .lower() method since it can convert
         # special characters outside the ASCII characters to lowercase
         if book.get("title").casefold() == book_title.casefold():
@@ -82,7 +82,7 @@ async def read_book(book_title: str) -> Optional[dict[str, str]]:
 @app.get("/books/q/")
 async def read_category_by_query(category: str) -> Optional[list[dict[str, str]]]:
     book_list = []
-    for book in books:
+    for book in BOOKS:
         if book.get("category").casefold() == category.casefold():
             book_list.append(book)
     if not book_list:
@@ -97,7 +97,7 @@ async def read_category_by_query(category: str) -> Optional[list[dict[str, str]]
 @app.get("/books/author/q/")
 def read_author_by_query(author: str) -> Optional[list[dict[str, str]]]:
     book_list = []
-    for book in books:
+    for book in BOOKS:
         if book.get("author").casefold() == author.casefold():
             book_list.append(book)
     if not book_list:
@@ -114,7 +114,7 @@ async def read_author_category_by_query(
     book_author: str, category: str
 ) -> Optional[list[dict[str, str]]]:
     book_list = []
-    for book in books:
+    for book in BOOKS:
         if (
             book.get("author").casefold() == book_author.casefold()
             and book.get("category").casefold() == category.casefold()
@@ -129,16 +129,16 @@ async def read_author_category_by_query(
 # URL: 127.0.0.1:8000/books/create_book
 @app.post("/books/create_book")
 async def create_book(new_book=Body()):
-    books.append(new_book)
+    BOOKS.append(new_book)
 
 
 # The API endpoint below is a static path and its function will take in a request body from the client to update data
 # URL: 127.0.0.1:8000/books/update_book
 @app.put("/books/update_book")
 async def update_book(updated_book=Body()):
-    for i in range(len(books)):
-        if books[i].get("title").casefold() == updated_book.get("title").casefold():
-            books[i] = updated_book
+    for i in range(len(BOOKS)):
+        if BOOKS[i].get("title").casefold() == updated_book.get("title").casefold():
+            BOOKS[i] = updated_book
 
 
 # The API endpoint below is a dynamic path since the function has a path parameter in its decorator to take in a request
@@ -146,7 +146,7 @@ async def update_book(updated_book=Body()):
 # URL: 127.0.0.1:8000/books/delete_book/{book_title}
 @app.delete("/books/delete_book/{book_title}")
 async def delete_book(book_title: str):
-    for i in range(len(books)):
-        if books[i].get("title").casefold() == book_title.casefold():
-            books.pop(i)
+    for i in range(len(BOOKS)):
+        if BOOKS[i].get("title").casefold() == book_title.casefold():
+            BOOKS.pop(i)
             break
