@@ -45,7 +45,7 @@ class Character:
     def display_health_points(self):
         print(f"{self.name} HP: {self.health_points}")
 
-    # TODO: Add to my_utilities repo
+    # Helper function
     # Using a clamp is typical in gaming and in programming in general so that your values are within an acceptable and
     # expected specific range, ensuring that they never fall below a minimum value or exceed above a maximum value
     @staticmethod
