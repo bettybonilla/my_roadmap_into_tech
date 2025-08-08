@@ -27,6 +27,7 @@ async def create_user_handler(
         last_name=create_user_request.last_name,
         hashed_password=BCRYPT_CONTEXT.hash(create_user_request.password),
         role=create_user_request.role,
+        phone_number=create_user_request.phone_number,
     )
     db.add(users_table)
     db.commit()

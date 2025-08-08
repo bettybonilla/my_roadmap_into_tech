@@ -41,3 +41,4 @@ class User(Base):
     is_active = Column(Boolean, default=True)
     # role will be a str to specify whether a user is an admin
     role = Column(String)
+    phone_number = Column(String)
