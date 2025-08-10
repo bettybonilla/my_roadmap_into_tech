@@ -12,15 +12,19 @@ from routers.admin.admin_handlers import AdminAccess
 from routers.auth.auth_handlers import create_user_handler, create_token_handler
 from routers.auth.auth_models import Token
 from routers.to_do.to_do_handlers import UserAccess
-from routers.user.user_handlers import get_account_details, change_password
+from routers.user.user_handlers import (
+    get_account_details_handler,
+    change_password_handler,
+    change_phone_number_handler,
+)
 
 app = FastAPI()
 # The APIRouter instances along with app.include_router(APIRouter instance) allow you to spin up your server with this
 # main.py file and keep separate files for the routers logic while running on the same port which makes our FastAPI
 # application (backend server) scalable + maintainable
-# The prefix="/user" parameter sets each API endpoint in the to-do routes to be prefixed with "/user"
-# The tags=["to-do"] parameter separates the to-do related API endpoints in the Swagger UI
-to_do_router = APIRouter(prefix="/user", tags=["to-do"])
+# The prefix="/auth" parameter sets each API endpoint in the auth routes to be prefixed with "/auth"
+# The tags=["auth"] parameter separates the auth related API endpoints in the Swagger UI
+to_do_router = APIRouter(tags=["to-do"])
 auth_router = APIRouter(prefix="/auth", tags=["auth"])
 admin_router = APIRouter(prefix="/admin", tags=["admin"])
 user_router = APIRouter(prefix="/user", tags=["user"])
@@ -76,10 +80,13 @@ admin_router.delete("/delete-to-do/{to_do_id}", status_code=status.HTTP_204_NO_C
 # User routes
 user_router.get(
     "/account-details", response_model=None, status_code=status.HTTP_200_OK
-)(get_account_details)
+)(get_account_details_handler)
 user_router.put(
     "/change-password", response_model=None, status_code=status.HTTP_204_NO_CONTENT
-)(change_password)
+)(change_password_handler)
+user_router.put(
+    "/change-phone-number", response_model=None, status_code=status.HTTP_204_NO_CONTENT
+)(change_phone_number_handler)
 
 app.include_router(to_do_router)
 app.include_router(auth_router)
