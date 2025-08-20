@@ -1,7 +1,7 @@
 import os
 from typing import Iterator
 
-from database import SessionLocal
+from ..database import SessionLocal
 
 
 # Dependency function

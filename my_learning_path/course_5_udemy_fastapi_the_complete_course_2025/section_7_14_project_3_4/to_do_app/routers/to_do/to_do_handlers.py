@@ -1,15 +1,15 @@
-from typing import Annotated, NoReturn, Optional
+from typing import NoReturn, Optional
 
-from fastapi import Depends, Path
-from models import ToDo
-from routers import TO_DO_NOT_FOUND_EXCEPTION, USER_AUTHORIZATION_EXCEPTION
-from routers.auth.auth_user_validation import UserValidation
-from routers.helpers import get_db
-from routers.to_do.to_do_models import ToDoRequest
-from sqlalchemy.orm import Session
+from fastapi import Path
 
-DB_DEPENDENCY = Annotated[Session, Depends(get_db)]
-USER_DEPENDENCY = Annotated[dict, Depends(UserValidation.get_current_user)]
+from .to_do_models import ToDoRequest
+from .. import (
+    USER_DEPENDENCY,
+    DB_DEPENDENCY,
+    USER_AUTHORIZATION_EXCEPTION,
+    TO_DO_NOT_FOUND_EXCEPTION,
+)
+from ...models import ToDo
 
 
 class UserAccess:

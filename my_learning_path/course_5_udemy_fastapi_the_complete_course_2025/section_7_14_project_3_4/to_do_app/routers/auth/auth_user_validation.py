@@ -2,16 +2,17 @@ from datetime import timedelta, datetime, timezone
 from typing import Literal, Annotated
 
 from fastapi import Depends
+from fastapi import HTTPException
 from jose import jwt, JWTError
-from models import User
-from routers import USER_AUTHENTICATION_EXCEPTION
-from routers.auth import (
-    BCRYPT_CONTEXT,
-    OAUTH2_BEARER,
-    ALGORITHM,
-    SECRET,
-)
 from sqlalchemy.orm import Session
+from starlette import status
+
+from . import BCRYPT_CONTEXT, ALGORITHM, SECRET, OAUTH2_BEARER
+from ...models import User
+
+USER_AUTHENTICATION_EXCEPTION = HTTPException(
+    status_code=status.HTTP_401_UNAUTHORIZED, detail="Authentication failed"
+)
 
 
 class UserValidation:
@@ -56,6 +57,8 @@ class UserValidation:
             if now >= expires:
                 raise USER_AUTHENTICATION_EXCEPTION
         except ValueError:
+            raise USER_AUTHENTICATION_EXCEPTION
+        except TypeError:
             raise USER_AUTHENTICATION_EXCEPTION
 
         username: str = payload.get("sub")
