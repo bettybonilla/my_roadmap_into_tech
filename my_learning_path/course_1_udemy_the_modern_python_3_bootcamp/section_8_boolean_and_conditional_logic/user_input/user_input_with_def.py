@@ -1,6 +1,6 @@
 """
 The below shows another way you can get user input by using a def (definition)
-which defines a function so you can reuse it again throughout your code
+which defines a function so you can re-use it again throughout your code
 """
 
 # -----------------------------------------------------------------------------
@@ -12,7 +12,7 @@ which defines a function so you can reuse it again throughout your code
 
 
 # Using a def implements the DRY (Don't Repeat Yourself) principle because you
-# define your function once and then you can reuse it without having to repeat
+# define your function once and then you can re-use it without having to repeat
 # the same code for it again
 # The 1st line is your signature line where you use a clear name (green) to
 # describe what your function will do then you write your parameters inside

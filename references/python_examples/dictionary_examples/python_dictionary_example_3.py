@@ -3,7 +3,7 @@ import csv
 import json
 import sys
 
-# allows me to pass in data from the command line as variables, rather than hardcoding them, it makes the script more reuseable
+# allows me to pass in data from the command line as variables, rather than hardcoding them, it makes the script more re-useable
 parser = argparse.ArgumentParser()
 parser.add_argument("-f", "--file", help="APS CSV")
 parser.add_argument("-j", "--json", help="APS JSON FROM DB")
