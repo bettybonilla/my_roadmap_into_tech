@@ -1,5 +1,6 @@
 from sqlalchemy import create_engine
-from sqlalchemy.ext.declarative import declarative_base
+
+from sqlalchemy.orm import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # Creates a database URL which is the location of the database where we want to store our to_do_app.db on our FastAPI

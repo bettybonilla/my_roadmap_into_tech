@@ -1,16 +1,12 @@
-from typing import Annotated
-
-from fastapi import Depends
-from models import User
-from routers import USER_AUTHORIZATION_EXCEPTION, INCORRECT_PASSWORD_EXCEPTION
-from routers.auth import BCRYPT_CONTEXT
-from routers.auth.auth_user_validation import UserValidation
-from routers.helpers import get_db
-from routers.user.user_models import ChangePasswordRequest
-from sqlalchemy.orm import Session
-
-DB_DEPENDENCY = Annotated[Session, Depends(get_db)]
-USER_DEPENDENCY = Annotated[dict, Depends(UserValidation.get_current_user)]
+from .user_models import ChangePasswordRequest, ChangePhoneNumberRequest
+from .. import (
+    USER_DEPENDENCY,
+    DB_DEPENDENCY,
+    USER_AUTHORIZATION_EXCEPTION,
+    INCORRECT_PASSWORD_EXCEPTION,
+)
+from ..auth import BCRYPT_CONTEXT
+from ...models import User
 
 
 async def get_account_details_handler(
@@ -41,11 +37,13 @@ async def change_password_handler(
 
 
 async def change_phone_number_handler(
-    user: USER_DEPENDENCY, db: DB_DEPENDENCY, phone_number: str
+    user: USER_DEPENDENCY,
+    db: DB_DEPENDENCY,
+    change_phone_number_request: ChangePhoneNumberRequest,
 ):
     if not user:
         raise USER_AUTHORIZATION_EXCEPTION
     users_table = db.query(User).filter(User.id == user.get("user_id")).first()
-    users_table.phone_number = phone_number
+    users_table.phone_number = change_phone_number_request.new_phone_number
     db.add(users_table)
     db.commit()

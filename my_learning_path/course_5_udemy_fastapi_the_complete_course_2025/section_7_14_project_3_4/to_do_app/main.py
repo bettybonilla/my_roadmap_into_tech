@@ -6,19 +6,26 @@ feature to prioritize them
 from fastapi import FastAPI, APIRouter
 from starlette import status
 
-import models
-from database import engine
-from routers.admin.admin_handlers import AdminAccess
-from routers.auth.auth_handlers import create_user_handler, create_token_handler
-from routers.auth.auth_models import Token
-from routers.to_do.to_do_handlers import UserAccess
-from routers.user.user_handlers import (
+from .database import engine
+from .models import Base
+from .routers.admin.admin_handlers import AdminAccess
+from .routers.auth.auth_handlers import create_user_handler, create_token_handler
+from .routers.auth.auth_models import Token
+from .routers.to_do.to_do_handlers import UserAccess
+from .routers.user.user_handlers import (
     get_account_details_handler,
     change_password_handler,
     change_phone_number_handler,
 )
 
 app = FastAPI()
+
+
+@app.get("/health-check")
+def health_check() -> dict[str, str]:
+    return {"status": "healthy"}
+
+
 # The APIRouter instances along with app.include_router(APIRouter instance) allow you to spin up your server with this
 # main.py file and keep separate files for the routers logic while running on the same port which makes our FastAPI
 # application (backend server) scalable + maintainable
@@ -42,7 +49,7 @@ user_router = APIRouter(prefix="/user", tags=["user"])
 # - .mode markdown
 # - .mode box (My favorite view for a few columns)
 # - .mode table
-models.Base.metadata.create_all(bind=engine)
+Base.metadata.create_all(bind=engine)
 
 # To-do routes
 to_do_router.get("/to-dos", response_model=None, status_code=status.HTTP_200_OK)(

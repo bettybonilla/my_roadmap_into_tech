@@ -3,18 +3,12 @@ from typing import Annotated
 
 from fastapi import Depends
 from fastapi.security import OAuth2PasswordRequestForm
-from models import User
-from routers import USER_AUTHENTICATION_EXCEPTION
-from routers.auth import BCRYPT_CONTEXT
-from routers.auth.auth_models import (
-    CreateUserRequest,
-    Token,
-)
-from routers.auth.auth_user_validation import UserValidation
-from routers.helpers import get_db
-from sqlalchemy.orm import Session
 
-DB_DEPENDENCY = Annotated[Session, Depends(get_db)]
+from . import BCRYPT_CONTEXT
+from .auth_models import CreateUserRequest, Token
+from .auth_user_validation import UserValidation
+from .. import DB_DEPENDENCY, USER_AUTHENTICATION_EXCEPTION
+from ...models import User
 
 
 async def create_user_handler(

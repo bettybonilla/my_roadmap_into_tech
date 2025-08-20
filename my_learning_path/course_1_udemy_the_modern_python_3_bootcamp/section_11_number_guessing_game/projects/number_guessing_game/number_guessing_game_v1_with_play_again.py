@@ -25,7 +25,7 @@ computer = random.randint(1, 10)
 
 # while True loops will loop forever until it hits the break keyword
 while True:
-    # Variable shadowing should be avoided which is when you reuse the same
+    # Variable shadowing should be avoided which is when you re-use the same
     # exact variable name for altered data
     # When you validate data or in general alter data in any way, it's good
     # practice to rename variables separately with the altered data since the

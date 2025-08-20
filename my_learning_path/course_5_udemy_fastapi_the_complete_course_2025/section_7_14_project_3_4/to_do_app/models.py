@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, String, Boolean, ForeignKey
 
-from database import Base
+from .database import Base
 
 
 # This models.py file outlines the structure and schema of the database tables below which are created for our
