@@ -6,10 +6,10 @@ from sqlalchemy.orm import sessionmaker
 # Creates a database URL which is the location of the database where we want to store our to_do_app.db on our FastAPI
 # application (backend server)
 # Using SQLite as our Database Management System (DBMS)
-DATABASE_URL = "sqlite:///./to_do_app.db"
+# DATABASE_URL = "sqlite:///./to_do_app.db"
 
 # Using Postgres as our Database Management System (DBMS)
-# DATABASE_URL = "postgresql://postgres:test1234!@localhost/ToDoAppDatabase"
+DATABASE_URL = "postgresql://postgres:test1234!@localhost/ToDoAppDatabase"
 
 # Using MySQL as our Database Management System (DBMS)
 # DATABASE_URL = "mysql+pymysql://root:test1234!@127.0.0.1:3306/ToDoAppDatabase"
@@ -23,9 +23,9 @@ DATABASE_URL = "sqlite:///./to_do_app.db"
 # Therefore, the {"check_same_thread": False} argument is used to let SQLite know that we don't want to be checking the
 # same thread all the time since there could be multiple threads interacting with our database - It is only needed for
 # SQLite (Postgres and MySQL don't need it)
-engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
+# engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
 
-# engine = create_engine(DATABASE_URL)
+engine = create_engine(DATABASE_URL)
 
 # The sessionmaker class is known as a factory class since it creates new Session objects when called
 # A factory creates and returns objects - Common in JavaScript where it's used as an alternative to using classes or

@@ -5,38 +5,36 @@ from fastapi import HTTPException
 from jose import jwt
 
 from . import TestSessionLocal
-from .helpers import mock_get_db, mock_users_table
+from .helpers import mock_get_db, mock_user
 from ..main import app
-from ..routers.auth import SECRET, ALGORITHM
-from ..routers.auth.auth_user_validation import UserValidation
+from ..routers.config import SECRET, ALGORITHM
 from ..routers.helpers import get_db
+from ..routers.user_validation import HandleUser
 
 app.dependency_overrides[get_db] = mock_get_db
 
 
-def test_authenticate_user_login(mock_users_table):
+def test_authenticate_user_login(mock_user):
     db = TestSessionLocal()
-    user = UserValidation.authenticate_user_login(
-        mock_users_table.username, "testpassword", db
-    )
+    user = HandleUser.authenticate_user_login(mock_user.username, "testpassword", db)
     assert user is not None
-    assert user.username == mock_users_table.username
-    false_username = UserValidation.authenticate_user_login(
+    assert user.username == mock_user.username
+    false_username = HandleUser.authenticate_user_login(
         "incorrect username", "testpassword", db
     )
     assert false_username is False
-    false_password = UserValidation.authenticate_user_login(
-        mock_users_table.username, "incorrect password", db
+    false_password = HandleUser.authenticate_user_login(
+        mock_user.username, "incorrect password", db
     )
     assert false_password is False
 
 
-def test_get_access_token():
+def test_create_access_token():
     username = "testusername"
     user_id = 1
     user_role = "user"
     expires_delta = timedelta(days=1)
-    encoded_jwt = UserValidation.get_access_token(
+    encoded_jwt = HandleUser.create_access_token(
         username, user_id, user_role, expires_delta
     )
     decoded_jwt = jwt.decode(
@@ -59,7 +57,7 @@ async def test_get_current_user():
         "exp": datetime.now(timezone.utc) + timedelta(days=1),
     }
     encoded_jwt = jwt.encode(algorithm=ALGORITHM, claims=payload, key=SECRET)
-    user = await UserValidation.get_current_user(token=encoded_jwt)
+    user = await HandleUser.get_current_user(token=encoded_jwt)
     assert user == {"username": "testusername", "user_id": 1, "user_role": "admin"}
 
 
@@ -69,7 +67,7 @@ async def test_get_current_user_unauthorized():
     encoded_jwt = jwt.encode(algorithm=ALGORITHM, claims=payload, key=SECRET)
 
     with pytest.raises(HTTPException) as excinfo:
-        await UserValidation.get_current_user(token=encoded_jwt)
+        await HandleUser.get_current_user(token=encoded_jwt)
 
     assert excinfo.value.status_code == 401
     assert excinfo.value.detail == "Authentication failed"

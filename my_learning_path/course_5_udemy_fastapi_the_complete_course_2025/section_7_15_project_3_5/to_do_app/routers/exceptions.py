@@ -1,18 +1,7 @@
-from typing import Annotated
-
-from fastapi import Depends
 from fastapi import HTTPException
-from sqlalchemy.orm import Session
 from starlette import status
 
-from .auth.auth_user_validation import UserValidation
-from .helpers import get_db
-
-# Dependencies
-DB_DEPENDENCY = Annotated[Session, Depends(get_db)]
-USER_DEPENDENCY = Annotated[dict, Depends(UserValidation.get_current_user)]
-
-# Exceptions
+USER_CREATION_EXCEPTION = HTTPException(status_code=status.HTTP_400_BAD_REQUEST)
 USER_AUTHENTICATION_EXCEPTION = HTTPException(
     status_code=status.HTTP_401_UNAUTHORIZED, detail="Authentication failed"
 )

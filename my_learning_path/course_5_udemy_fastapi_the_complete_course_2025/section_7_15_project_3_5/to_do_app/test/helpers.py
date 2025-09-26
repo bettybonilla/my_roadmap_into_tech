@@ -5,7 +5,7 @@ from sqlalchemy import text
 
 from . import TestSessionLocal, engine
 from ..models import ToDo, User
-from ..routers.auth import BCRYPT_CONTEXT
+from ..routers.config import BCRYPT_CONTEXT
 
 
 # Dependency function
@@ -28,9 +28,9 @@ def mock_get_current_user() -> dict[str, str | int]:
 # then stops execution until the test function calling this fixture exits, and then run the rest of the teardown/cleanup
 # phase
 @pytest.fixture
-def mock_to_dos_table():
+def mock_to_do():
     # Setup phase
-    to_dos_table = ToDo(
+    row = ToDo(
         title="Learn to code!",
         description="Need to learn everyday!",
         priority=5,
@@ -38,10 +38,10 @@ def mock_to_dos_table():
         owner_id=1,
     )
     db = TestSessionLocal()
-    db.add(to_dos_table)
+    db.add(row)
     db.commit()
     # Stops execution until the test function calling this fixture exits
-    yield to_dos_table
+    yield row
     # Teardown/cleanup phase
     with engine.connect() as connection:
         connection.execute(text("DELETE FROM to_dos;"))
@@ -49,8 +49,8 @@ def mock_to_dos_table():
 
 
 @pytest.fixture
-def mock_users_table():
-    users_table = User(
+def mock_user():
+    row = User(
         email="codingwithroby@email.com",
         username="codingwithroby",
         first_name="Eric",
@@ -60,9 +60,9 @@ def mock_users_table():
         phone_number="111-111-1111",
     )
     db = TestSessionLocal()
-    db.add(users_table)
+    db.add(row)
     db.commit()
-    yield users_table
+    yield row
     with engine.connect() as connection:
         connection.execute(text("DELETE FROM users;"))
         connection.commit()

@@ -1,11 +1,7 @@
-from .user_models import ChangePasswordRequest, ChangePhoneNumberRequest
-from .. import (
-    USER_DEPENDENCY,
-    DB_DEPENDENCY,
-    USER_AUTHORIZATION_EXCEPTION,
-    INCORRECT_PASSWORD_EXCEPTION,
-)
-from ..auth import BCRYPT_CONTEXT
+from .models import ChangePasswordRequest, ChangePhoneNumberRequest
+from .. import USER_DEPENDENCY, DB_DEPENDENCY
+from ..config import BCRYPT_CONTEXT
+from ..exceptions import USER_AUTHORIZATION_EXCEPTION, INCORRECT_PASSWORD_EXCEPTION
 from ...models import User
 
 
@@ -24,15 +20,13 @@ async def change_password_handler(
 ):
     if not user:
         raise USER_AUTHORIZATION_EXCEPTION
-    users_table = db.query(User).filter(User.id == user.get("user_id")).first()
+    row = db.query(User).filter(User.id == user.get("user_id")).first()
     if not BCRYPT_CONTEXT.verify(
-        password_verification.current_password, users_table.hashed_password
+        password_verification.current_password, row.hashed_password
     ):
         raise INCORRECT_PASSWORD_EXCEPTION
-    users_table.hashed_password = BCRYPT_CONTEXT.hash(
-        password_verification.new_password
-    )
-    db.add(users_table)
+    row.hashed_password = BCRYPT_CONTEXT.hash(password_verification.new_password)
+    db.add(row)
     db.commit()
 
 
@@ -43,7 +37,7 @@ async def change_phone_number_handler(
 ):
     if not user:
         raise USER_AUTHORIZATION_EXCEPTION
-    users_table = db.query(User).filter(User.id == user.get("user_id")).first()
-    users_table.phone_number = change_phone_number_request.new_phone_number
-    db.add(users_table)
+    row = db.query(User).filter(User.id == user.get("user_id")).first()
+    row.phone_number = change_phone_number_request.new_phone_number
+    db.add(row)
     db.commit()

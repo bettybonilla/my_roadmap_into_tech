@@ -2,9 +2,8 @@ from typing import NoReturn
 
 from fastapi import Path
 
-from .. import (
-    USER_DEPENDENCY,
-    DB_DEPENDENCY,
+from .. import USER_DEPENDENCY, DB_DEPENDENCY
+from ..exceptions import (
     USER_AUTHORIZATION_EXCEPTION,
     USER_FORBIDDEN_EXCEPTION,
     TO_DO_NOT_FOUND_EXCEPTION,
@@ -33,8 +32,8 @@ class AdminAccess:
             raise USER_AUTHORIZATION_EXCEPTION
         if user.get("user_role") != "admin":
             raise USER_FORBIDDEN_EXCEPTION
-        to_dos_table = db.query(ToDo).filter(ToDo.id == to_do_id).first()
-        if not to_dos_table:
+        row = db.query(ToDo).filter(ToDo.id == to_do_id).first()
+        if not row:
             raise TO_DO_NOT_FOUND_EXCEPTION
         db.query(ToDo).filter(ToDo.id == to_do_id).delete()
         db.commit()

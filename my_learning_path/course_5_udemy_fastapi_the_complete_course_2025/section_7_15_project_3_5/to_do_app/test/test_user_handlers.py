@@ -1,16 +1,16 @@
 from fastapi import status
 
 from . import client
-from .helpers import mock_get_db, mock_get_current_user, mock_users_table
+from .helpers import mock_get_db, mock_get_current_user, mock_user
 from ..main import app
-from ..routers.auth.auth_user_validation import UserValidation
 from ..routers.helpers import get_db
+from ..routers.user_validation import HandleUser
 
 app.dependency_overrides[get_db] = mock_get_db
-app.dependency_overrides[UserValidation.get_current_user] = mock_get_current_user
+app.dependency_overrides[HandleUser.get_current_user] = mock_get_current_user
 
 
-def test_get_account_details_handler(mock_users_table):
+def test_get_account_details_handler(mock_user):
     response = client.get("user/account-details")
     assert response.status_code == status.HTTP_200_OK
     assert response.json()["email"] == "codingwithroby@email.com"
@@ -21,7 +21,7 @@ def test_get_account_details_handler(mock_users_table):
     assert response.json()["phone_number"] == "111-111-1111"
 
 
-def test_change_password_handler(mock_users_table):
+def test_change_password_handler(mock_user):
     response = client.put(
         "user/change-password",
         json={"current_password": "testpassword", "new_password": "newpassword"},
@@ -29,7 +29,7 @@ def test_change_password_handler(mock_users_table):
     assert response.status_code == status.HTTP_204_NO_CONTENT
 
 
-def test_change_password_handler_unauthorized(mock_users_table):
+def test_change_password_handler_unauthorized(mock_user):
     response = client.put(
         "user/change-password",
         json={"current_password": "incorrect password", "new_password": "newpassword"},
@@ -38,7 +38,7 @@ def test_change_password_handler_unauthorized(mock_users_table):
     assert response.json() == {"detail": "Incorrect password"}
 
 
-def test_change_phone_number_handler(mock_users_table):
+def test_change_phone_number_handler(mock_user):
     response = client.put(
         "user/change-phone-number",
         json={"new_phone_number": "222-222-2222"},

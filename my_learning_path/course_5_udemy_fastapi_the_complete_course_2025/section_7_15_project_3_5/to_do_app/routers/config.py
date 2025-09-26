@@ -1,7 +1,7 @@
 from fastapi.security import OAuth2PasswordBearer
 from passlib.context import CryptContext
 
-from ..helpers import get_exported_environ_var
+from .helpers import get_exported_environ_var
 
 # Used for hashing passwords
 # The below is the setup for passlib to work properly
