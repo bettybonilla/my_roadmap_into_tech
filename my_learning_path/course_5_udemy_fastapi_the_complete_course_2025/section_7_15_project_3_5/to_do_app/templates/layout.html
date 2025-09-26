@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!--Uncomment/comment the link tags below for testing/production-->
+    <!--For testing without spinning up server-->
+    <!--Replaced href attributes with absolute paths-->
+    <!--Allows you to preview locally-->
+    <!--However, only works if Jinja is not being used-->
+    <!--<link rel="stylesheet" type="text/css"-->
+    <!--      href="/Users/bettybonilla/github/bettybonilla/my_roadmap_into_tech/my_learning_path/course_5_udemy_fastapi_the_complete_course_2025/section_7_15_project_3_5/to_do_app/static/css/base.css">-->
+    <!--<link rel="stylesheet" type="text/css"-->
+    <!--      href="/Users/bettybonilla/github/bettybonilla/my_roadmap_into_tech/my_learning_path/course_5_udemy_fastapi_the_complete_course_2025/section_7_15_project_3_5/to_do_app/static/css/bootstrap.css">-->
+    <!--For production with spinning up server-->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/css/base.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/css/bootstrap.css') }}">
+        <meta charset="UTF-8">
+        <title>To-do App</title>
+    </head>
+    <body>
+        {% include "navbar.html" %}
+        {% block content %}
+        {% endblock %}
+        <script src="{{ url_for('static', path='/js/jquery-slim.js') }}"></script>
+        <script src="{{ url_for('static', path='/js/popper.js') }}"></script>
+        <script src="{{ url_for('static', path='/js/bootstrap.js') }}"></script>
+        <script src="{{ url_for('static', path='/js/base.js') }}" defer></script>
+    </body>
+</html>
