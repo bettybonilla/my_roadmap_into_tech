@@ -28,4 +28,5 @@ async def read_item(r: Request) -> dict[str, str]:
 
 # curl command to interact with the above server code:
 # curl 'localhost:8000/?skip=0&name=marc&hello=world&shiba=hachi'
-# needs to be passed as a string since the & character already exists as a key character and will cause an error
+# NOTE: curl commands with query parameters must be passed as a string since both the ? character and the & character
+# already exist as key characters and will otherwise raise the zsh: no matches found error

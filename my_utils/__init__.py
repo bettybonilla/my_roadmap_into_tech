@@ -15,8 +15,8 @@ def clamp(value: int, min_value: int, max_value: int) -> int:
     # return max_value(min_value, min_value(value, max_value))
 
 
-# Returns the exported environ_var variable from the profile file (bash profile/os) which should be used in production
-# for security purposes since it won't be committed
+# Returns the exported environ_var variable from the zshrc file which should be used for production and security
+# purposes since it won't be committed
 # Otherwise, returns the default_value variable which should be used for testing purposes only since it will be
 # committed however it won't be used in production
 def get_exported_environ_var(environ_var: str, default_value: str) -> str:
